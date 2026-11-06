@@ -1,0 +1,69 @@
+/* Photo wallpapers are confined to light mode; learning cards stay opaque. */
+.explorer-app[data-color-mode=light]{
+ --navy:#111;--ink:#111;--muted:#111;--subtle:#111;
+ --wallpaper:url('/explorers/welcome.png');
+ --wallpaper-wash:linear-gradient(#ffffff70,#fffaf099);
+ color:#111;
+}
+.explorer-app[data-color-mode=light][data-background=forest]{
+ --wallpaper:url('/explorers/forest.png');
+ --wallpaper-wash:linear-gradient(#f7fff270,#ffffff99);
+}
+.explorer-app[data-color-mode=light][data-background=sunrise]{
+ --wallpaper-wash:linear-gradient(#fff0df70,#fff8eb99);
+}
+.explorer-app[data-color-mode=light][data-background=stars]{
+ --wallpaper:url('/explorers/forest.png');
+ --wallpaper-wash:linear-gradient(#f2efff70,#fffaf599);
+}
+.explorer-app[data-color-mode=light] .explorer-main{
+ background-image:var(--wallpaper-wash),var(--wallpaper);
+ background-size:cover,cover;
+ background-position:center,center;
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+}
+.explorer-app[data-color-mode=light] :is(h1,h2,h3,h4,p,small,strong,label,li,a,button,input,textarea,select,.translations,.translation-line,.muted,.section-kicker,.back,.explorer-text,.theme-option-copy,.studio-note,.rail-caption,.explorer-footer){color:#111}
+.explorer-app[data-color-mode=light] :is(h1,h2,h3,h4,p,small,strong,label,li,a,button,.translations) span{color:inherit}
+.explorer-app[data-color-mode=light] :is(.explorer-header,.explorer-sidebar,.explorer-bottom-nav){background:#fffdf7f5}
+.explorer-app[data-color-mode=light] :is(.primary,.lesson-audio,.audio-big,.yellow-button){color:#fff}
+.explorer-app[data-color-mode=light] .yellow-button{color:#111}
+.explorer-app[data-color-mode=light] :is(.primary,.lesson-audio,.audio-big) :is(span,strong,small){color:#fff}
+.explorer-app[data-color-mode=light] :is(.explorer-story-card,.story-card-copy) :is(strong,span,p,small){color:#fff}
+.explorer-app[data-color-mode=light] .theme-swatch{background-image:linear-gradient(#ffffff10,#ffffff10),url('/explorers/welcome.png');background-size:cover;background-position:center}
+.explorer-app[data-color-mode=light] .swatch-forest{background-image:url('/explorers/forest.png');background-position:center 55%}
+.explorer-app[data-color-mode=light] .swatch-sunrise{background-image:linear-gradient(#ffc79c35,#ffc79c35),url('/explorers/welcome.png');background-position:right center}
+.explorer-app[data-color-mode=light] .swatch-stars{background-image:linear-gradient(#b9b0e14d,#b9b0e14d),url('/explorers/forest.png')}
+.explorer-app[data-color-mode=light] .theme-swatch>i{display:none}
+.explorer-app[data-color-mode=light] .theme-swatch>span{background:#fffef5e6;border-radius:50%;width:66px;height:66px;display:grid;place-items:center;font-size:34px}
+/* Printed translations and automatic support captions have their own colours
+   and opacity. Keep every layer of regular light-mode copy truly black. */
+.explorer-app[data-color-mode=light] :is(.translations,.translation-line,.bilingual-label,.label-translations,.muted,.section-kicker),
+.explorer-app[data-color-mode=light] :is(.translations,.bilingual-label,.label-translations) :is(p,span,small,bdi),
+.explorer-app[data-color-mode=light] [data-support]::after{
+ color:#000!important;opacity:1!important;
+}
+.explorer-app[data-color-mode=light] .pw-banner{
+ background:linear-gradient(90deg,#fffffff0 0%,#ffffffe3 55%,#ffffff73 100%),var(--wallpaper) center 60%/cover!important;
+ border-color:#c2ccba;
+}
+.explorer-app[data-color-mode=light] .pw-banner :is(span,strong,small,p,bdi),
+.explorer-app[data-color-mode=light] .pw-banner [data-support]::after{
+ color:#000!important;opacity:1!important;
+}
+.explorer-app[data-color-mode=light] :is(h1,h2,h3,h4,p,small,strong,label,li,a,summary,.explorer-text,.theme-option-copy,.studio-note,.rail-caption,.explorer-footer){color:#000}
+/* Primary actions and text printed over dark story art retain contrast. */
+.explorer-app[data-color-mode=light] :is(.primary,.lesson-audio,.audio-big,.explorer-story-card,.story-card-copy) :is(.translations,.translation-line,p,span,strong,small,bdi),
+.explorer-app[data-color-mode=light] :is(.primary,.lesson-audio,.audio-big,.explorer-story-card,.story-card-copy) [data-support]::after{color:#fff!important}
+@media(max-width:620px){
+ .explorer-app[data-color-mode=light] .explorer-main{background-attachment:scroll;background-size:auto,auto 1100px;background-repeat:no-repeat,repeat-y}
+}
+
+/* Pale sound notes need dark copy in both colour modes. */
+.explorer-app .phonics-letter-note,
+.explorer-app .phonics-letter-note *,
+.explorer-app .phonics-letter-note [data-support]::after,
+.explorer-app .phonics-letter-note[data-support]::after {
+ color:#111!important;
+ opacity:1!important;
+}

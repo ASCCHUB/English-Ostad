@@ -1,0 +1,142 @@
+/* Shared storybook palette and surfaces, loaded after the screen styles. */
+:root {
+  --navy: #203b57;
+  --blue: #176bc1;
+  --cream: #fffaf0;
+  --line: #e3e9e5;
+  --shadow: 0 12px 32px #294b6510;
+}
+body {
+  color: var(--navy);
+  background: var(--cream);
+}
+.explorer-main {
+  background:
+    radial-gradient(ellipse at 100% 0%, #dff2f68c, transparent 42%),
+    radial-gradient(ellipse at 0% 55%, #fff0c94d, transparent 38%),
+    var(--cream);
+}
+.explorer-header {background: #fffdf7; border-bottom-color: #e6e9df;}
+.explorer-sidebar {
+  background: linear-gradient(180deg, #fffef9 65%, #eff7ec);
+  border-right-color: #e2e9df;
+}
+.explorer-brand {color: #234b70;}
+.explorer-section-title h2 {letter-spacing: -.55px;}
+.section-kicker {color: #52776c; letter-spacing: 1.4px; line-height: 1.7;}
+.small-chip {background: #edf4ed; color: #426953; border: 1px solid #dce8db;}
+.explorer-goal, .next-adventure, .activity, .focused-letter,
+.explorer-badge, .journey-detail {
+  border-color: #e1e8e2;
+  box-shadow: var(--shadow);
+}
+.explorer-subjects>button, .letter-library-grid>button {
+  border-color: #e1e8e2;
+  box-shadow: 0 5px 16px #294b6508;
+}
+.primary {
+  background: linear-gradient(180deg, #2584da, #176bc1);
+  border-color: #176bc1;
+  box-shadow: 0 3px 0 #12569b, 0 7px 16px #176bc11c;
+}
+.primary:hover {background: #176bc1; box-shadow: 0 4px 0 #12569b, 0 9px 20px #176bc125;}
+.secondary {background: #fffefb; border: 1px solid #d4e2e8; color: #315b7d; box-shadow: 0 2px 0 #dce7ec;}
+.secondary:hover {background: #edf6fc;}
+.primary:active, .secondary:active {transform: translateY(2px); box-shadow: none;}
+button:disabled {cursor: default;}
+input:focus, select:focus {border-color: #4d92c8;}
+.learning-studio {
+  padding: 25px;
+  border: 1px solid #e3e9df;
+  border-radius: 28px;
+  background: #fffefa;
+  box-shadow: var(--shadow);
+}
+.learning-studio .explorer-section-title {margin-top: 0;}
+.learning-studio .section-kicker {font-size: 10px;}
+.studio-cards {gap: 16px;}
+.studio-card {
+  --course-color: #286f9c;
+  --course-tint: #e5f3fc;
+  background: linear-gradient(145deg, #fffefb, var(--course-tint));
+  border: 1px solid #dce7e6;
+  border-bottom: 4px solid var(--course-color);
+  border-radius: 22px;
+  padding: 23px 20px 27px;
+  min-height: 215px;
+  gap: 14px;
+  box-shadow: 0 6px 15px #25467408;
+}
+.studio-card.butter {--course-color: #93621d; --course-tint: #fff1ca;}
+.studio-card.mint {--course-color: #337855; --course-tint: #e2f3e5;}
+.studio-card.coral {--course-color: #a45649; --course-tint: #ffe8df;}
+.studio-card>svg:first-child {
+  color: var(--course-color);
+  background: #fffc;
+  border: 1px solid #fff;
+  padding: 12px;
+  border-radius: 18px;
+}
+.studio-card strong {font-size: 19px; color: var(--navy);}
+.studio-card>span {font-size: 13px; color: #496274;}
+.studio-card>svg:last-child {color: var(--course-color);}
+.studio-note {margin-bottom: 0; line-height: 1.8;}
+.study-course-top {
+  background: #fffdf7;
+  padding: 24px;
+  border: 1px solid #e1e8e2;
+  border-radius: 24px;
+  box-shadow: 0 5px 20px #294b6507;
+}
+.study-course-top h2 {line-height: 1.35; letter-spacing: -.6px;}
+.study-course-top select, .study-course-top>input {background: white; min-height: 48px;}
+.study-steps {gap: 10px; padding-bottom: 15px;}
+.study-steps>button {border-radius: 18px; border-color: #e0e7e4; background: #fffdf7; color: #456278;}
+.study-steps>.step-current {background: #e1effb; border-color: #72a8d2; box-shadow: 0 3px 0 #a9cce7; color: #195d94;}
+.study-steps>.step-done {background: #edf6e9; border-color: #cce1c1; color: #436944;}
+.study-panel {background: #fffefb; border-radius: 28px;}
+.study-panel>.pill {background: #eaf3fa; color: #2d648d; padding: 8px 13px; letter-spacing: 1px;}
+.study-word-picture {
+  display: grid;
+  place-items: center;
+  width: 132px;
+  height: 132px;
+  background: radial-gradient(circle at 35% 25%, #fff9de, #ffefbf);
+  border-radius: 42% 58% 54% 46%;
+  border: 1px solid #f1e5bc;
+  font-size: 75px;
+}
+.study-support {background: #edf5fa; border-color: #dbe9f2;}
+.study-support>p {color: #365b79;}
+.study-tip {background: #fff5da; border-left-color: #dcad4c;}
+.study-keyboard>button {background: #fffdf8; border-color: #d6e2e5; border-bottom-color: #adc5d2; color: #315570; border-radius: 12px;}
+.study-keyboard>button:active {transform: translateY(2px); border-bottom-width: 1px;}
+.sentence-input, .spell-input {background: #fffef8; border-color: #b9d3e3;}
+.study-summary {background: linear-gradient(160deg, #fffef8, #f0f8e9); padding-block: 42px;}
+.study-celebration {filter: drop-shadow(0 7px 0 #d8b85022);}
+.study-course-actions {border-top: 1px dashed #d4e1e5;}
+@media (hover: hover) {
+  .studio-card:hover {transform: translateY(-4px); box-shadow: 0 12px 24px #294b6514;}
+  .explorer-subjects>button:hover, .letter-library-grid>button:hover {border-color: #9ebfce;}
+}
+@media (max-width: 620px) {
+  .learning-studio {padding: 18px 14px; border-radius: 23px; margin-top: 20px;}
+  .learning-studio .section-kicker {font-size: 9px; letter-spacing: 1px;}
+  .learning-studio .explorer-section-title h2 {font-size: 23px;}
+  .studio-cards {gap: 12px;}
+  .studio-card {min-height: 192px; padding: 17px 13px 21px; border-radius: 18px; gap: 12px;}
+  .studio-card strong {font-size: 17px;}
+  .studio-card>span {font-size: 12px;}
+  .studio-card>svg:first-child {padding: 9px; border-radius: 14px;}
+  .study-course-top {padding: 20px 17px; border-radius: 21px;}
+  .study-course-top h2 {font-size: 24px;}
+  .study-panel {border-radius: 23px;}
+  .study-word-picture {width: 112px; height: 112px; font-size: 65px;}
+  .study-steps>button {border-radius: 14px;}
+  .study-keyboard>button {min-width: 40px; min-height: 46px;}
+  .study-summary {padding-block: 30px;}
+}
+@media (prefers-reduced-motion: reduce) {
+  .studio-card, .primary, .secondary {transition: none;}
+  .studio-card:hover, .primary:hover, .primary:active, .secondary:active {transform: none;}
+}

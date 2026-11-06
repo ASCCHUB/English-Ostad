@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {validateAdventure,defaultAdventure} from './adventureSettings.js';
+import {freshProfile,validateSaved} from './engine.js';
+import {support} from './supportCopy.js';
+import {soundRows} from './supportSound.js';
+test('voice, effects and music start on, on and off, and older settings gain them',()=>{const old={...defaultAdventure,classIndex:2};for(const k of ['effects','music','muted','voiceName'])delete old[k];const result=validateAdventure(old);assert.equal(result.audio,true);assert.equal(result.effects,true);assert.equal(result.music,false);assert.equal(result.pashtoAudio,true);assert.equal(result.autoNext,true);assert.equal(result.muted,false);assert.equal(result.voiceName,'');assert.equal(result.classIndex,2);});
+test('each learner keeps their own sound choices through a backup',()=>{const p={...freshProfile('A'),adventure:{...defaultAdventure,audio:false,effects:false,music:true,muted:true,voiceName:'Google UK English Female'}},q={...freshProfile('B'),adventure:{...defaultAdventure}};const [a,b]=validateSaved(JSON.parse(JSON.stringify({profiles:[p,q],active:0,language:'ps',goal:3}))).profiles;assert.deepEqual([a.adventure.audio,a.adventure.effects,a.adventure.music,a.adventure.muted,a.adventure.voiceName],[false,false,true,true,'Google UK English Female']);assert.deepEqual([b.adventure.effects,b.adventure.music,b.adventure.muted],[true,false,false]);});
+test('invalid sound settings are rejected before replacing saved progress',()=>{for(const patch of [{effects:'yes'},{music:1},{muted:null},{voiceName:5},{voiceName:'x'.repeat(201)},{pashtoAudio:'on'},{autoNext:'yes'}])assert.throws(()=>validateAdventure({...defaultAdventure,...patch}));});
+test('every sound button, message and praise line has all support languages',()=>{for(const [en] of soundRows){const item=support(en);assert.ok(item,en);for(const k of ['ps','rps','ur','rur'])assert.ok(item[k]?.trim(),`${en}: ${k}`);}});

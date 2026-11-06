@@ -1,0 +1,638 @@
+{
+ "version": 1,
+ "levels": 20,
+ "perLevel": 10,
+ "roundSize": 5,
+ "games": {
+  "letter-hunt": {
+   "title": "Letter Hunt",
+   "questions": 200,
+   "levels": [
+    {
+     "level": 1,
+     "class": 1,
+     "title": "Uppercase letters",
+     "questions": 10
+    },
+    {
+     "level": 2,
+     "class": 1,
+     "title": "Uppercase letters",
+     "questions": 10
+    },
+    {
+     "level": 3,
+     "class": 1,
+     "title": "Uppercase letters · Lowercase letters",
+     "questions": 10
+    },
+    {
+     "level": 4,
+     "class": 1,
+     "title": "Lowercase letters",
+     "questions": 10
+    },
+    {
+     "level": 5,
+     "class": 1,
+     "title": "Lowercase letters",
+     "questions": 10
+    },
+    {
+     "level": 6,
+     "class": 1,
+     "title": "Lowercase letters · Big and small partners",
+     "questions": 10
+    },
+    {
+     "level": 7,
+     "class": 1,
+     "title": "Big and small partners",
+     "questions": 10
+    },
+    {
+     "level": 8,
+     "class": 1,
+     "title": "Big and small partners",
+     "questions": 10
+    },
+    {
+     "level": 9,
+     "class": 1,
+     "title": "Big and small partners",
+     "questions": 10
+    },
+    {
+     "level": 10,
+     "class": 1,
+     "title": "Big and small partners",
+     "questions": 10
+    },
+    {
+     "level": 11,
+     "class": 1,
+     "title": "Big and small partners · Letters in words",
+     "questions": 10
+    },
+    {
+     "level": 12,
+     "class": 1,
+     "title": "Letters in words",
+     "questions": 10
+    },
+    {
+     "level": 13,
+     "class": 2,
+     "title": "Letters in words",
+     "questions": 10
+    },
+    {
+     "level": 14,
+     "class": 2,
+     "title": "Letters in words",
+     "questions": 10
+    },
+    {
+     "level": 15,
+     "class": 2,
+     "title": "Letters in words",
+     "questions": 10
+    },
+    {
+     "level": 16,
+     "class": 2,
+     "title": "Letters in words",
+     "questions": 10
+    },
+    {
+     "level": 17,
+     "class": 2,
+     "title": "Letters in words · Missing letters",
+     "questions": 10
+    },
+    {
+     "level": 18,
+     "class": 2,
+     "title": "Missing letters",
+     "questions": 10
+    },
+    {
+     "level": 19,
+     "class": 2,
+     "title": "Missing letters",
+     "questions": 10
+    },
+    {
+     "level": 20,
+     "class": 2,
+     "title": "Missing letters",
+     "questions": 10
+    }
+   ]
+  },
+  "sound-safari": {
+   "title": "Sound Safari",
+   "questions": 200,
+   "levels": [
+    {
+     "level": 1,
+     "class": 1,
+     "title": "Sounds and letters",
+     "questions": 10
+    },
+    {
+     "level": 2,
+     "class": 1,
+     "title": "Sounds and letters",
+     "questions": 10
+    },
+    {
+     "level": 3,
+     "class": 1,
+     "title": "First sounds",
+     "questions": 10
+    },
+    {
+     "level": 4,
+     "class": 1,
+     "title": "First sounds",
+     "questions": 10
+    },
+    {
+     "level": 5,
+     "class": 1,
+     "title": "First sounds",
+     "questions": 10
+    },
+    {
+     "level": 6,
+     "class": 1,
+     "title": "First sounds",
+     "questions": 10
+    },
+    {
+     "level": 7,
+     "class": 1,
+     "title": "First sounds",
+     "questions": 10
+    },
+    {
+     "level": 8,
+     "class": 1,
+     "title": "First sounds",
+     "questions": 10
+    },
+    {
+     "level": 9,
+     "class": 1,
+     "title": "First sounds",
+     "questions": 10
+    },
+    {
+     "level": 10,
+     "class": 1,
+     "title": "Last sounds",
+     "questions": 10
+    },
+    {
+     "level": 11,
+     "class": 2,
+     "title": "Last sounds",
+     "questions": 10
+    },
+    {
+     "level": 12,
+     "class": 2,
+     "title": "Last sounds",
+     "questions": 10
+    },
+    {
+     "level": 13,
+     "class": 2,
+     "title": "Last sounds · Middle vowel sounds",
+     "questions": 10
+    },
+    {
+     "level": 14,
+     "class": 2,
+     "title": "Middle vowel sounds",
+     "questions": 10
+    },
+    {
+     "level": 15,
+     "class": 2,
+     "title": "Middle vowel sounds",
+     "questions": 10
+    },
+    {
+     "level": 16,
+     "class": 2,
+     "title": "Middle vowel sounds",
+     "questions": 10
+    },
+    {
+     "level": 17,
+     "class": 2,
+     "title": "Blending sounds",
+     "questions": 10
+    },
+    {
+     "level": 18,
+     "class": 2,
+     "title": "Blending sounds",
+     "questions": 10
+    },
+    {
+     "level": 19,
+     "class": 2,
+     "title": "Blending sounds",
+     "questions": 10
+    },
+    {
+     "level": 20,
+     "class": 2,
+     "title": "Blending sounds",
+     "questions": 10
+    }
+   ]
+  },
+  "feed-animal": {
+   "title": "Feed the Animal",
+   "questions": 200,
+   "levels": [
+    {
+     "level": 1,
+     "class": 1,
+     "title": "Food words",
+     "questions": 10
+    },
+    {
+     "level": 2,
+     "class": 1,
+     "title": "Food words",
+     "questions": 10
+    },
+    {
+     "level": 3,
+     "class": 1,
+     "title": "Food words · Animal names",
+     "questions": 10
+    },
+    {
+     "level": 4,
+     "class": 1,
+     "title": "Animal names",
+     "questions": 10
+    },
+    {
+     "level": 5,
+     "class": 1,
+     "title": "Animal names · Follow an instruction",
+     "questions": 10
+    },
+    {
+     "level": 6,
+     "class": 1,
+     "title": "Follow an instruction",
+     "questions": 10
+    },
+    {
+     "level": 7,
+     "class": 1,
+     "title": "Follow an instruction",
+     "questions": 10
+    },
+    {
+     "level": 8,
+     "class": 1,
+     "title": "Follow an instruction · Colours",
+     "questions": 10
+    },
+    {
+     "level": 9,
+     "class": 2,
+     "title": "Colours",
+     "questions": 10
+    },
+    {
+     "level": 10,
+     "class": 2,
+     "title": "Colours",
+     "questions": 10
+    },
+    {
+     "level": 11,
+     "class": 2,
+     "title": "Colours · How many?",
+     "questions": 10
+    },
+    {
+     "level": 12,
+     "class": 2,
+     "title": "How many?",
+     "questions": 10
+    },
+    {
+     "level": 13,
+     "class": 2,
+     "title": "How many?",
+     "questions": 10
+    },
+    {
+     "level": 14,
+     "class": 2,
+     "title": "How many?",
+     "questions": 10
+    },
+    {
+     "level": 15,
+     "class": 2,
+     "title": "How many? · Action words",
+     "questions": 10
+    },
+    {
+     "level": 16,
+     "class": 2,
+     "title": "Action words",
+     "questions": 10
+    },
+    {
+     "level": 17,
+     "class": 3,
+     "title": "Who eats what?",
+     "questions": 10
+    },
+    {
+     "level": 18,
+     "class": 3,
+     "title": "Who eats what?",
+     "questions": 10
+    },
+    {
+     "level": 19,
+     "class": 3,
+     "title": "Two-step instructions",
+     "questions": 10
+    },
+    {
+     "level": 20,
+     "class": 3,
+     "title": "Two-step instructions",
+     "questions": 10
+    }
+   ]
+  },
+  "number-adventure": {
+   "title": "Number Adventure",
+   "questions": 200,
+   "levels": [
+    {
+     "level": 1,
+     "class": 1,
+     "title": "Counting",
+     "questions": 10
+    },
+    {
+     "level": 2,
+     "class": 1,
+     "title": "Counting",
+     "questions": 10
+    },
+    {
+     "level": 3,
+     "class": 1,
+     "title": "Counting",
+     "questions": 10
+    },
+    {
+     "level": 4,
+     "class": 1,
+     "title": "Numbers and groups",
+     "questions": 10
+    },
+    {
+     "level": 5,
+     "class": 1,
+     "title": "Numbers and groups",
+     "questions": 10
+    },
+    {
+     "level": 6,
+     "class": 1,
+     "title": "Numbers and groups · Number names",
+     "questions": 10
+    },
+    {
+     "level": 7,
+     "class": 1,
+     "title": "Number names",
+     "questions": 10
+    },
+    {
+     "level": 8,
+     "class": 1,
+     "title": "Number names",
+     "questions": 10
+    },
+    {
+     "level": 9,
+     "class": 1,
+     "title": "Number names",
+     "questions": 10
+    },
+    {
+     "level": 10,
+     "class": 1,
+     "title": "Number names · Spelling number words",
+     "questions": 10
+    },
+    {
+     "level": 11,
+     "class": 2,
+     "title": "Spelling number words",
+     "questions": 10
+    },
+    {
+     "level": 12,
+     "class": 2,
+     "title": "Spelling number words · More, fewer, same",
+     "questions": 10
+    },
+    {
+     "level": 13,
+     "class": 2,
+     "title": "More, fewer, same",
+     "questions": 10
+    },
+    {
+     "level": 14,
+     "class": 2,
+     "title": "More, fewer, same",
+     "questions": 10
+    },
+    {
+     "level": 15,
+     "class": 2,
+     "title": "More, fewer, same · Number patterns",
+     "questions": 10
+    },
+    {
+     "level": 16,
+     "class": 2,
+     "title": "Number patterns",
+     "questions": 10
+    },
+    {
+     "level": 17,
+     "class": 2,
+     "title": "Number patterns",
+     "questions": 10
+    },
+    {
+     "level": 18,
+     "class": 2,
+     "title": "Adding",
+     "questions": 10
+    },
+    {
+     "level": 19,
+     "class": 2,
+     "title": "Adding",
+     "questions": 10
+    },
+    {
+     "level": 20,
+     "class": 2,
+     "title": "Adding",
+     "questions": 10
+    }
+   ]
+  },
+  "fox-apple": {
+   "title": "Help Fox Find the Apple",
+   "questions": 200,
+   "levels": [
+    {
+     "level": 1,
+     "class": 2,
+     "title": "Fruits and things",
+     "questions": 10
+    },
+    {
+     "level": 2,
+     "class": 2,
+     "title": "Fruits and things",
+     "questions": 10
+    },
+    {
+     "level": 3,
+     "class": 2,
+     "title": "Fruits and things",
+     "questions": 10
+    },
+    {
+     "level": 4,
+     "class": 2,
+     "title": "Colours",
+     "questions": 10
+    },
+    {
+     "level": 5,
+     "class": 2,
+     "title": "Colours",
+     "questions": 10
+    },
+    {
+     "level": 6,
+     "class": 2,
+     "title": "Colours · Big and small",
+     "questions": 10
+    },
+    {
+     "level": 7,
+     "class": 2,
+     "title": "Big and small",
+     "questions": 10
+    },
+    {
+     "level": 8,
+     "class": 2,
+     "title": "Big and small · Where is it?",
+     "questions": 10
+    },
+    {
+     "level": 9,
+     "class": 3,
+     "title": "Where is it?",
+     "questions": 10
+    },
+    {
+     "level": 10,
+     "class": 3,
+     "title": "Where is it?",
+     "questions": 10
+    },
+    {
+     "level": 11,
+     "class": 3,
+     "title": "Where is it?",
+     "questions": 10
+    },
+    {
+     "level": 12,
+     "class": 3,
+     "title": "Where is it?",
+     "questions": 10
+    },
+    {
+     "level": 13,
+     "class": 3,
+     "title": "Where is it? · Colour and place",
+     "questions": 10
+    },
+    {
+     "level": 14,
+     "class": 3,
+     "title": "Colour and place",
+     "questions": 10
+    },
+    {
+     "level": 15,
+     "class": 3,
+     "title": "Colour and place",
+     "questions": 10
+    },
+    {
+     "level": 16,
+     "class": 3,
+     "title": "Colour and place",
+     "questions": 10
+    },
+    {
+     "level": 17,
+     "class": 4,
+     "title": "Short sentences",
+     "questions": 10
+    },
+    {
+     "level": 18,
+     "class": 4,
+     "title": "Short sentences",
+     "questions": 10
+    },
+    {
+     "level": 19,
+     "class": 4,
+     "title": "Short sentences",
+     "questions": 10
+    },
+    {
+     "level": 20,
+     "class": 4,
+     "title": "Short sentences",
+     "questions": 10
+    }
+   ]
+  }
+ }
+}

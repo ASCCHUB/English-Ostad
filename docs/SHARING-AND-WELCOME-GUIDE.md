@@ -1,0 +1,9 @@
+# APK sharing and first-time guide
+
+Share app is available on Home, in the sidebar and in the footer. Android offers its installed-app share menu for the APK file. It copies only the installed application package into a private cache directory, grants temporary read access to that content URI, and lets the user choose WhatsApp, an email client or another compatible app and recipient. It never includes learner progress or contacts and never sends automatically. Some email providers reject large installer attachments; the UI offers a download-link alternative.
+
+The download-link mode accepts a public HTTPS URL, saves it on this device, and opens WhatsApp or an email draft. Localhost, private-network and credential-bearing URLs are rejected. No public download location was supplied, so link sharing is unconfigured until one is entered. Native APK sharing needs no hosted link.
+
+New users see a five-step guide after starting the welcome screen; new nicknames added in the parent area see it too. It covers explanation language, level check, Listen/letter/word controls, answer/Next/keyboard controls, and saved progress and sharing. The guide has optional English narration and Pashto text; no Pashto audio is synthesized. How to use on Home and in the footer reopens it. Guide completion is saved separately for each learner on this device. Newly added Pashto text remains available for native review.
+
+Validation: 143 tests pass; sharing layouts render in English/Pashto and light/dark modes for Android/browser; guide state and Home entries are checked; the Android project compiles; APK signature, native sharing plugin and 375 bundled files are verified. The older-Android CSS guard passes. Real recipient selection and sending are left to the user and were not performed during testing. All-lesson access and existing progress remain unchanged.

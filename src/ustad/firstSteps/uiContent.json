@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "reviewStatus": "pending_review",
+  "assessmentKinds": {
+    "L4-05": "sentence_conventions"
+  },
+  "audio": [
+    {
+      "id": "ps-b0c1ed5615cf",
+      "language": "ps-PK",
+      "text": "لفظ بیا واورئ. د هر اواز لپاره سم ټکی غوره کړئ.",
+      "kind": "speech",
+      "recordingNotes": "Lower Dir native review required.",
+      "file": null,
+      "alignment": null,
+      "status": "pending_recording",
+      "reviewStatus": "pending_review",
+      "reviewer": null,
+      "signedAt": null
+    },
+    {
+      "id": "ps-d1e7ccb34f62",
+      "language": "ps-PK",
+      "text": "د ټکي شکل او اواز بیا وګورئ.",
+      "kind": "speech",
+      "recordingNotes": "Lower Dir native review required.",
+      "file": null,
+      "alignment": null,
+      "status": "pending_recording",
+      "reviewStatus": "pending_review",
+      "reviewer": null,
+      "signedAt": null
+    },
+    {
+      "id": "ps-cbf291943863",
+      "language": "ps-PK",
+      "text": "د جملې اول، د لفظونو ترمنځ ځایونه او د اخر ټکی وګورئ.",
+      "kind": "speech",
+      "recordingNotes": "Lower Dir native review required.",
+      "file": null,
+      "alignment": null,
+      "status": "pending_recording",
+      "reviewStatus": "pending_review",
+      "reviewer": null,
+      "signedAt": null
+    },
+    {
+      "id": "ps-43b9b30e4f47",
+      "language": "ps-PK",
+      "text": "تصویر او د قیصې خبره بیا په یاد کړئ.",
+      "kind": "speech",
+      "recordingNotes": "Lower Dir native review required.",
+      "file": null,
+      "alignment": null,
+      "status": "pending_recording",
+      "reviewStatus": "pending_review",
+      "reviewer": null,
+      "signedAt": null
+    }
+  ]
+}

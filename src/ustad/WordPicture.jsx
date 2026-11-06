@@ -1,0 +1,9 @@
+import {useState} from 'react';
+import {wordPhoto,pictureWord} from './wordPhotos.js';
+import './wordPictures.css';
+function colorFilter(color,rotation){if(color==='white')return 'grayscale(1) brightness(1.65) contrast(.55)';if(color==='black')return 'grayscale(1) brightness(.25)';if(color==='grey')return 'grayscale(1)';if(color==='brown')return `hue-rotate(${rotation}deg) saturate(.65) brightness(.65)`;if(color==='pink')return `hue-rotate(${rotation}deg) saturate(.7) brightness(1.3)`;return `hue-rotate(${rotation||0}deg)`;}
+export default function WordPicture(props){const numeral={zero:0,one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10}[String(props.word).toLowerCase()];if(numeral!==undefined)return <span className={`word-photo fs-numeral ${props.className||''}`} aria-label={String(props.word)}>{numeral}</span>;const record=wordPhoto(props.word||pictureWord(props.emoji));return record?<Photo key={record.src+record.kind+record.color+record.count} {...props} record={record}/>:null;}
+function Photo({record,className='',size}){const [broken,setBroken]=useState(false);const style={...(size?{'--word-photo-size':size+'px'}:{}),...(record.kind==='count'?{'--count-columns':Math.min(record.count,3),'--count-rows':Math.ceil(record.count/3)}:{})};if(broken)return <span className={`word-photo word-photo-unavailable ${className}`} style={style} role="img" aria-label="Picture unavailable"/>;
+ const image=(key)=> <img key={key} src={record.src} alt="" aria-hidden="true" loading="lazy" decoding="async" onError={()=>setBroken(true)} style={record.kind==='color'?{filter:colorFilter(record.color,record.rotation)}:undefined}/>;
+ return <span className={`word-photo word-photo-${record.kind} ${className}`} style={style} aria-hidden="true">{record.kind==='count'?Array.from({length:record.count},(_,i)=>image(i)):image('photo')}</span>;
+}

@@ -1,0 +1,1162 @@
+{
+  "words": {
+    "apple": {
+      "src": "/explorers/apple.png",
+      "kind": "photo",
+      "source": "existing-generated-art"
+    },
+    "banana": {
+      "kind": "photo",
+      "src": "/learning-photos/banana.jpg"
+    },
+    "orange": {
+      "kind": "photo",
+      "src": "/learning-photos/orange.jpg"
+    },
+    "mango": {
+      "kind": "photo",
+      "src": "/learning-photos/mango.jpg"
+    },
+    "grapes": {
+      "kind": "photo",
+      "src": "/learning-photos/grapes.jpg"
+    },
+    "cat": {
+      "kind": "photo",
+      "src": "/learning-photos/cat.jpg"
+    },
+    "dog": {
+      "kind": "photo",
+      "src": "/learning-photos/dog.jpg"
+    },
+    "bird": {
+      "kind": "photo",
+      "src": "/learning-photos/bird.jpg"
+    },
+    "fish": {
+      "kind": "photo",
+      "src": "/learning-photos/fish.jpg"
+    },
+    "cow": {
+      "kind": "photo",
+      "src": "/learning-photos/cow.jpg"
+    },
+    "goat": {
+      "kind": "photo",
+      "src": "/learning-photos/goat.jpg"
+    },
+    "lion": {
+      "kind": "photo",
+      "src": "/learning-photos/lion.jpg"
+    },
+    "rabbit": {
+      "src": "/explorers/avatar-bunny.png",
+      "kind": "photo",
+      "source": "existing-generated-art"
+    },
+    "book": {
+      "src": "/explorers/book.png",
+      "kind": "photo",
+      "source": "existing-generated-art"
+    },
+    "pen": {
+      "kind": "photo",
+      "src": "/learning-photos/pen.png"
+    },
+    "pencil": {
+      "kind": "photo",
+      "src": "/learning-photos/pencil.jpg"
+    },
+    "bag": {
+      "kind": "photo",
+      "src": "/learning-photos/bag.jpg"
+    },
+    "school": {
+      "kind": "photo",
+      "src": "/learning-photos/school.jpg"
+    },
+    "sun": {
+      "kind": "photo",
+      "src": "/learning-photos/sun.jpg"
+    },
+    "moon": {
+      "kind": "photo",
+      "src": "/learning-photos/moon.jpg"
+    },
+    "star": {
+      "kind": "photo",
+      "src": "/learning-photos/star.jpg"
+    },
+    "tree": {
+      "kind": "photo",
+      "src": "/learning-photos/tree.jpg"
+    },
+    "flower": {
+      "kind": "photo",
+      "src": "/learning-photos/flower.jpg"
+    },
+    "rain": {
+      "kind": "photo",
+      "src": "/learning-photos/rain.jpg"
+    },
+    "water": {
+      "kind": "photo",
+      "src": "/learning-photos/water.jpg"
+    },
+    "milk": {
+      "kind": "photo",
+      "src": "/learning-photos/milk.jpg"
+    },
+    "bread": {
+      "kind": "photo",
+      "src": "/learning-photos/bread.jpg"
+    },
+    "egg": {
+      "kind": "photo",
+      "src": "/learning-photos/egg.jpg"
+    },
+    "rice": {
+      "kind": "photo",
+      "src": "/learning-photos/rice.jpg"
+    },
+    "ball": {
+      "src": "/explorers/ball.png",
+      "kind": "photo",
+      "source": "existing-generated-art"
+    },
+    "car": {
+      "kind": "photo",
+      "src": "/learning-photos/car.jpg"
+    },
+    "house": {
+      "kind": "photo",
+      "src": "/learning-photos/house.jpg"
+    },
+    "door": {
+      "kind": "photo",
+      "src": "/learning-photos/door.jpg"
+    },
+    "chair": {
+      "kind": "photo",
+      "src": "/learning-photos/chair.jpg"
+    },
+    "hand": {
+      "kind": "photo",
+      "src": "/learning-photos/hand.jpg"
+    },
+    "eye": {
+      "kind": "photo",
+      "src": "/learning-photos/eye.jpg"
+    },
+    "ear": {
+      "kind": "photo",
+      "src": "/learning-photos/ear.jpg"
+    },
+    "nose": {
+      "kind": "photo",
+      "src": "/learning-photos/nose.jpg"
+    },
+    "red": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "red",
+      "rotation": 150
+    },
+    "blue": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "blue",
+      "rotation": 0
+    },
+    "green": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "green",
+      "rotation": -90
+    },
+    "yellow": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "yellow",
+      "rotation": 205
+    },
+    "one": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 1
+    },
+    "two": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 2
+    },
+    "three": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 3
+    },
+    "four": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 4
+    },
+    "five": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 5
+    },
+    "happy": {
+      "kind": "photo",
+      "src": "/learning-photos/happy.jpg"
+    },
+    "sad": {
+      "kind": "photo",
+      "src": "/learning-photos/sad.jpg"
+    },
+    "umbrella": {
+      "kind": "photo",
+      "src": "/learning-photos/umbrella.jpg"
+    },
+    "queen": {
+      "kind": "photo",
+      "src": "/learning-photos/queen.jpg"
+    },
+    "zebra": {
+      "kind": "photo",
+      "src": "/learning-photos/zebra.jpg"
+    },
+    "fox": {
+      "src": "/explorers/avatar-fox.png",
+      "kind": "photo",
+      "source": "existing-generated-art"
+    },
+    "nest": {
+      "kind": "photo",
+      "src": "/learning-photos/nest.jpg"
+    },
+    "kite": {
+      "kind": "photo",
+      "src": "/learning-photos/kite.jpg"
+    },
+    "watch": {
+      "kind": "photo",
+      "src": "/learning-photos/watch.jpg"
+    },
+    "van": {
+      "kind": "photo",
+      "src": "/learning-photos/van.jpg"
+    },
+    "yogurt": {
+      "kind": "photo",
+      "src": "/learning-photos/yogurt.jpg"
+    },
+    "ice": {
+      "kind": "photo",
+      "src": "/learning-photos/ice.jpg"
+    },
+    "juice": {
+      "kind": "photo",
+      "src": "/learning-photos/juice.jpg"
+    },
+    "potato": {
+      "kind": "photo",
+      "src": "/learning-photos/potato.jpg"
+    },
+    "tomato": {
+      "kind": "photo",
+      "src": "/learning-photos/tomato.jpg"
+    },
+    "onion": {
+      "kind": "photo",
+      "src": "/learning-photos/onion.jpg"
+    },
+    "carrot": {
+      "kind": "photo",
+      "src": "/learning-photos/carrot.jpg"
+    },
+    "peas": {
+      "kind": "photo",
+      "src": "/learning-photos/peas.jpg"
+    },
+    "mother": {
+      "kind": "photo",
+      "src": "/learning-photos/mother.jpg"
+    },
+    "father": {
+      "kind": "photo",
+      "src": "/learning-photos/father.jpg"
+    },
+    "brother": {
+      "kind": "photo",
+      "src": "/learning-photos/brother.jpg"
+    },
+    "sister": {
+      "kind": "photo",
+      "src": "/learning-photos/sister.jpg"
+    },
+    "baby": {
+      "kind": "photo",
+      "src": "/learning-photos/baby.jpg"
+    },
+    "foot": {
+      "kind": "photo",
+      "src": "/learning-photos/foot.jpg"
+    },
+    "tooth": {
+      "kind": "photo",
+      "src": "/learning-photos/tooth.jpg"
+    },
+    "mouth": {
+      "kind": "photo",
+      "src": "/learning-photos/mouth.jpg"
+    },
+    "shirt": {
+      "kind": "photo",
+      "src": "/learning-photos/shirt.jpg"
+    },
+    "shoes": {
+      "kind": "photo",
+      "src": "/learning-photos/shoes.jpg"
+    },
+    "hat": {
+      "kind": "photo",
+      "src": "/learning-photos/hat.jpg"
+    },
+    "socks": {
+      "kind": "photo",
+      "src": "/learning-photos/socks.jpg"
+    },
+    "dress": {
+      "kind": "photo",
+      "src": "/learning-photos/dress.jpg"
+    },
+    "bus": {
+      "kind": "photo",
+      "src": "/learning-photos/bus.jpg"
+    },
+    "train": {
+      "kind": "photo",
+      "src": "/learning-photos/train.jpg"
+    },
+    "bicycle": {
+      "kind": "photo",
+      "src": "/learning-photos/bicycle.jpg"
+    },
+    "boat": {
+      "kind": "photo",
+      "src": "/learning-photos/boat.jpg"
+    },
+    "plane": {
+      "kind": "photo",
+      "src": "/learning-photos/plane.jpg"
+    },
+    "duck": {
+      "kind": "photo",
+      "src": "/learning-photos/duck.jpg"
+    },
+    "elephant": {
+      "kind": "photo",
+      "src": "/learning-photos/elephant.jpg"
+    },
+    "horse": {
+      "kind": "photo",
+      "src": "/learning-photos/horse.jpg"
+    },
+    "sheep": {
+      "kind": "photo",
+      "src": "/learning-photos/sheep.jpg"
+    },
+    "bee": {
+      "kind": "photo",
+      "src": "/learning-photos/bee.jpg"
+    },
+    "butterfly": {
+      "kind": "photo",
+      "src": "/learning-photos/butterfly.jpg"
+    },
+    "cloud": {
+      "kind": "photo",
+      "src": "/learning-photos/cloud.jpg"
+    },
+    "snow": {
+      "kind": "photo",
+      "src": "/learning-photos/snow.jpg"
+    },
+    "wind": {
+      "kind": "photo",
+      "src": "/learning-photos/wind.jpg"
+    },
+    "mountain": {
+      "kind": "photo",
+      "src": "/learning-photos/mountain.jpg"
+    },
+    "river": {
+      "kind": "photo",
+      "src": "/learning-photos/river.jpg"
+    },
+    "bed": {
+      "kind": "photo",
+      "src": "/learning-photos/bed.jpg"
+    },
+    "key": {
+      "kind": "photo",
+      "src": "/learning-photos/key.jpg"
+    },
+    "cup": {
+      "kind": "photo",
+      "src": "/learning-photos/cup.jpg"
+    },
+    "spoon": {
+      "kind": "photo",
+      "src": "/learning-photos/spoon.jpg"
+    },
+    "clock": {
+      "kind": "photo",
+      "src": "/learning-photos/clock.jpg"
+    },
+    "soap": {
+      "kind": "photo",
+      "src": "/learning-photos/soap.jpg"
+    },
+    "watermelon": {
+      "kind": "photo",
+      "src": "/learning-photos/watermelon.jpg"
+    },
+    "pear": {
+      "kind": "photo",
+      "src": "/learning-photos/pear.jpg"
+    },
+    "peach": {
+      "kind": "photo",
+      "src": "/learning-photos/peach.jpg"
+    },
+    "cherry": {
+      "kind": "photo",
+      "src": "/learning-photos/cherry.jpg"
+    },
+    "lemon": {
+      "kind": "photo",
+      "src": "/learning-photos/lemon.jpg"
+    },
+    "strawberry": {
+      "kind": "photo",
+      "src": "/learning-photos/strawberry.jpg"
+    },
+    "corn": {
+      "kind": "photo",
+      "src": "/learning-photos/corn.jpg"
+    },
+    "chilli": {
+      "kind": "photo",
+      "src": "/learning-photos/chilli.jpg"
+    },
+    "cucumber": {
+      "kind": "photo",
+      "src": "/learning-photos/cucumber.jpg"
+    },
+    "garlic": {
+      "kind": "photo",
+      "src": "/learning-photos/garlic.jpg"
+    },
+    "mushroom": {
+      "kind": "photo",
+      "src": "/learning-photos/mushroom.jpg"
+    },
+    "monkey": {
+      "kind": "photo",
+      "src": "/learning-photos/monkey.jpg"
+    },
+    "tiger": {
+      "kind": "photo",
+      "src": "/learning-photos/tiger.jpg"
+    },
+    "bear": {
+      "kind": "photo",
+      "src": "/learning-photos/bear.jpg"
+    },
+    "camel": {
+      "kind": "photo",
+      "src": "/learning-photos/camel.jpg"
+    },
+    "hen": {
+      "kind": "photo",
+      "src": "/learning-photos/hen.jpg"
+    },
+    "frog": {
+      "kind": "photo",
+      "src": "/learning-photos/frog.jpg"
+    },
+    "snake": {
+      "kind": "photo",
+      "src": "/learning-photos/snake.jpg"
+    },
+    "turtle": {
+      "src": "/explorers/avatar-turtle.png",
+      "kind": "photo",
+      "source": "existing-generated-art"
+    },
+    "mouse": {
+      "kind": "photo",
+      "src": "/learning-photos/mouse.jpg"
+    },
+    "ant": {
+      "kind": "photo",
+      "src": "/learning-photos/ant.jpg"
+    },
+    "black": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "black",
+      "rotation": 0
+    },
+    "white": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "white",
+      "rotation": 0
+    },
+    "grey": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "grey",
+      "rotation": 0
+    },
+    "purple": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "purple",
+      "rotation": 65
+    },
+    "brown": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "brown",
+      "rotation": 155
+    },
+    "pink": {
+      "src": "/explorers/ball.png",
+      "kind": "color",
+      "color": "pink",
+      "rotation": 130
+    },
+    "six": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 6
+    },
+    "seven": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 7
+    },
+    "eight": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 8
+    },
+    "nine": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 9
+    },
+    "ten": {
+      "src": "/explorers/apple.png",
+      "kind": "count",
+      "count": 10
+    },
+    "angry": {
+      "kind": "photo",
+      "src": "/learning-photos/angry.jpg"
+    },
+    "scared": {
+      "kind": "photo",
+      "src": "/learning-photos/scared.jpg"
+    },
+    "tired": {
+      "kind": "photo",
+      "src": "/learning-photos/tired.jpg"
+    },
+    "surprised": {
+      "kind": "photo",
+      "src": "/learning-photos/surprised.jpg"
+    },
+    "hungry": {
+      "kind": "photo",
+      "src": "/learning-photos/hungry.jpg"
+    },
+    "sick": {
+      "kind": "photo",
+      "src": "/learning-photos/sick.jpg"
+    },
+    "head": {
+      "kind": "photo",
+      "src": "/learning-photos/head.jpg"
+    },
+    "hair": {
+      "kind": "photo",
+      "src": "/learning-photos/hair.jpg"
+    },
+    "leg": {
+      "kind": "photo",
+      "src": "/learning-photos/leg.jpg"
+    },
+    "arm": {
+      "kind": "photo",
+      "src": "/learning-photos/arm.jpg"
+    },
+    "finger": {
+      "kind": "photo",
+      "src": "/learning-photos/finger.jpg"
+    },
+    "grandmother": {
+      "kind": "photo",
+      "src": "/learning-photos/grandmother.jpg"
+    },
+    "grandfather": {
+      "kind": "photo",
+      "src": "/learning-photos/grandfather.jpg"
+    },
+    "uncle": {
+      "kind": "photo",
+      "src": "/learning-photos/uncle.jpg"
+    },
+    "aunt": {
+      "kind": "photo",
+      "src": "/learning-photos/aunt.jpg"
+    },
+    "friend": {
+      "kind": "photo",
+      "src": "/learning-photos/friend.jpg"
+    },
+    "teacher": {
+      "kind": "photo",
+      "src": "/learning-photos/teacher.jpg"
+    },
+    "doctor": {
+      "kind": "photo",
+      "src": "/learning-photos/doctor.jpg"
+    },
+    "farmer": {
+      "kind": "photo",
+      "src": "/learning-photos/farmer.jpg"
+    },
+    "chef": {
+      "kind": "photo",
+      "src": "/learning-photos/chef.jpg"
+    },
+    "cake": {
+      "kind": "photo",
+      "src": "/learning-photos/cake.jpg"
+    },
+    "tea": {
+      "kind": "photo",
+      "src": "/learning-photos/tea.jpg"
+    },
+    "meat": {
+      "kind": "photo",
+      "src": "/learning-photos/meat.jpg"
+    },
+    "honey": {
+      "kind": "photo",
+      "src": "/learning-photos/honey.jpg"
+    },
+    "salt": {
+      "kind": "photo",
+      "src": "/learning-photos/salt.jpg"
+    },
+    "sugar": {
+      "kind": "photo",
+      "src": "/learning-photos/sugar.jpg"
+    },
+    "hospital": {
+      "kind": "photo",
+      "src": "/learning-photos/hospital.jpg"
+    },
+    "mosque": {
+      "kind": "photo",
+      "src": "/learning-photos/mosque.jpg"
+    },
+    "shop": {
+      "kind": "photo",
+      "src": "/learning-photos/shop.jpg"
+    },
+    "playground": {
+      "kind": "photo",
+      "src": "/learning-photos/playground.jpg"
+    },
+    "farm": {
+      "kind": "photo",
+      "src": "/learning-photos/farm.jpg"
+    },
+    "road": {
+      "kind": "photo",
+      "src": "/learning-photos/road.jpg"
+    },
+    "run": {
+      "kind": "photo",
+      "src": "/learning-photos/run.jpg"
+    },
+    "jump": {
+      "kind": "photo",
+      "src": "/learning-photos/jump.jpg"
+    },
+    "eat": {
+      "kind": "photo",
+      "src": "/learning-photos/eat.jpg"
+    },
+    "drink": {
+      "kind": "photo",
+      "src": "/learning-photos/drink.jpg"
+    },
+    "sleep": {
+      "kind": "photo",
+      "src": "/learning-photos/sleep.jpg"
+    },
+    "read": {
+      "kind": "photo",
+      "src": "/learning-photos/read.jpg"
+    },
+    "write": {
+      "kind": "photo",
+      "src": "/learning-photos/write.jpg"
+    },
+    "swim": {
+      "kind": "photo",
+      "src": "/learning-photos/swim.jpg"
+    },
+    "sing": {
+      "kind": "photo",
+      "src": "/learning-photos/sing.jpg"
+    },
+    "walk": {
+      "kind": "photo",
+      "src": "/learning-photos/walk.jpg"
+    },
+    "window": {
+      "kind": "photo",
+      "src": "/learning-photos/window.jpg"
+    },
+    "candle": {
+      "kind": "photo",
+      "src": "/learning-photos/candle.jpg"
+    },
+    "lamp": {
+      "kind": "photo",
+      "src": "/learning-photos/lamp.jpg"
+    },
+    "phone": {
+      "kind": "photo",
+      "src": "/learning-photos/phone.jpg"
+    },
+    "box": {
+      "kind": "photo",
+      "src": "/learning-photos/box.jpg"
+    },
+    "rainbow": {
+      "kind": "photo",
+      "src": "/learning-photos/rainbow.jpg"
+    },
+    "storm": {
+      "kind": "photo",
+      "src": "/learning-photos/storm.jpg"
+    },
+    "leaf": {
+      "kind": "photo",
+      "src": "/learning-photos/leaf.jpg"
+    },
+    "sea": {
+      "kind": "photo",
+      "src": "/learning-photos/sea.jpg"
+    },
+    "jacket": {
+      "kind": "photo",
+      "src": "/learning-photos/jacket.jpg"
+    },
+    "scarf": {
+      "kind": "photo",
+      "src": "/learning-photos/scarf.jpg"
+    },
+    "apples": {
+      "alias": "apple"
+    },
+    "mat": {
+      "kind": "photo",
+      "src": "/learning-photos/mat.jpg"
+    },
+    "map": {
+      "kind": "photo",
+      "src": "/learning-photos/map.jpg"
+    },
+    "tap": {
+      "kind": "photo",
+      "src": "/learning-photos/tap.jpg"
+    },
+    "pat": {
+      "kind": "photo",
+      "src": "/learning-photos/pat.jpg"
+    },
+    "sat": {
+      "alias": "sit"
+    },
+    "sit": {
+      "kind": "photo",
+      "src": "/learning-photos/sit.jpg"
+    },
+    "pin": {
+      "kind": "photo",
+      "src": "/learning-photos/pin.jpg"
+    },
+    "tin": {
+      "kind": "photo",
+      "src": "/learning-photos/tin.jpg"
+    },
+    "pan": {
+      "kind": "photo",
+      "src": "/learning-photos/pan.jpg"
+    },
+    "pot": {
+      "kind": "photo",
+      "src": "/learning-photos/pot.jpg"
+    },
+    "pet": {
+      "alias": "cat"
+    },
+    "ram": {
+      "kind": "photo",
+      "src": "/learning-photos/ram.jpg"
+    },
+    "jam": {
+      "kind": "photo",
+      "src": "/learning-photos/jam.jpg"
+    },
+    "log": {
+      "kind": "photo",
+      "src": "/learning-photos/log.jpg"
+    },
+    "pig": {
+      "kind": "photo",
+      "src": "/learning-photos/pig.jpg"
+    },
+    "web": {
+      "kind": "photo",
+      "src": "/learning-photos/web.jpg"
+    },
+    "ship": {
+      "kind": "photo",
+      "src": "/learning-photos/ship.jpg"
+    },
+    "dish": {
+      "kind": "photo",
+      "src": "/learning-photos/dish.jpg"
+    },
+    "chip": {
+      "kind": "photo",
+      "src": "/learning-photos/chip.jpg"
+    },
+    "chin": {
+      "kind": "photo",
+      "src": "/learning-photos/chin.jpg"
+    },
+    "sock": {
+      "alias": "socks"
+    },
+    "neck": {
+      "kind": "photo",
+      "src": "/learning-photos/neck.jpg"
+    },
+    "back": {
+      "kind": "photo",
+      "src": "/learning-photos/back.jpg"
+    },
+    "ring": {
+      "kind": "photo",
+      "src": "/learning-photos/ring.jpg"
+    },
+    "king": {
+      "kind": "photo",
+      "src": "/learning-photos/king.jpg"
+    },
+    "wing": {
+      "kind": "photo",
+      "src": "/learning-photos/wing.jpg"
+    },
+    "bell": {
+      "kind": "photo",
+      "src": "/learning-photos/bell.jpg"
+    },
+    "seed": {
+      "kind": "photo",
+      "src": "/learning-photos/seed.jpg"
+    },
+    "feet": {
+      "kind": "count",
+      "count": 2,
+      "src": "/learning-photos/foot.jpg"
+    },
+    "food": {
+      "kind": "photo",
+      "src": "/learning-photos/food.jpg"
+    },
+    "roof": {
+      "kind": "photo",
+      "src": "/learning-photos/roof.jpg"
+    },
+    "cook": {
+      "alias": "chef"
+    },
+    "tail": {
+      "kind": "photo",
+      "src": "/learning-photos/tail.jpg"
+    },
+    "mail": {
+      "kind": "photo",
+      "src": "/learning-photos/mail.jpg"
+    },
+    "nail": {
+      "kind": "photo",
+      "src": "/learning-photos/nail.jpg"
+    },
+    "coat": {
+      "kind": "photo",
+      "src": "/learning-photos/coat.jpg"
+    },
+    "park": {
+      "kind": "photo",
+      "src": "/learning-photos/park.jpg"
+    },
+    "hands": {
+      "kind": "count",
+      "count": 2,
+      "src": "/learning-photos/hand.jpg"
+    },
+    "flag": {
+      "kind": "photo",
+      "src": "/learning-photos/flag.jpg"
+    },
+    "game": {
+      "kind": "photo",
+      "src": "/learning-photos/game.jpg"
+    },
+    "bike": {
+      "alias": "bicycle"
+    },
+    "mum": {
+      "alias": "mother"
+    },
+    "dad": {
+      "alias": "father"
+    },
+    "desk": {
+      "kind": "photo",
+      "src": "/learning-photos/desk.jpg"
+    },
+    "ali": {
+      "alias": "brother"
+    },
+    "ayesha": {
+      "alias": "sister"
+    },
+    "insect": {
+      "kind": "photo",
+      "src": "/learning-photos/insect.jpg"
+    },
+    "jug": {
+      "kind": "photo",
+      "src": "/learning-photos/jug.jpg"
+    },
+    "yoghurt": {
+      "alias": "yogurt"
+    },
+    "zip": {
+      "kind": "photo",
+      "src": "/learning-photos/zip.jpg"
+    }
+  },
+  "emojiWords": {
+    "🍎": "apple",
+    "🍌": "banana",
+    "🍊": "orange",
+    "🥭": "mango",
+    "🍇": "grapes",
+    "🐈": "cat",
+    "🐕": "dog",
+    "🐦": "bird",
+    "🐟": "fish",
+    "🐄": "cow",
+    "🐐": "goat",
+    "🦁": "lion",
+    "🐇": "rabbit",
+    "📕": "book",
+    "🖊️": "pen",
+    "✏️": "pencil",
+    "🎒": "bag",
+    "🏫": "school",
+    "☀️": "sun",
+    "🌙": "moon",
+    "⭐": "star",
+    "🌳": "tree",
+    "🌼": "flower",
+    "🌧️": "rain",
+    "💧": "water",
+    "🥛": "milk",
+    "🍞": "bread",
+    "🥚": "egg",
+    "🍚": "rice",
+    "⚽": "ball",
+    "🚗": "car",
+    "🏠": "house",
+    "🚪": "door",
+    "🪑": "chair",
+    "✋": "hand",
+    "👁️": "eye",
+    "👂": "ear",
+    "👃": "nose",
+    "🔴": "red",
+    "🔵": "blue",
+    "🟢": "green",
+    "🟡": "yellow",
+    "1️⃣": "one",
+    "2️⃣": "two",
+    "3️⃣": "three",
+    "4️⃣": "four",
+    "5️⃣": "five",
+    "😊": "happy",
+    "😢": "sad",
+    "☂️": "umbrella",
+    "👑": "queen",
+    "🦓": "zebra",
+    "🦊": "fox",
+    "🪺": "nest",
+    "🪁": "kite",
+    "⌚": "watch",
+    "🚐": "van",
+    "🥣": "yogurt",
+    "🧊": "ice",
+    "🧃": "juice",
+    "🥔": "potato",
+    "🍅": "tomato",
+    "🧅": "onion",
+    "🥕": "carrot",
+    "🫛": "peas",
+    "👩": "mother",
+    "👨": "father",
+    "👦": "brother",
+    "👧": "sister",
+    "👶": "baby",
+    "🦶": "foot",
+    "🦷": "tooth",
+    "👄": "mouth",
+    "👕": "shirt",
+    "👟": "shoes",
+    "🎩": "hat",
+    "🧦": "socks",
+    "👗": "dress",
+    "🚌": "bus",
+    "🚆": "train",
+    "🚲": "bicycle",
+    "⛵": "boat",
+    "✈️": "plane",
+    "🦆": "duck",
+    "🐘": "elephant",
+    "🐎": "horse",
+    "🐑": "sheep",
+    "🐝": "bee",
+    "🦋": "butterfly",
+    "☁️": "cloud",
+    "❄️": "snow",
+    "🌬️": "wind",
+    "⛰️": "mountain",
+    "🏞️": "river",
+    "🛏️": "bed",
+    "🔑": "key",
+    "☕": "cup",
+    "🥄": "spoon",
+    "🕒": "clock",
+    "🧼": "soap",
+    "🍉": "watermelon",
+    "🍐": "pear",
+    "🍑": "peach",
+    "🍒": "cherry",
+    "🍋": "lemon",
+    "🍓": "strawberry",
+    "🌽": "corn",
+    "🌶️": "chilli",
+    "🥒": "cucumber",
+    "🧄": "garlic",
+    "🍄": "mushroom",
+    "🐒": "monkey",
+    "🐅": "tiger",
+    "🐻": "bear",
+    "🐫": "camel",
+    "🐔": "hen",
+    "🐸": "frog",
+    "🐍": "snake",
+    "🐢": "turtle",
+    "🐁": "mouse",
+    "🐜": "ant",
+    "⚫": "black",
+    "⚪": "white",
+    "🩶": "grey",
+    "🟣": "purple",
+    "🟤": "brown",
+    "🩷": "pink",
+    "6️⃣": "six",
+    "7️⃣": "seven",
+    "8️⃣": "eight",
+    "9️⃣": "nine",
+    "🔟": "ten",
+    "😠": "angry",
+    "😨": "scared",
+    "😴": "tired",
+    "😲": "surprised",
+    "🤤": "hungry",
+    "🤒": "sick",
+    "🗣️": "head",
+    "💇": "hair",
+    "🦵": "leg",
+    "💪": "arm",
+    "☝️": "finger",
+    "👵": "grandmother",
+    "👴": "grandfather",
+    "🧔": "uncle",
+    "👩‍🦱": "aunt",
+    "🧑‍🤝‍🧑": "friend",
+    "👩‍🏫": "teacher",
+    "🧑‍⚕️": "doctor",
+    "🧑‍🌾": "farmer",
+    "🧑‍🍳": "chef",
+    "🎂": "cake",
+    "🍵": "tea",
+    "🍖": "meat",
+    "🍯": "honey",
+    "🧂": "salt",
+    "🍬": "sugar",
+    "🏥": "hospital",
+    "🕌": "mosque",
+    "🏪": "shop",
+    "🛝": "playground",
+    "🚜": "farm",
+    "🛣️": "road",
+    "🏃": "run",
+    "🤸": "jump",
+    "🍽️": "eat",
+    "🥤": "drink",
+    "🛌": "sleep",
+    "📖": "read",
+    "✍️": "write",
+    "🏊": "swim",
+    "🎤": "sing",
+    "🚶": "walk",
+    "🪟": "window",
+    "🕯️": "candle",
+    "💡": "lamp",
+    "📱": "phone",
+    "📦": "box",
+    "🌈": "rainbow",
+    "⛈️": "storm",
+    "🍃": "leaf",
+    "🌊": "sea",
+    "🧥": "jacket",
+    "🧣": "scarf"
+  }
+}

@@ -1,0 +1,11 @@
+.brand-mark{display:block;object-fit:cover;flex-shrink:0;border-radius:23%;box-shadow:0 3px 8px #293d4f16}
+.avatar-options>button>.avatar-photo{display:block;width:96px;height:96px;max-width:100%;object-fit:cover;border-radius:50%;border:3px solid #d1e0d1;box-shadow:0 4px 12px #173a4b14;background:#e4ecdc}
+.avatar-options>.avatar-selected>.avatar-photo{border-color:#cfad5a}
+.explorer-app[data-color-mode=dark] .avatar-options>button>.avatar-photo{border-color:#536e83;box-shadow:0 4px 12px #0003}
+.explorer-app[data-color-mode=dark] .avatar-options>.avatar-selected>.avatar-photo{border-color:#9ac6e4}
+@media(max-width:620px){.avatar-options>button>.avatar-photo{width:74px;height:74px;border-width:2px}}
+.explorer-sidebar .explorer-brand>.brand-mark{width:40px;height:40px}
+.explorer-sidebar .explorer-brand>span{font-size:18px;letter-spacing:-.65px}
+.explorer-brand small{letter-spacing:.8px}
+@media(max-width:620px){.explorer-header>.explorer-brand{gap:7px}.explorer-header>.explorer-brand>.brand-mark{width:32px;height:32px}.explorer-header>.explorer-brand>span{font-size:14px;letter-spacing:-.45px}.explorer-header>.explorer-brand small{font-size:8px;letter-spacing:1px;margin-top:5px}.explorer-page-welcome .explorer-header>.explorer-brand>.brand-mark{width:31px;height:31px}.explorer-page-welcome .explorer-header>.explorer-brand>span{font-size:14px}}
+@media(max-width:350px){.explorer-header>.explorer-brand>.brand-mark{width:27px;height:27px}.explorer-header>.explorer-brand>span{font-size:12px}.explorer-header>.explorer-brand{gap:5px}}

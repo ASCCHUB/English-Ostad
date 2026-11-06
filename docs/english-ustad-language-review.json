@@ -1,0 +1,2694 @@
+{
+  "status": "DRAFT — fluent Swat / Dir / Malakand Pashto and Urdu teacher review required",
+  "pashtoLocale": {
+    "languageTag": "ps-PK",
+    "label": "Swat / Dir / Malakand Pashto",
+    "regions": [
+      "Swat",
+      "Dir",
+      "Malakand"
+    ],
+    "register": "Everyday speech for a child; short singular instructions",
+    "reviewStatus": "needs-regional-native-review",
+    "romanization": {
+      "style": "Practical informal Roman Pashto, not IPA",
+      "notes": [
+        "Use kh for the local pronunciation of ښ and g for ږ where appropriate.",
+        "Use z for ځ and s for څ in this northern conversational reading aid.",
+        "Use zama, bya, school and kitaab consistently.",
+        "Romanization is a reading aid; it does not replace the English word or claim a universal spelling standard."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.mashaalradio.com/a/33123271.html",
+        "scope": "Attested use of سکول in a report about a Swat school; not validation of the whole course."
+      },
+      {
+        "url": "https://pashtoacademy.edu.pk/journal/pdf/2015-Pasht-44-Kaleem-LexicalVar.pdf",
+        "scope": "Search-indexed lexical variation study identifies Kashmiry for tomato among Swat speakers; use alongside ټماټر, not as the only valid regional word."
+      },
+      {
+        "url": "https://oped.univie.ac.at/oped.php?alph=2&dev=1&dir=0&entry=12616&how=1&let=&nons=1&what=1",
+        "scope": "Dictionary marks پۍ as an Eastern word for milk; not proof that every family prefers it."
+      },
+      {
+        "url": "https://thepashto.com/word.php?english=potato",
+        "scope": "Dictionary includes الو among potato variants."
+      }
+    ]
+  },
+  "explorerCopy": {
+    "classes": {
+      "en": "Classes",
+      "ps": "کلاسونه",
+      "rps": "Klasuna",
+      "ur": "کلاسیں",
+      "rur": "Classes"
+    },
+    "home": {
+      "en": "Home",
+      "ps": "کور پاڼه",
+      "rps": "Kor paana",
+      "ur": "ہوم",
+      "rur": "Home"
+    },
+    "learn": {
+      "en": "Learn",
+      "ps": "سبقونه",
+      "rps": "Sabaquna",
+      "ur": "سیکھیں",
+      "rur": "Seekhein"
+    },
+    "play": {
+      "en": "Play",
+      "ps": "لوبې",
+      "rps": "Lobey",
+      "ur": "کھیلیں",
+      "rur": "Khelein"
+    },
+    "stars": {
+      "en": "My Stars",
+      "ps": "زما ستوري",
+      "rps": "Zama stori",
+      "ur": "میرے ستارے",
+      "rur": "Mere sitaray"
+    },
+    "welcome": {
+      "en": "Your next adventure starts here.",
+      "ps": "ستا نوی سفر له دې ځایه شروع کېږي.",
+      "rps": "Sta naway safar la de zaaya shuru kegi.",
+      "ur": "آپ کا اگلا سفر یہیں سے شروع ہوتا ہے۔",
+      "rur": "Aap ka agla safar yaheen se shuru hota hai."
+    },
+    "explore": {
+      "en": "Let’s explore",
+      "ps": "راځه، څه نوي زده کړو",
+      "rps": "Raaza, sa nawe zda kro",
+      "ur": "آئیں کچھ نیا سیکھیں",
+      "rur": "Aaiye kuch naya seekhein"
+    },
+    "ready": {
+      "en": "Ready to discover?",
+      "ps": "نوي سبق ته تیار یې؟",
+      "rps": "Nawe sabaq ta tayaar ye?",
+      "ur": "کچھ نیا سیکھنے کے لیے تیار؟",
+      "rur": "Kuch naya seekhne ke liye tayyar?"
+    },
+    "journey": {
+      "en": "Your learning journey",
+      "ps": "ستا د سبقونو سفر",
+      "rps": "Sta da sabaquno safar",
+      "ur": "آپ کا سیکھنے کا سفر",
+      "rur": "Aap ka seekhne ka safar"
+    },
+    "growing": {
+      "en": "Look how you’re growing!",
+      "ps": "وګوره، څومره څه دې زده کړل!",
+      "rps": "Wagora, somra sa de zda kral!",
+      "ur": "دیکھیں، آپ کتنا سیکھ رہے ہیں!",
+      "rur": "Dekhein, aap kitna seekh rahe hain!"
+    },
+    "games": {
+      "en": "Play & discover",
+      "ps": "لوبې وکړه، نوي څه زده کړه",
+      "rps": "Lobey wakra, nawe sa zda kra",
+      "ur": "کھیلیں اور سیکھیں",
+      "rur": "Khelein aur seekhein"
+    },
+    "lesson": {
+      "en": "Listen, look and say.",
+      "ps": "واوره، وګوره او ووایه.",
+      "rps": "Waawra, wagora aw wawaaya.",
+      "ur": "سنیں، دیکھیں اور بولیں۔",
+      "rur": "Sunein, dekhein aur bolein."
+    }
+  },
+  "studyCopy": {
+    "spelling": {
+      "en": "Spelling, one little step at a time",
+      "ps": "املا په لږ لږ مشق زده کړه",
+      "rps": "Imla pa lag lag mashq zda kra",
+      "ur": "تھوڑی تھوڑی مشق سے ہجے سیکھیں",
+      "rur": "Thori thori mashq se hijjay seekhein",
+      "reviewStatus": "needs-native-review"
+    },
+    "letters": {
+      "en": "Look at each letter. These are letter names, not separate speech sounds.",
+      "ps": "هر توری وګوره. د توري نوم او اواز یو شان نه دي.",
+      "rps": "Har toray wagora. Da tori noom aw aawaaz yaw shaan na di.",
+      "ur": "ہر حرف دیکھیں۔ حرف کا نام اور آواز ایک جیسے نہیں ہوتے۔",
+      "rur": "Har harf dekhein. Harf ka naam aur aawaz aik jaisay nahin hotay.",
+      "reviewStatus": "needs-native-review"
+    },
+    "missing": {
+      "en": "Choose the missing letter.",
+      "ps": "پاتې توری خوښ کړه.",
+      "rps": "Paate toray khwakh kra.",
+      "ur": "غائب حرف چنیں۔",
+      "rur": "Ghaib harf chunein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "build": {
+      "en": "Tap the letters to build the word. Tap a placed letter to undo it.",
+      "ps": "توري یو په بل پسې کېږده او لفظ جوړ کړه.",
+      "rps": "Tori yaw pa bal pase kegda aw lafz jor kra.",
+      "ur": "حروف ترتیب سے رکھ کر لفظ بنائیں۔",
+      "rur": "Huroof tarteeb se rakh kar lafz banayein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "dictation": {
+      "en": "Listen, then spell the word without looking.",
+      "ps": "اواز واوره، بیا لفظ بې له کتلو ولیکه.",
+      "rps": "Aawaaz waawra, bya lafz be la katlo walika.",
+      "ur": "آواز سنیں، پھر دیکھے بغیر لفظ لکھیں۔",
+      "rur": "Aawaz sunein, phir dekhay baghair lafz likhein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "sentence": {
+      "en": "Let’s build a complete sentence.",
+      "ps": "راځه چې پوره جمله جوړه کړو.",
+      "rps": "Raaza che poora jumla jora kro.",
+      "ur": "آئیں ایک مکمل جملہ بنائیں۔",
+      "rur": "Aaiye aik mukammal jumla banayein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "copy": {
+      "en": "Read the sentence, then write it yourself.",
+      "ps": "جمله ولوله، بیا یې خپله ولیکه.",
+      "rps": "Jumla walola, bya ye khpala walika.",
+      "ur": "جملہ پڑھیں، پھر خود لکھیں۔",
+      "rur": "Jumla parhein, phir khud likhein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "capital": {
+      "en": "Start with a capital letter. Use a capital I for yourself.",
+      "ps": "جمله په لوی توري شروع کړه. د ځان لپاره I تل لوی لیکه.",
+      "rps": "Jumla pa loy tori shuru kra. Da zaan dapaara I tal loy lika.",
+      "ur": "جملہ بڑے حرف سے شروع کریں۔ اپنے لیے I ہمیشہ بڑا لکھیں۔",
+      "rur": "Jumla baray harf se shuru karein. Apne liye I hamesha bara likhein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "punctuation": {
+      "en": "A statement ends with a full stop. A question ends with a question mark.",
+      "ps": "د خبرې په اخر کې ټکی او د سوال په اخر کې د سوال نښه لګوه.",
+      "rps": "Da khabare pa aakhar ke takay aw da sawaal pa aakhar ke da sawaal nakha lagawa.",
+      "ur": "بات کے آخر میں نقطہ، سوال کے آخر میں سوالیہ نشان لگائیں۔",
+      "rur": "Baat ke aakhir mein nuqta, sawaal ke aakhir mein sawaliya nishaan lagayein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "read": {
+      "en": "Tap a word to hear it. Read the whole sentence again.",
+      "ps": "په لفظ ګوته کېږده او اواز یې واوره. بیا پوره جمله ولوله.",
+      "rps": "Pa lafz gwata kegda aw aawaaz ye waawra. Bya poora jumla walola.",
+      "ur": "لفظ پر دبائیں اور سنیں، پھر پورا جملہ پڑھیں۔",
+      "rur": "Lafz par dabayein aur sunein, phir poora jumla parhein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "retry": {
+      "en": "A little more practice. Look at the correction, then try again.",
+      "ps": "لږ نور مشق وکړه. صحیح جواب وګوره، بیا کوشش وکړه.",
+      "rps": "Lag nor mashq wakra. Sahih jawaab wagora, bya koshish wakra.",
+      "ur": "تھوڑی اور مشق کریں۔ صحیح جواب دیکھ کر دوبارہ کوشش کریں۔",
+      "rur": "Thori aur mashq karein. Sahih jawaab dekh kar dobara koshish karein.",
+      "reviewStatus": "needs-native-review"
+    },
+    "family": {
+      "en": "These words share an ending. Listen to what stays the same.",
+      "ps": "د دې لفظونو اخري اواز یو شان دی. اوازونه یې واوره.",
+      "rps": "Da de lafzuno aakhri aawaaz yaw shaan day. Aawaazuna ye waawra.",
+      "ur": "ان لفظوں کی آخری آواز ایک جیسی ہے۔ سن کر ملائیں۔",
+      "rur": "In lafzon ki aakhri aawaz aik jaisi hai. Sun kar milayein.",
+      "reviewStatus": "needs-native-review"
+    }
+  },
+  "adventureHelp": {
+    "en": "Watch and listen. Then tap an answer. You can ask for a hint and try again.",
+    "ps": "وګوره او واوره. بیا په جواب ګوته کېږده. که نه پوهېږې، مدد وغواړه او بیا کوشش وکړه.",
+    "rps": "Wagora aw waawra. Bya pa jawaab gwata kegda. Ka na pohege, madad waghwaara aw bya koshish wakra.",
+    "ur": "دیکھیں اور سنیں، پھر جواب پر دبائیں۔ اشارہ لے کر دوبارہ کوشش کر سکتے ہیں۔",
+    "rur": "Dekhein aur sunein, phir jawab par dabayein. Ishara le kar dobara koshish kar sakte hain.",
+    "reviewStatus": "needs-native-review"
+  },
+  "instructions": "Review English meaning, natural Khyber Pakhtunkhwa Pashto, Roman Pashto consistency, Urdu and Roman Urdu. Add corrections and reviewer notes. This export is for review; changes must be applied to the source modules and tested before release.",
+  "words": [
+    {
+      "id": "word-0",
+      "en": "Apple",
+      "emoji": "🍎",
+      "ps": "مڼه",
+      "rps": "Mana",
+      "ur": "سیب",
+      "rur": "Saib",
+      "pron": "AP-uhl",
+      "category": "Fruits",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-1",
+      "en": "Banana",
+      "emoji": "🍌",
+      "ps": "کېله",
+      "rps": "Kela",
+      "ur": "کیلا",
+      "rur": "Kela",
+      "pron": "buh-NAH-nuh",
+      "category": "Fruits",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-2",
+      "en": "Orange",
+      "emoji": "🍊",
+      "ps": "مالټه",
+      "rps": "Malta",
+      "ur": "مالٹا",
+      "rur": "Malta",
+      "pron": "OR-inj",
+      "category": "Fruits",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-3",
+      "en": "Mango",
+      "emoji": "🥭",
+      "ps": "آم",
+      "rps": "Aam",
+      "ur": "آم",
+      "rur": "Aam",
+      "pron": "MANG-goh",
+      "category": "Fruits",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-4",
+      "en": "Grapes",
+      "emoji": "🍇",
+      "ps": "انګور",
+      "rps": "Angoor",
+      "ur": "انگور",
+      "rur": "Angoor",
+      "pron": "GRAYPS",
+      "category": "Fruits",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-5",
+      "en": "Cat",
+      "emoji": "🐈",
+      "ps": "پیشو",
+      "rps": "Pisho",
+      "ur": "بلی",
+      "rur": "Billi",
+      "pron": "KAT",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-6",
+      "en": "Dog",
+      "emoji": "🐕",
+      "ps": "سپی",
+      "rps": "Spay",
+      "ur": "کتا",
+      "rur": "Kutta",
+      "pron": "DOG",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-7",
+      "en": "Bird",
+      "emoji": "🐦",
+      "ps": "مرغه",
+      "rps": "Margha",
+      "ur": "پرندہ",
+      "rur": "Parinda",
+      "pron": "BURD",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-8",
+      "en": "Fish",
+      "emoji": "🐟",
+      "ps": "کب",
+      "rps": "Kab",
+      "ur": "مچھلی",
+      "rur": "Machhli",
+      "pron": "FISH",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-9",
+      "en": "Cow",
+      "emoji": "🐄",
+      "ps": "غوا",
+      "rps": "Ghwa",
+      "ur": "گائے",
+      "rur": "Gaaye",
+      "pron": "KOW",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-10",
+      "en": "Goat",
+      "emoji": "🐐",
+      "ps": "وزه",
+      "rps": "Wuza",
+      "ur": "بکری",
+      "rur": "Bakri",
+      "pron": "GOHT",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-11",
+      "en": "Lion",
+      "emoji": "🦁",
+      "ps": "زمری",
+      "rps": "Zmaray",
+      "ur": "شیر",
+      "rur": "Sher",
+      "pron": "LY-un",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-12",
+      "en": "Rabbit",
+      "emoji": "🐇",
+      "ps": "سوی",
+      "rps": "Soy",
+      "ur": "خرگوش",
+      "rur": "Khargosh",
+      "pron": "RAB-it",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-13",
+      "en": "Book",
+      "emoji": "📕",
+      "ps": "کتاب",
+      "rps": "Kitaab",
+      "ur": "کتاب",
+      "rur": "Kitab",
+      "pron": "BUUK",
+      "category": "School",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-14",
+      "en": "Pen",
+      "emoji": "🖊️",
+      "ps": "قلم",
+      "rps": "Qalam",
+      "ur": "قلم",
+      "rur": "Qalam",
+      "pron": "PEN",
+      "category": "School",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-15",
+      "en": "Pencil",
+      "emoji": "✏️",
+      "ps": "پنسل",
+      "rps": "Pencil",
+      "ur": "پنسل",
+      "rur": "Pencil",
+      "pron": "PEN-suhl",
+      "category": "School",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-16",
+      "en": "Bag",
+      "emoji": "🎒",
+      "ps": "بکس",
+      "rps": "Baks",
+      "ur": "بستہ",
+      "rur": "Basta",
+      "pron": "BAG",
+      "category": "School",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-17",
+      "en": "School",
+      "emoji": "🏫",
+      "ps": "سکول",
+      "rps": "School",
+      "ur": "اسکول",
+      "rur": "School",
+      "pron": "SKOOL",
+      "category": "School",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-18",
+      "en": "Sun",
+      "emoji": "☀️",
+      "ps": "لمر",
+      "rps": "Lmar",
+      "ur": "سورج",
+      "rur": "Sooraj",
+      "pron": "SUN",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-19",
+      "en": "Moon",
+      "emoji": "🌙",
+      "ps": "سپوږمۍ",
+      "rps": "Spogmai",
+      "ur": "چاند",
+      "rur": "Chaand",
+      "pron": "MOON",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-20",
+      "en": "Star",
+      "emoji": "⭐",
+      "ps": "ستوری",
+      "rps": "Storay",
+      "ur": "ستارہ",
+      "rur": "Sitara",
+      "pron": "STAR",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-21",
+      "en": "Tree",
+      "emoji": "🌳",
+      "ps": "ونه",
+      "rps": "Wana",
+      "ur": "درخت",
+      "rur": "Darakht",
+      "pron": "TREE",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-22",
+      "en": "Flower",
+      "emoji": "🌼",
+      "ps": "ګل",
+      "rps": "Gul",
+      "ur": "پھول",
+      "rur": "Phool",
+      "pron": "FLOW-er",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-23",
+      "en": "Rain",
+      "emoji": "🌧️",
+      "ps": "باران",
+      "rps": "Baran",
+      "ur": "بارش",
+      "rur": "Barish",
+      "pron": "RAYN",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-24",
+      "en": "Water",
+      "emoji": "💧",
+      "ps": "اوبه",
+      "rps": "Oba",
+      "ur": "پانی",
+      "rur": "Pani",
+      "pron": "WAW-ter",
+      "category": "Food",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-25",
+      "en": "Milk",
+      "emoji": "🥛",
+      "ps": "پۍ",
+      "rps": "Pe",
+      "ur": "دودھ",
+      "rur": "Doodh",
+      "pron": "MILK",
+      "category": "Food",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-26",
+      "en": "Bread",
+      "emoji": "🍞",
+      "ps": "ډوډۍ",
+      "rps": "Dodai",
+      "ur": "روٹی",
+      "rur": "Roti",
+      "pron": "BRED",
+      "category": "Food",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-27",
+      "en": "Egg",
+      "emoji": "🥚",
+      "ps": "هګۍ",
+      "rps": "Hagai",
+      "ur": "انڈا",
+      "rur": "Anda",
+      "pron": "EG",
+      "category": "Food",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-28",
+      "en": "Rice",
+      "emoji": "🍚",
+      "ps": "وریژې",
+      "rps": "Wrizhey",
+      "ur": "چاول",
+      "rur": "Chawal",
+      "pron": "RYS",
+      "category": "Food",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-29",
+      "en": "Ball",
+      "emoji": "⚽",
+      "ps": "توپ",
+      "rps": "Top",
+      "ur": "گیند",
+      "rur": "Gaind",
+      "pron": "BAWL",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-30",
+      "en": "Car",
+      "emoji": "🚗",
+      "ps": "موټر",
+      "rps": "Motor",
+      "ur": "گاڑی",
+      "rur": "Gaari",
+      "pron": "KAR",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-31",
+      "en": "House",
+      "emoji": "🏠",
+      "ps": "کور",
+      "rps": "Kor",
+      "ur": "گھر",
+      "rur": "Ghar",
+      "pron": "HOWS",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-32",
+      "en": "Door",
+      "emoji": "🚪",
+      "ps": "دروازه",
+      "rps": "Darwaza",
+      "ur": "دروازہ",
+      "rur": "Darwaza",
+      "pron": "DOR",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-33",
+      "en": "Chair",
+      "emoji": "🪑",
+      "ps": "چوکۍ",
+      "rps": "Chawkai",
+      "ur": "کرسی",
+      "rur": "Kursi",
+      "pron": "CHAIR",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-34",
+      "en": "Hand",
+      "emoji": "✋",
+      "ps": "لاس",
+      "rps": "Las",
+      "ur": "ہاتھ",
+      "rur": "Haath",
+      "pron": "HAND",
+      "category": "Body",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-35",
+      "en": "Eye",
+      "emoji": "👁️",
+      "ps": "سترګه",
+      "rps": "Starga",
+      "ur": "آنکھ",
+      "rur": "Aankh",
+      "pron": "EYE",
+      "category": "Body",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-36",
+      "en": "Ear",
+      "emoji": "👂",
+      "ps": "غوږ",
+      "rps": "Ghwag",
+      "ur": "کان",
+      "rur": "Kaan",
+      "pron": "EER",
+      "category": "Body",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-37",
+      "en": "Nose",
+      "emoji": "👃",
+      "ps": "پوزه",
+      "rps": "Poza",
+      "ur": "ناک",
+      "rur": "Naak",
+      "pron": "NOHZ",
+      "category": "Body",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-38",
+      "en": "Red",
+      "emoji": "🔴",
+      "ps": "سور",
+      "rps": "Soor",
+      "ur": "لال",
+      "rur": "Laal",
+      "pron": "RED",
+      "category": "Colors",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-39",
+      "en": "Blue",
+      "emoji": "🔵",
+      "ps": "نیلي",
+      "rps": "Neeli",
+      "ur": "نیلا",
+      "rur": "Neela",
+      "pron": "BLOO",
+      "category": "Colors",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-40",
+      "en": "Green",
+      "emoji": "🟢",
+      "ps": "شین",
+      "rps": "Shin",
+      "ur": "سبز",
+      "rur": "Sabz",
+      "pron": "GREEN",
+      "category": "Colors",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-41",
+      "en": "Yellow",
+      "emoji": "🟡",
+      "ps": "زېړ",
+      "rps": "Zer",
+      "ur": "پیلا",
+      "rur": "Peela",
+      "pron": "YEL-oh",
+      "category": "Colors",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-42",
+      "en": "One",
+      "emoji": "1️⃣",
+      "ps": "یو",
+      "rps": "Yaw",
+      "ur": "ایک",
+      "rur": "Aik",
+      "pron": "WUN",
+      "category": "Numbers",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-43",
+      "en": "Two",
+      "emoji": "2️⃣",
+      "ps": "دوه",
+      "rps": "Dwa",
+      "ur": "دو",
+      "rur": "Do",
+      "pron": "TOO",
+      "category": "Numbers",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-44",
+      "en": "Three",
+      "emoji": "3️⃣",
+      "ps": "درې",
+      "rps": "Dre",
+      "ur": "تین",
+      "rur": "Teen",
+      "pron": "THREE",
+      "category": "Numbers",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-45",
+      "en": "Four",
+      "emoji": "4️⃣",
+      "ps": "څلور",
+      "rps": "Salor",
+      "ur": "چار",
+      "rur": "Chaar",
+      "pron": "FOR",
+      "category": "Numbers",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-46",
+      "en": "Five",
+      "emoji": "5️⃣",
+      "ps": "پنځه",
+      "rps": "Pinza",
+      "ur": "پانچ",
+      "rur": "Paanch",
+      "pron": "FYV",
+      "category": "Numbers",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-47",
+      "en": "Happy",
+      "emoji": "😊",
+      "ps": "خوشاله",
+      "rps": "Khushala",
+      "ur": "خوش",
+      "rur": "Khush",
+      "pron": "HAP-ee",
+      "category": "Feelings",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-48",
+      "en": "Sad",
+      "emoji": "😢",
+      "ps": "خفه",
+      "rps": "Khafa",
+      "ur": "اداس",
+      "rur": "Udaas",
+      "pron": "SAD",
+      "category": "Feelings",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-49",
+      "en": "Umbrella",
+      "emoji": "☂️",
+      "ps": "چترۍ",
+      "rps": "Chatrai",
+      "ur": "چھتری",
+      "rur": "Chhatri",
+      "pron": "um-BREL-uh",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-50",
+      "en": "Queen",
+      "emoji": "👑",
+      "ps": "ملکه",
+      "rps": "Malika",
+      "ur": "ملکہ",
+      "rur": "Malika",
+      "pron": "KWEEN",
+      "category": "People",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-51",
+      "en": "Zebra",
+      "emoji": "🦓",
+      "ps": "زیبرا",
+      "rps": "Zebra",
+      "ur": "زیبرا",
+      "rur": "Zebra",
+      "pron": "ZEE-bruh",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-52",
+      "en": "Fox",
+      "emoji": "🦊",
+      "ps": "ګیدړ",
+      "rps": "Gidar",
+      "ur": "لومڑی",
+      "rur": "Lomri",
+      "pron": "FOKS",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-53",
+      "en": "Nest",
+      "emoji": "🪺",
+      "ps": "ځاله",
+      "rps": "Zaala",
+      "ur": "گھونسلا",
+      "rur": "Ghonsla",
+      "pron": "NEST",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-54",
+      "en": "Kite",
+      "emoji": "🪁",
+      "ps": "پتنګ",
+      "rps": "Patang",
+      "ur": "پتنگ",
+      "rur": "Patang",
+      "pron": "KYT",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-55",
+      "en": "Watch",
+      "emoji": "⌚",
+      "ps": "لاسي ګړۍ",
+      "rps": "Laasi garai",
+      "ur": "گھڑی",
+      "rur": "Ghari",
+      "pron": "WOCH",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-56",
+      "en": "Van",
+      "emoji": "🚐",
+      "ps": "وین",
+      "rps": "Van",
+      "ur": "وین",
+      "rur": "Van",
+      "pron": "VAN",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-57",
+      "en": "Yogurt",
+      "emoji": "🥣",
+      "ps": "مستې",
+      "rps": "Maste",
+      "ur": "دہی",
+      "rur": "Dahi",
+      "pron": "YOH-gurt",
+      "category": "Food",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-58",
+      "en": "Ice",
+      "emoji": "🧊",
+      "ps": "یخ",
+      "rps": "Yakh",
+      "ur": "برف",
+      "rur": "Baraf",
+      "pron": "YS",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-59",
+      "en": "Juice",
+      "emoji": "🧃",
+      "ps": "جوس",
+      "rps": "Joos",
+      "ur": "جوس",
+      "rur": "Joos",
+      "pron": "JOOS",
+      "category": "Food",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-60",
+      "en": "Potato",
+      "emoji": "🥔",
+      "ps": "الو",
+      "rps": "Aaloo",
+      "ur": "آلو",
+      "rur": "Aalu",
+      "pron": "puh-TAY-toh",
+      "category": "Vegetables",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-61",
+      "en": "Tomato",
+      "emoji": "🍅",
+      "ps": "کشمیري (ټماټر)",
+      "rps": "Kashmiri (Tamatar)",
+      "ur": "ٹماٹر",
+      "rur": "Tamatar",
+      "pron": "tuh-MAH-toh",
+      "category": "Vegetables",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-62",
+      "en": "Onion",
+      "emoji": "🧅",
+      "ps": "پیاز",
+      "rps": "Pyaaz",
+      "ur": "پیاز",
+      "rur": "Pyaaz",
+      "pron": "UN-yun",
+      "category": "Vegetables",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-63",
+      "en": "Carrot",
+      "emoji": "🥕",
+      "ps": "ګازره",
+      "rps": "Gazara",
+      "ur": "گاجر",
+      "rur": "Gajar",
+      "pron": "KAR-uht",
+      "category": "Vegetables",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-64",
+      "en": "Peas",
+      "emoji": "🫛",
+      "ps": "مټر",
+      "rps": "Matar",
+      "ur": "مٹر",
+      "rur": "Matar",
+      "pron": "PEEZ",
+      "category": "Vegetables",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-65",
+      "en": "Mother",
+      "emoji": "👩",
+      "ps": "مور",
+      "rps": "Mor",
+      "ur": "ماں",
+      "rur": "Maa",
+      "pron": "MUH-thuh",
+      "category": "Family",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-66",
+      "en": "Father",
+      "emoji": "👨",
+      "ps": "پلار",
+      "rps": "Plar",
+      "ur": "والد",
+      "rur": "Walid",
+      "pron": "FAH-thuh",
+      "category": "Family",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-67",
+      "en": "Brother",
+      "emoji": "👦",
+      "ps": "ورور",
+      "rps": "Wror",
+      "ur": "بھائی",
+      "rur": "Bhai",
+      "pron": "BRUH-thuh",
+      "category": "Family",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-68",
+      "en": "Sister",
+      "emoji": "👧",
+      "ps": "خور",
+      "rps": "Khor",
+      "ur": "بہن",
+      "rur": "Behen",
+      "pron": "SIS-tuh",
+      "category": "Family",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-69",
+      "en": "Baby",
+      "emoji": "👶",
+      "ps": "ماشوم",
+      "rps": "Mashoom",
+      "ur": "بچہ",
+      "rur": "Bachcha",
+      "pron": "BAY-bee",
+      "category": "Family",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-70",
+      "en": "Foot",
+      "emoji": "🦶",
+      "ps": "پښه",
+      "rps": "Pkha",
+      "ur": "پاؤں",
+      "rur": "Paaon",
+      "pron": "FUUT",
+      "category": "Body",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-71",
+      "en": "Tooth",
+      "emoji": "🦷",
+      "ps": "غاښ",
+      "rps": "Ghaakh",
+      "ur": "دانت",
+      "rur": "Daant",
+      "pron": "TOOTH",
+      "category": "Body",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-72",
+      "en": "Mouth",
+      "emoji": "👄",
+      "ps": "خوله",
+      "rps": "Khwla",
+      "ur": "منہ",
+      "rur": "Munh",
+      "pron": "MOWTH",
+      "category": "Body",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-73",
+      "en": "Shirt",
+      "emoji": "👕",
+      "ps": "کمیس",
+      "rps": "Qamees",
+      "ur": "قمیص",
+      "rur": "Qameez",
+      "pron": "SHURT",
+      "category": "Clothes",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-74",
+      "en": "Shoes",
+      "emoji": "👟",
+      "ps": "بوټان",
+      "rps": "Bootan",
+      "ur": "جوتے",
+      "rur": "Jootay",
+      "pron": "SHOOZ",
+      "category": "Clothes",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-75",
+      "en": "Hat",
+      "emoji": "🎩",
+      "ps": "خولۍ",
+      "rps": "Kholai",
+      "ur": "ٹوپی",
+      "rur": "Topi",
+      "pron": "HAT",
+      "category": "Clothes",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-76",
+      "en": "Socks",
+      "emoji": "🧦",
+      "ps": "جرابې",
+      "rps": "Jorabey",
+      "ur": "جرابیں",
+      "rur": "Jurabein",
+      "pron": "SOKS",
+      "category": "Clothes",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-77",
+      "en": "Dress",
+      "emoji": "👗",
+      "ps": "فراک",
+      "rps": "Fraak",
+      "ur": "فراک",
+      "rur": "Fraak",
+      "pron": "DRES",
+      "category": "Clothes",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-78",
+      "en": "Bus",
+      "emoji": "🚌",
+      "ps": "بس",
+      "rps": "Bas",
+      "ur": "بس",
+      "rur": "Bus",
+      "pron": "BUS",
+      "category": "Vehicles",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-79",
+      "en": "Train",
+      "emoji": "🚆",
+      "ps": "رېل ګاډی",
+      "rps": "Rail gaaday",
+      "ur": "ریل گاڑی",
+      "rur": "Rail gaari",
+      "pron": "TRAYN",
+      "category": "Vehicles",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-80",
+      "en": "Bicycle",
+      "emoji": "🚲",
+      "ps": "سایکل",
+      "rps": "Saikal",
+      "ur": "سائیکل",
+      "rur": "Cycle",
+      "pron": "BY-si-kuhl",
+      "category": "Vehicles",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-81",
+      "en": "Boat",
+      "emoji": "⛵",
+      "ps": "کښتۍ",
+      "rps": "Kashtai",
+      "ur": "کشتی",
+      "rur": "Kashti",
+      "pron": "BOHT",
+      "category": "Vehicles",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-82",
+      "en": "Plane",
+      "emoji": "✈️",
+      "ps": "جهاز",
+      "rps": "Jahaaz",
+      "ur": "ہوائی جہاز",
+      "rur": "Hawai jahaz",
+      "pron": "PLAYN",
+      "category": "Vehicles",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-83",
+      "en": "Duck",
+      "emoji": "🦆",
+      "ps": "هیلۍ",
+      "rps": "Helai",
+      "ur": "بطخ",
+      "rur": "Batakh",
+      "pron": "DUK",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-84",
+      "en": "Elephant",
+      "emoji": "🐘",
+      "ps": "فیل",
+      "rps": "Feel",
+      "ur": "ہاتھی",
+      "rur": "Haathi",
+      "pron": "EL-i-fuhnt",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-85",
+      "en": "Horse",
+      "emoji": "🐎",
+      "ps": "آس",
+      "rps": "Aas",
+      "ur": "گھوڑا",
+      "rur": "Ghora",
+      "pron": "HORS",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-86",
+      "en": "Sheep",
+      "emoji": "🐑",
+      "ps": "مېږه",
+      "rps": "Mega",
+      "ur": "بھیڑ",
+      "rur": "Bher",
+      "pron": "SHEEP",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-87",
+      "en": "Bee",
+      "emoji": "🐝",
+      "ps": "مچۍ",
+      "rps": "Machai",
+      "ur": "شہد کی مکھی",
+      "rur": "Shehad ki makkhi",
+      "pron": "BEE",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-88",
+      "en": "Butterfly",
+      "emoji": "🦋",
+      "ps": "تیتلی",
+      "rps": "Titli",
+      "ur": "تتلی",
+      "rur": "Titli",
+      "pron": "BUT-uh-fly",
+      "category": "Animals",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-89",
+      "en": "Cloud",
+      "emoji": "☁️",
+      "ps": "ورېځ",
+      "rps": "Wrez",
+      "ur": "بادل",
+      "rur": "Baadal",
+      "pron": "KLOWD",
+      "category": "Weather",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-90",
+      "en": "Snow",
+      "emoji": "❄️",
+      "ps": "واوره",
+      "rps": "Wawra",
+      "ur": "برف",
+      "rur": "Baraf",
+      "pron": "SNOH",
+      "category": "Weather",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-91",
+      "en": "Wind",
+      "emoji": "🌬️",
+      "ps": "باد",
+      "rps": "Baad",
+      "ur": "ہوا",
+      "rur": "Hawa",
+      "pron": "WIND",
+      "category": "Weather",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-92",
+      "en": "Mountain",
+      "emoji": "⛰️",
+      "ps": "غر",
+      "rps": "Ghar",
+      "ur": "پہاڑ",
+      "rur": "Pahaar",
+      "pron": "MOWN-tin",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-93",
+      "en": "River",
+      "emoji": "🏞️",
+      "ps": "سیند",
+      "rps": "Seend",
+      "ur": "دریا",
+      "rur": "Darya",
+      "pron": "RIV-uh",
+      "category": "Nature",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-94",
+      "en": "Bed",
+      "emoji": "🛏️",
+      "ps": "کټ",
+      "rps": "Kat",
+      "ur": "بستر",
+      "rur": "Bistar",
+      "pron": "BED",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-95",
+      "en": "Key",
+      "emoji": "🔑",
+      "ps": "کیلي",
+      "rps": "Kili",
+      "ur": "چابی",
+      "rur": "Chaabi",
+      "pron": "KEE",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-96",
+      "en": "Cup",
+      "emoji": "☕",
+      "ps": "پیاله",
+      "rps": "Pyala",
+      "ur": "پیالی",
+      "rur": "Pyali",
+      "pron": "KUP",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-97",
+      "en": "Spoon",
+      "emoji": "🥄",
+      "ps": "چمچ",
+      "rps": "Chamach",
+      "ur": "چمچ",
+      "rur": "Chamach",
+      "pron": "SPOON",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-98",
+      "en": "Clock",
+      "emoji": "🕒",
+      "ps": "ګړۍ",
+      "rps": "Garai",
+      "ur": "گھڑی",
+      "rur": "Ghari",
+      "pron": "KLOK",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "id": "word-99",
+      "en": "Soap",
+      "emoji": "🧼",
+      "ps": "صابون",
+      "rps": "Saboon",
+      "ur": "صابن",
+      "rur": "Sabun",
+      "pron": "SOHP",
+      "category": "Things",
+      "reviewStatus": "needs-native-review"
+    }
+  ],
+  "phrases": [
+    {
+      "en": "Hello.",
+      "ps": "سلام",
+      "rps": "Salam",
+      "ur": "سلام",
+      "rur": "Salam"
+    },
+    {
+      "en": "How are you?",
+      "ps": "ته څنګه یې؟",
+      "rps": "Ta sanga ye?",
+      "ur": "آپ کیسے ہیں؟",
+      "rur": "Aap kaise hain?"
+    },
+    {
+      "en": "My name is Ali.",
+      "ps": "زما نوم علي دی.",
+      "rps": "Zama noom Ali day.",
+      "ur": "میرا نام علی ہے۔",
+      "rur": "Mera naam Ali hai."
+    },
+    {
+      "en": "Thank you.",
+      "ps": "مننه",
+      "rps": "Manana",
+      "ur": "شکریہ",
+      "rur": "Shukriya"
+    },
+    {
+      "en": "Please help me.",
+      "ps": "مهرباني وکړه، زما مدد وکړه.",
+      "rps": "Mehrabani wakra, zama madad wakra.",
+      "ur": "براہ کرم میری مدد کریں۔",
+      "rur": "Barah e karam meri madad karein."
+    },
+    {
+      "en": "I need water.",
+      "ps": "ما ته اوبه پکار دي.",
+      "rps": "Ma ta oba pakaar di.",
+      "ur": "مجھے پانی چاہیے۔",
+      "rur": "Mujhe pani chahiye."
+    },
+    {
+      "en": "I am going to school.",
+      "ps": "زه سکول ته ځم.",
+      "rps": "Za school ta zam.",
+      "ur": "میں اسکول جا رہا ہوں۔",
+      "rur": "Main school ja raha hoon."
+    },
+    {
+      "en": "I am fine.",
+      "ps": "زه ښه یم.",
+      "rps": "Za kha yam.",
+      "ur": "میں ٹھیک ہوں۔",
+      "rur": "Main theek hoon."
+    },
+    {
+      "en": "What is your name?",
+      "ps": "ستا نوم څه دی؟",
+      "rps": "Sta noom sa day?",
+      "ur": "آپ کا نام کیا ہے؟",
+      "rur": "Aap ka naam kya hai?"
+    },
+    {
+      "en": "May I come in?",
+      "ps": "زه دننه راشم؟",
+      "rps": "Za danana raasham?",
+      "ur": "کیا میں اندر آ سکتا ہوں؟",
+      "rur": "Kya main andar aa sakta hoon?"
+    },
+    {
+      "en": "Please sit down.",
+      "ps": "مهرباني وکړه، کېنه.",
+      "rps": "Mehrabani wakra, kena.",
+      "ur": "براہ کرم بیٹھ جائیں۔",
+      "rur": "Barah e karam baith jayein."
+    },
+    {
+      "en": "Please open your book.",
+      "ps": "مهرباني وکړه، خپل کتاب خلاص کړه.",
+      "rps": "Mehrabani wakra, khpal kitaab khlaas kra.",
+      "ur": "براہ کرم اپنی کتاب کھولیں۔",
+      "rur": "Barah e karam apni kitab kholein."
+    },
+    {
+      "en": "I do not understand.",
+      "ps": "زه نه پوهېږم.",
+      "rps": "Za na pohegam.",
+      "ur": "مجھے سمجھ نہیں آئی۔",
+      "rur": "Mujhe samajh nahin aayi."
+    },
+    {
+      "en": "Please say it again.",
+      "ps": "مهرباني وکړه، بیا یې ووایه.",
+      "rps": "Mehrabani wakra, bya ye wawaaya.",
+      "ur": "براہ کرم دوبارہ کہیں۔",
+      "rur": "Barah e karam dobara kahein."
+    },
+    {
+      "en": "Goodbye.",
+      "ps": "د خدای په امان.",
+      "rps": "Da Khudai pa aman.",
+      "ur": "خدا حافظ۔",
+      "rur": "Khuda hafiz."
+    }
+  ],
+  "readings": [
+    {
+      "en": "This is a cat.",
+      "ps": "دا پیشو ده.",
+      "rps": "Da pisho da.",
+      "ur": "یہ بلی ہے۔",
+      "rur": "Yeh billi hai.",
+      "emoji": "🐈"
+    },
+    {
+      "en": "I have a ball.",
+      "ps": "زما سره توپ دی.",
+      "rps": "Zama sara top day.",
+      "ur": "میرے پاس گیند ہے۔",
+      "rur": "Mere paas gaind hai.",
+      "emoji": "⚽"
+    },
+    {
+      "en": "The sun is hot.",
+      "ps": "لمر ګرم دی.",
+      "rps": "Lmar garm day.",
+      "ur": "سورج گرم ہے۔",
+      "rur": "Sooraj garam hai.",
+      "emoji": "☀️"
+    },
+    {
+      "en": "I like apples.",
+      "ps": "زما مڼې خوښې دي.",
+      "rps": "Zama maney khwakhe di.",
+      "ur": "مجھے سیب پسند ہیں۔",
+      "rur": "Mujhe saib pasand hain.",
+      "emoji": "🍎"
+    },
+    {
+      "en": "It is a red ball.",
+      "ps": "دا سور توپ دی.",
+      "rps": "Da soor top day.",
+      "ur": "یہ لال گیند ہے۔",
+      "rur": "Yeh laal gaind hai.",
+      "emoji": "🔴⚽"
+    },
+    {
+      "en": "The bird can fly.",
+      "ps": "مرغه الوتی شي.",
+      "rps": "Margha alwate shi.",
+      "ur": "پرندہ اڑ سکتا ہے۔",
+      "rur": "Parinda urr sakta hai.",
+      "emoji": "🐦"
+    },
+    {
+      "en": "I drink water.",
+      "ps": "زه اوبه څښم.",
+      "rps": "Za oba skham.",
+      "ur": "میں پانی پیتا ہوں۔",
+      "rur": "Main pani peeta hoon.",
+      "emoji": "💧"
+    },
+    {
+      "en": "This is my book.",
+      "ps": "دا زما کتاب دی.",
+      "rps": "Da zama kitaab day.",
+      "ur": "یہ میری کتاب ہے۔",
+      "rur": "Yeh meri kitab hai.",
+      "emoji": "📕"
+    },
+    {
+      "en": "We go to school.",
+      "ps": "مونږ سکول ته ځو.",
+      "rps": "Mung school ta zoo.",
+      "ur": "ہم اسکول جاتے ہیں۔",
+      "rur": "Hum school jatay hain.",
+      "emoji": "🏫"
+    },
+    {
+      "en": "The tree is big.",
+      "ps": "ونه لویه ده.",
+      "rps": "Wana loya da.",
+      "ur": "درخت بڑا ہے۔",
+      "rur": "Darakht bara hai.",
+      "emoji": "🌳"
+    },
+    {
+      "en": "I see a fish.",
+      "ps": "زه کب وینم.",
+      "rps": "Za kab winam.",
+      "ur": "مجھے ایک مچھلی نظر آتی ہے۔",
+      "rur": "Mujhe aik machhli nazar aati hai.",
+      "emoji": "🐟"
+    },
+    {
+      "en": "The cat is on the chair.",
+      "ps": "پیشو په چوکۍ ده.",
+      "rps": "Pisho pa chawkai da.",
+      "ur": "بلی کرسی پر ہے۔",
+      "rur": "Billi kursi par hai.",
+      "emoji": "🐈🪑"
+    }
+  ],
+  "phonics": [
+    [
+      "a",
+      "cat · bat · hat",
+      "A short /æ/: open your mouth wide. The letter name A is different from this sound."
+    ],
+    [
+      "sh",
+      "ship · shop · fish",
+      "Bring your lips forward. Let air flow: sh."
+    ],
+    [
+      "ch",
+      "chip · chin · much",
+      "Start with a stop, then release air: ch."
+    ],
+    [
+      "th",
+      "think · thin · bath",
+      "Put the tip of your tongue gently between your teeth and blow air."
+    ],
+    [
+      "th",
+      "this · that · them",
+      "Use the same tongue position, with a gentle vibration in your throat."
+    ],
+    [
+      "v / w",
+      "vet · wet · van",
+      "For v, touch your lower lip with your top teeth. For w, round your lips."
+    ],
+    [
+      "i / ee",
+      "ship · sheep",
+      "Ship has a short relaxed vowel. Sheep has a longer /iː/ sound."
+    ],
+    [
+      "blend",
+      "cat · bat · mat",
+      "Say the sounds /k/, /æ/, /t/ slowly, then join them to make cat. Letter names and sounds are different."
+    ],
+    [
+      "e",
+      "bed · pen · red",
+      "Short e /e/: relax your mouth and listen to the middle sound."
+    ],
+    [
+      "i",
+      "sit · pin · fish",
+      "Short i /ɪ/: keep the vowel short and relaxed."
+    ],
+    [
+      "o",
+      "dog · hot · pot",
+      "Short o /ɒ/ in British English: round your open lips. Accents vary."
+    ],
+    [
+      "u",
+      "sun · cup · bus",
+      "Short u /ʌ/: open your mouth a little."
+    ],
+    [
+      "a / a_e",
+      "cap · cape · tap · tape",
+      "In these pairs, the final e is silent and the a sound changes. This pattern has exceptions."
+    ],
+    [
+      "i / i_e",
+      "kit · kite · bit · bite",
+      "The silent e changes short i /ɪ/ to /aɪ/ in these words."
+    ],
+    [
+      "ph",
+      "phone · photo · dolphin",
+      "The two letters ph often spell the single sound /f/."
+    ],
+    [
+      "st / bl / tr",
+      "stop · blue · tree",
+      "These are blends: keep both consonant sounds as you join them."
+    ]
+  ],
+  "phonicsSupport": [
+    {
+      "en": "Open your mouth for the short a sound.",
+      "ps": "د لنډ a اواز لپاره خوله خلاصه کړه.",
+      "rps": "Da land a aawaaz dapaara khwla khlaasa kra.",
+      "ur": "چھوٹی اَ کی آواز کے لیے منہ کھولیں۔",
+      "rur": "Chhoti a ki aawaz ke liye munh kholein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Push your lips forward and let air out.",
+      "ps": "شونډې لږې مخې ته کړه او هوا وباسه.",
+      "rps": "Shundey lagey makhe ta kra aw hawa wabaasa.",
+      "ur": "ہونٹ آگے کریں اور ہوا نکالیں۔",
+      "rur": "Hont aagay karein aur hawa nikalein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Stop the air, then release it.",
+      "ps": "هوا لږه بنده کړه، بیا یې پرېږده.",
+      "rps": "Hawa laga banda kra, bya ye pregda.",
+      "ur": "ہوا روکیں، پھر چھوڑیں۔",
+      "rur": "Hawa rokein, phir chorein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Put your tongue gently between your teeth.",
+      "ps": "د ژبې سر د غاښونو منځ کې لږ کېږده.",
+      "rps": "Da jibey sar da ghaakhuno manz ke lag kegda.",
+      "ur": "زبان آہستہ دانتوں کے درمیان رکھیں۔",
+      "rur": "Zaban aahista daanton ke darmiyan rakhein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Use your voice with the same tongue position.",
+      "ps": "ژبه همداسې وساته او اواز وباسه.",
+      "rps": "Jiba hamdaase wasaata aw aawaaz wabaasa.",
+      "ur": "زبان اسی طرح رکھیں اور آواز نکالیں۔",
+      "rur": "Zaban isi tarah rakhein aur aawaz nikalein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Listen to v and w. Watch your lips.",
+      "ps": "د v او w اوازونه واوره. خپلو شونډو ته پام کوه.",
+      "rps": "Da v aw w aawaazuna waawra. Khpalo shundo ta paam kawa.",
+      "ur": "وی اور ڈبلیو سنیں۔ اپنے ہونٹوں پر دھیان دیں۔",
+      "rur": "V aur W sunein. Apne honton par dhyan dein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Listen: ship is short; sheep is longer.",
+      "ps": "په ship کې د منځ اواز لنډ دی، په sheep کې اوږد دی.",
+      "rps": "Pa ship ke da manz aawaaz land day, pa sheep ke oogd day.",
+      "ur": "سنیں: شِپ کی آواز چھوٹی، شیپ کی لمبی ہے۔",
+      "rur": "Sunein: ship ki aawaz chhoti, sheep ki lambi hai.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Say the sounds, then join them.",
+      "ps": "اوازونه ووایه، بیا یې سره یو ځای کړه.",
+      "rps": "Aawaazuna wawaaya, bya ye sara yaw zaay kra.",
+      "ur": "آوازیں بولیں، پھر ملائیں۔",
+      "rur": "Aawazein bolein, phir milayein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Listen to the middle sound in bed and pen.",
+      "ps": "په bed او pen کې د منځ اواز واوره.",
+      "rps": "Pa bed aw pen ke da manz aawaaz waawra.",
+      "ur": "بیڈ اور پین کی درمیانی آواز سنیں۔",
+      "rur": "Bed aur pen ki darmiyani aawaz sunein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Keep the middle vowel short.",
+      "ps": "د منځ اواز لنډ ووایه.",
+      "rps": "Da manz aawaaz land wawaaya.",
+      "ur": "درمیانی آواز چھوٹی بولیں۔",
+      "rur": "Darmiyani aawaz chhoti bolein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Open your mouth and round your lips.",
+      "ps": "خوله خلاصه کړه او شونډې ګردې کړه.",
+      "rps": "Khwla khlaasa kra aw shundey girdey kra.",
+      "ur": "منہ کھولیں اور ہونٹ گول کریں۔",
+      "rur": "Munh kholein aur hont gol karein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Listen to sun, cup and bus.",
+      "ps": "د sun، cup او bus اوازونه واوره.",
+      "rps": "Da sun, cup aw bus aawaazuna waawra.",
+      "ur": "سن، کپ اور بس کی آوازیں سنیں۔",
+      "rur": "Sun, cup aur bus ki aawazein sunein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "The last e is silent in cape. Listen to the change.",
+      "ps": "په cape کې اخري e نه وایو. د a اواز ته غوږ ونیسه.",
+      "rps": "Pa cape ke aakhri e na waayu. Da a aawaaz ta ghwag wanisa.",
+      "ur": "کیپ میں آخری ای خاموش ہے۔ فرق سنیں۔",
+      "rur": "Cape mein aakhri e khamosh hai. Farq sunein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Compare kit and kite. Listen to the vowel.",
+      "ps": "kit او kite واوره. د منځ اواز یې یو شان نه دی.",
+      "rps": "Kit aw kite waawra. Da manz aawaaz ye yaw shaan na day.",
+      "ur": "کٹ اور کائٹ کا فرق سنیں۔",
+      "rur": "Kit aur kite ka farq sunein.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Two letters can make one sound.",
+      "ps": "کله کله دوه توري یو اواز ورکوي.",
+      "rps": "Kala kala dwa tori yaw aawaaz warkawi.",
+      "ur": "دو حروف ایک آواز بنا سکتے ہیں۔",
+      "rur": "Do huroof aik aawaz bana saktay hain.",
+      "reviewStatus": "needs-native-review"
+    },
+    {
+      "en": "Join the sounds and say the word.",
+      "ps": "اوازونه سره یو ځای کړه او لفظ ووایه.",
+      "rps": "Aawaazuna sara yaw zaay kra aw lafz wawaaya.",
+      "ur": "آوازیں ملائیں اور لفظ بولیں۔",
+      "rur": "Aawazein milayein aur lafz bolein.",
+      "reviewStatus": "needs-native-review"
+    }
+  ],
+  "prompts": {
+    "listen": {
+      "ps": "واوره او بیا یې ووایه",
+      "rps": "Waawra aw bya ye wawaaya",
+      "ur": "سنیں اور پھر بولیں",
+      "rur": "Sunein aur phir bolein"
+    },
+    "choose": {
+      "ps": "صحیح جواب خوښ کړه",
+      "rps": "Sahih jawaab khwakh kra",
+      "ur": "صحیح جواب چنیں",
+      "rur": "Sahi jawab chunein"
+    },
+    "retry": {
+      "ps": "بیا کوشش وکړه",
+      "rps": "Bya koshish wakra",
+      "ur": "دوبارہ کوشش کریں",
+      "rur": "Dobara koshish karein"
+    }
+  },
+  "grammarLessons": [
+    {
+      "id": "am",
+      "en": "I am happy.",
+      "ps": "زه خوشاله یم.",
+      "rps": "Za khushala yam.",
+      "ur": "میں خوش ہوں۔",
+      "rur": "Main khush hoon.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "😊",
+      "tip": "Use am with I."
+    },
+    {
+      "id": "is",
+      "en": "She is happy.",
+      "ps": "هغه خوشاله ده.",
+      "rps": "Hagha khushala da.",
+      "ur": "وہ خوش ہے۔",
+      "rur": "Woh khush hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "👧",
+      "tip": "Use is with he, she or it."
+    },
+    {
+      "id": "are",
+      "en": "We are happy.",
+      "ps": "مونږ خوشاله یو.",
+      "rps": "Mung khushala yoo.",
+      "ur": "ہم خوش ہیں۔",
+      "rur": "Hum khush hain.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "👫",
+      "tip": "Use are with you, we or they."
+    },
+    {
+      "id": "have",
+      "en": "I have a book.",
+      "ps": "زما سره کتاب دی.",
+      "rps": "Zama sara kitaab day.",
+      "ur": "میرے پاس کتاب ہے۔",
+      "rur": "Mere paas kitab hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "📕",
+      "tip": "Use have with I, you, we or they."
+    },
+    {
+      "id": "has",
+      "en": "He has a ball.",
+      "ps": "د هغه سره توپ دی.",
+      "rps": "Da hagha sara top day.",
+      "ur": "اس کے پاس گیند ہے۔",
+      "rur": "Us ke paas gaind hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "⚽",
+      "tip": "Use has with he, she or it."
+    },
+    {
+      "id": "a",
+      "en": "This is a cat.",
+      "ps": "دا پیشو ده.",
+      "rps": "Da pisho da.",
+      "ur": "یہ بلی ہے۔",
+      "rur": "Yeh billi hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🐈",
+      "tip": "Use a before a consonant sound: a cat."
+    },
+    {
+      "id": "an",
+      "en": "This is an apple.",
+      "ps": "دا مڼه ده.",
+      "rps": "Da mana da.",
+      "ur": "یہ سیب ہے۔",
+      "rur": "Yeh saib hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🍎",
+      "tip": "Use an before a vowel sound: an apple. Listen to the sound, not just the letter."
+    },
+    {
+      "id": "plural",
+      "en": "I have two books.",
+      "ps": "زما سره دوه کتابونه دي.",
+      "rps": "Zama sara dwa kitaabuna di.",
+      "ur": "میرے پاس دو کتابیں ہیں۔",
+      "rur": "Mere paas do kitabein hain.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "📚",
+      "tip": "Many nouns add s for more than one: book → books. Some change differently: child → children."
+    },
+    {
+      "id": "this",
+      "en": "This is my pen.",
+      "ps": "دا زما قلم دی.",
+      "rps": "Da zama qalam day.",
+      "ur": "یہ میرا قلم ہے۔",
+      "rur": "Yeh mera qalam hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🖊️",
+      "tip": "This points to one thing near you."
+    },
+    {
+      "id": "that",
+      "en": "That is a tree.",
+      "ps": "هغه ونه ده.",
+      "rps": "Hagha wana da.",
+      "ur": "وہ درخت ہے۔",
+      "rur": "Woh darakht hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🌳",
+      "tip": "That points to one thing farther away."
+    },
+    {
+      "id": "these",
+      "en": "These are apples.",
+      "ps": "دا مڼې دي.",
+      "rps": "Da maney di.",
+      "ur": "یہ سیب ہیں۔",
+      "rur": "Yeh saib hain.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🍎🍎",
+      "tip": "These points to more than one thing near you."
+    },
+    {
+      "id": "those",
+      "en": "Those are birds.",
+      "ps": "هغه مرغان دي.",
+      "rps": "Hagha marghan di.",
+      "ur": "وہ پرندے ہیں۔",
+      "rur": "Woh parinday hain.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🐦🐦",
+      "tip": "Those points to more than one thing farther away."
+    },
+    {
+      "id": "present",
+      "en": "I go to school.",
+      "ps": "زه سکول ته ځم.",
+      "rps": "Za school ta zam.",
+      "ur": "میں اسکول جاتا ہوں۔",
+      "rur": "Main school jata hoon.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🏫",
+      "tip": "Use this for something you do regularly. He goes; I go."
+    },
+    {
+      "id": "past",
+      "en": "I played yesterday.",
+      "ps": "ما پرون لوبې وکړې.",
+      "rps": "Ma paroon lobey wakrey.",
+      "ur": "میں نے کل کھیلا۔",
+      "rur": "Main ne kal khela.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "⚽",
+      "tip": "Yesterday is before today. Play becomes played for the past."
+    },
+    {
+      "id": "future",
+      "en": "I will play tomorrow.",
+      "ps": "زه به سبا لوبې کوم.",
+      "rps": "Za ba saba lobey kawum.",
+      "ur": "میں کل کھیلوں گا۔",
+      "rur": "Main kal kheloon ga.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🪁",
+      "tip": "Tomorrow is after today. Will helps talk about the future."
+    },
+    {
+      "id": "negative",
+      "en": "I am not sad.",
+      "ps": "زه خفه نه یم.",
+      "rps": "Za khafa na yam.",
+      "ur": "میں اداس نہیں ہوں۔",
+      "rur": "Main udaas nahin hoon.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "😊",
+      "tip": "Add not after am, is or are to say no."
+    },
+    {
+      "id": "question",
+      "en": "Are you happy?",
+      "ps": "ته خوشاله یې؟",
+      "rps": "Ta khushala ye?",
+      "ur": "کیا آپ خوش ہیں؟",
+      "rur": "Kya aap khush hain?",
+      "reviewStatus": "needs-native-review",
+      "emoji": "💬",
+      "tip": "A question asks something. End a written question with ?."
+    },
+    {
+      "id": "in",
+      "en": "The cat is in the box.",
+      "ps": "پیشو په ډبه کې ده.",
+      "rps": "Pisho pa dabba ke da.",
+      "ur": "بلی ڈبے میں ہے۔",
+      "rur": "Billi dabbay mein hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🐈📦",
+      "tip": "In means inside. The cat is inside the box."
+    },
+    {
+      "id": "on",
+      "en": "The book is on the chair.",
+      "ps": "کتاب په چوکۍ باندې دی.",
+      "rps": "Kitaab pa chawkai bande day.",
+      "ur": "کتاب کرسی پر ہے۔",
+      "rur": "Kitab kursi par hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "📕🪑",
+      "tip": "On tells us that something rests on a surface."
+    },
+    {
+      "id": "possessive",
+      "en": "This is my bag.",
+      "ps": "دا زما بکس دی.",
+      "rps": "Da zama baks day.",
+      "ur": "یہ میرا بستہ ہے۔",
+      "rur": "Yeh mera basta hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🎒",
+      "tip": "My tells us something belongs to me. Your tells us it belongs to you."
+    },
+    {
+      "id": "adjective",
+      "en": "The ball is red.",
+      "ps": "توپ سور دی.",
+      "rps": "Top soor day.",
+      "ur": "گیند لال ہے۔",
+      "rur": "Gaind laal hai.",
+      "reviewStatus": "needs-native-review",
+      "emoji": "🔴⚽",
+      "tip": "Red describes the ball. Big and small also describe things."
+    }
+  ],
+  "stories": [
+    {
+      "id": "apples",
+      "title": "Ali and the apples",
+      "scene": "👦 🧺 🍎",
+      "lines": [
+        {
+          "en": "Ali goes to the shop.",
+          "ps": "علي دوکان ته ځي.",
+          "rps": "Ali dukaan ta zi.",
+          "ur": "علی دکان جاتا ہے۔",
+          "rur": "Ali dukan jata hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "He buys three apples.",
+          "ps": "هغه درې مڼې اخلي.",
+          "rps": "Hagha dre maney akhli.",
+          "ur": "وہ تین سیب خریدتا ہے۔",
+          "rur": "Woh teen saib khareedta hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "He shares the apples with his family.",
+          "ps": "هغه مڼې د خپل کور د خلکو سره وېشي.",
+          "rps": "Hagha maney da khpal kor da khalko sara weshi.",
+          "ur": "وہ سیب اپنے گھر والوں کے ساتھ بانٹتا ہے۔",
+          "rur": "Woh saib apne ghar walon ke saath baantta hai.",
+          "reviewStatus": "needs-native-review"
+        }
+      ],
+      "vocabulary": [
+        "Apple",
+        "Family",
+        "Shop"
+      ],
+      "questions": [
+        {
+          "prompt": "Where does Ali go?",
+          "options": [
+            "The shop",
+            "The park",
+            "School"
+          ],
+          "answer": "The shop"
+        },
+        {
+          "prompt": "How many apples does Ali buy?",
+          "options": [
+            "Two",
+            "Three",
+            "Five"
+          ],
+          "answer": "Three"
+        },
+        {
+          "prompt": "Who shares the apples?",
+          "options": [
+            "Ali",
+            "A bird",
+            "A cat"
+          ],
+          "answer": "Ali"
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "title": "A book for school",
+      "scene": "👧 🎒 🏫",
+      "lines": [
+        {
+          "en": "Sara has a red bag.",
+          "ps": "سارا سره سور بکس دی.",
+          "rps": "Sara sara soor baks day.",
+          "ur": "سارہ کے پاس لال بستہ ہے۔",
+          "rur": "Sara ke paas laal basta hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "She puts a book in her bag.",
+          "ps": "هغه په خپل بکس کې کتاب ږدي.",
+          "rps": "Hagha pa khpal baks ke kitaab gdi.",
+          "ur": "وہ اپنے بستے میں کتاب رکھتی ہے۔",
+          "rur": "Woh apne bastay mein kitab rakhti hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "She goes to school.",
+          "ps": "هغه سکول ته ځي.",
+          "rps": "Hagha school ta zi.",
+          "ur": "وہ اسکول جاتی ہے۔",
+          "rur": "Woh school jati hai.",
+          "reviewStatus": "needs-native-review"
+        }
+      ],
+      "vocabulary": [
+        "Bag",
+        "Book",
+        "School"
+      ],
+      "questions": [
+        {
+          "prompt": "What colour is the bag?",
+          "options": [
+            "Blue",
+            "Red",
+            "Green"
+          ],
+          "answer": "Red"
+        },
+        {
+          "prompt": "What is in the bag?",
+          "options": [
+            "A book",
+            "An apple",
+            "A cat"
+          ],
+          "answer": "A book"
+        },
+        {
+          "prompt": "Where does Sara go?",
+          "options": [
+            "The river",
+            "The shop",
+            "School"
+          ],
+          "answer": "School"
+        }
+      ]
+    },
+    {
+      "id": "park",
+      "title": "Friends in the park",
+      "scene": "👦 👧 ⚽ 🌳",
+      "lines": [
+        {
+          "en": "Ali and Sara go to the park.",
+          "ps": "علي او سارا پارک ته ځي.",
+          "rps": "Ali aw Sara park ta zi.",
+          "ur": "علی اور سارہ پارک جاتے ہیں۔",
+          "rur": "Ali aur Sara park jatay hain.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "They play with a ball.",
+          "ps": "هغوی په توپ لوبې کوي.",
+          "rps": "Haghwi pa top lobey kawi.",
+          "ur": "وہ گیند سے کھیلتے ہیں۔",
+          "rur": "Woh gaind se kheltay hain.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "They sit under a tree.",
+          "ps": "هغوی د ونې لاندې کېني.",
+          "rps": "Haghwi da waney lande keni.",
+          "ur": "وہ درخت کے نیچے بیٹھتے ہیں۔",
+          "rur": "Woh darakht ke neechay baithtay hain.",
+          "reviewStatus": "needs-native-review"
+        }
+      ],
+      "vocabulary": [
+        "Ball",
+        "Tree"
+      ],
+      "questions": [
+        {
+          "prompt": "Who goes to the park?",
+          "options": [
+            "Ali and Sara",
+            "A teacher",
+            "A doctor"
+          ],
+          "answer": "Ali and Sara"
+        },
+        {
+          "prompt": "What do they play with?",
+          "options": [
+            "A book",
+            "A cup",
+            "A ball"
+          ],
+          "answer": "A ball"
+        },
+        {
+          "prompt": "Where do they sit?",
+          "options": [
+            "Under a tree",
+            "In a car",
+            "On a train"
+          ],
+          "answer": "Under a tree"
+        }
+      ]
+    },
+    {
+      "id": "hands",
+      "title": "Clean hands",
+      "scene": "🧒 🧼 💧",
+      "lines": [
+        {
+          "en": "It is time to eat.",
+          "ps": "د ډوډۍ وخت دی.",
+          "rps": "Da dodai wakht day.",
+          "ur": "کھانے کا وقت ہے۔",
+          "rur": "Khanay ka waqt hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "Ali washes his hands with soap and water.",
+          "ps": "علي خپل لاسونه په صابون او اوبو وینځي.",
+          "rps": "Ali khpal laasuna pa saabun aw obo winzi.",
+          "ur": "علی صابن اور پانی سے ہاتھ دھوتا ہے۔",
+          "rur": "Ali sabun aur pani se haath dhota hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "Now his hands are clean.",
+          "ps": "اوس د هغه لاسونه پاک دي.",
+          "rps": "Os da hagha laasuna paak di.",
+          "ur": "اب اس کے ہاتھ صاف ہیں۔",
+          "rur": "Ab us ke haath saaf hain.",
+          "reviewStatus": "needs-native-review"
+        }
+      ],
+      "vocabulary": [
+        "Hand",
+        "Soap",
+        "Water"
+      ],
+      "questions": [
+        {
+          "prompt": "What time is it?",
+          "options": [
+            "Time to eat",
+            "Time to sleep",
+            "Time to run"
+          ],
+          "answer": "Time to eat"
+        },
+        {
+          "prompt": "What does Ali wash?",
+          "options": [
+            "His bag",
+            "His hands",
+            "His shoes"
+          ],
+          "answer": "His hands"
+        },
+        {
+          "prompt": "What does Ali use?",
+          "options": [
+            "Milk",
+            "Juice",
+            "Soap and water"
+          ],
+          "answer": "Soap and water"
+        }
+      ]
+    },
+    {
+      "id": "bird",
+      "title": "A thirsty bird",
+      "scene": "🐦 🥣 💧",
+      "lines": [
+        {
+          "en": "Sara sees a small bird.",
+          "ps": "سارا یو وړوکی مرغه ویني.",
+          "rps": "Sara yaw warokay margha wini.",
+          "ur": "سارہ ایک چھوٹا پرندہ دیکھتی ہے۔",
+          "rur": "Sara aik chhota parinda dekhti hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "She puts water in a bowl.",
+          "ps": "هغه په پیاله کې اوبه اچوي.",
+          "rps": "Hagha pa pyaala ke oba achawi.",
+          "ur": "وہ پیالے میں پانی ڈالتی ہے۔",
+          "rur": "Woh piyalay mein pani daalti hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "The bird drinks the water.",
+          "ps": "مرغه اوبه څښي.",
+          "rps": "Margha oba skhi.",
+          "ur": "پرندہ پانی پیتا ہے۔",
+          "rur": "Parinda pani peeta hai.",
+          "reviewStatus": "needs-native-review"
+        }
+      ],
+      "vocabulary": [
+        "Bird",
+        "Water"
+      ],
+      "questions": [
+        {
+          "prompt": "What does Sara see?",
+          "options": [
+            "A lion",
+            "A bird",
+            "A fish"
+          ],
+          "answer": "A bird"
+        },
+        {
+          "prompt": "What does she put in the bowl?",
+          "options": [
+            "Rice",
+            "Milk",
+            "Water"
+          ],
+          "answer": "Water"
+        },
+        {
+          "prompt": "Who drinks the water?",
+          "options": [
+            "The bird",
+            "Ali",
+            "A cat"
+          ],
+          "answer": "The bird"
+        }
+      ]
+    },
+    {
+      "id": "lost-star",
+      "title": "The Lost Star",
+      "scene": "🦊 ⭐ 🌙",
+      "lines": [
+        {
+          "en": "The fox sees a little star.",
+          "ps": "ګیدړ یو وړوکی ستوری ویني.",
+          "rps": "Gidar yaw warokay storay wini.",
+          "ur": "لومڑی ایک چھوٹا ستارہ دیکھتی ہے۔",
+          "rur": "Lomri aik chhota sitara dekhti hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "He helps the star find its way home.",
+          "ps": "هغه ستوري ته د کور لاره ښيي.",
+          "rps": "Hagha stori ta da kor laara khayi.",
+          "ur": "وہ ستارے کو گھر کا راستہ ڈھونڈنے میں مدد کرتا ہے۔",
+          "rur": "Woh sitaray ko ghar ka raasta dhoondnay mein madad karta hai.",
+          "reviewStatus": "needs-native-review"
+        },
+        {
+          "en": "The star is happy.",
+          "ps": "ستوری خوشاله دی.",
+          "rps": "Storay khushala day.",
+          "ur": "ستارہ خوش ہے۔",
+          "rur": "Sitara khush hai.",
+          "reviewStatus": "needs-native-review"
+        }
+      ],
+      "vocabulary": [
+        "Fox",
+        "Star",
+        "House"
+      ],
+      "questions": [
+        {
+          "prompt": "Who sees the little star?",
+          "options": [
+            "The fox",
+            "The turtle",
+            "The bunny"
+          ],
+          "answer": "The fox"
+        },
+        {
+          "prompt": "Where does the star want to go?",
+          "options": [
+            "To school",
+            "Home",
+            "To the shop"
+          ],
+          "answer": "Home"
+        },
+        {
+          "prompt": "How does the star feel at the end?",
+          "options": [
+            "Sad",
+            "Angry",
+            "Happy"
+          ],
+          "answer": "Happy"
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "home": [
+      "My learning",
+      "زما سبقونه",
+      "Zama sabaquna",
+      "میری تعلیم",
+      "Meri taleem"
+    ],
+    "vocabulary": [
+      "Word garden",
+      "نوي لفظونه",
+      "Nawe lafzuna",
+      "الفاظ",
+      "Alfaaz"
+    ],
+    "games": [
+      "Play & practice",
+      "لوبې او مشق",
+      "Lobey aw mashq",
+      "کھیل اور مشق",
+      "Khel aur mashq"
+    ],
+    "progress": [
+      "My progress",
+      "ما څومره زده کړل؟",
+      "Ma somra zda kral?",
+      "میری پیش رفت",
+      "Meri pesh raft"
+    ],
+    "stories": [
+      "Story corner",
+      "کیسې",
+      "Kisey",
+      "کہانیاں",
+      "Kahaniyan"
+    ],
+    "downloads": [
+      "Offline lessons",
+      "بې انټرنېټه سبقونه",
+      "Be interneta sabaquna",
+      "آف لائن سبق",
+      "Offline sabaq"
+    ],
+    "parent": [
+      "Parent & teacher area",
+      "د مور، پلار او استاد برخه",
+      "Da mor, plaar aw ustaad barkha",
+      "والدین اور اساتذہ",
+      "Walidain aur asatiza"
+    ],
+    "alphabet": [
+      "Meet the alphabet",
+      "انګریزي توري",
+      "Angrezi tori",
+      "انگریزی حروف",
+      "Angrezi huroof"
+    ],
+    "phonics": [
+      "Sounds & phonics",
+      "د تورو اوازونه",
+      "Da toro aawaazuna",
+      "حروف کی آوازیں",
+      "Huroof ki aawazein"
+    ],
+    "spelling": [
+      "Spelling adventure",
+      "د لفظونو املا",
+      "Da lafzuno imla",
+      "ہجے کی مشق",
+      "Hijjay ki mashq"
+    ],
+    "reading": [
+      "Let’s read together",
+      "راځه چې ولولو",
+      "Raaza che walolo",
+      "آئیں پڑھیں",
+      "Aaiye parhein"
+    ],
+    "writing": [
+      "Write & trace",
+      "لیکل زده کړه",
+      "Likal zda kra",
+      "لکھنا سیکھیں",
+      "Likhna seekhein"
+    ],
+    "speaking": [
+      "Let’s talk",
+      "راځه خبرې وکړو",
+      "Raaza khabare wakro",
+      "آئیں بات کریں",
+      "Aaiye baat karein"
+    ],
+    "grammar": [
+      "Sentence builder",
+      "جملې جوړې کړه",
+      "Jumley jorey kra",
+      "جملے بنائیں",
+      "Jumlay banayein"
+    ],
+    "quiz": [
+      "Quiz time",
+      "د سوالونو وخت",
+      "Da sawaaluno wakht",
+      "سوالوں کا وقت",
+      "Sawalon ka waqt"
+    ],
+    "listen": [
+      "Listen",
+      "واوره",
+      "Waawra",
+      "سنیں",
+      "Sunein"
+    ],
+    "slow": [
+      "Slowly",
+      "ورو ورو",
+      "Wro wro",
+      "آہستہ",
+      "Aahista"
+    ],
+    "check": [
+      "Check my answer",
+      "جواب وګوره",
+      "Jawaab wagora",
+      "جواب دیکھیں",
+      "Jawab dekhein"
+    ],
+    "next": [
+      "Next",
+      "بل",
+      "Bal",
+      "اگلا",
+      "Agla"
+    ],
+    "retry": [
+      "Try again",
+      "بیا کوشش وکړه",
+      "Bya koshish wakra",
+      "دوبارہ کوشش کریں",
+      "Dobara koshish karein"
+    ],
+    "choose": [
+      "Choose the correct answer",
+      "صحیح جواب خوښ کړه",
+      "Sahih jawaab khwakh kra",
+      "صحیح جواب چنیں",
+      "Sahi jawab chunein"
+    ],
+    "order": [
+      "Put the letters in order",
+      "توري په صحیح ترتیب کېږده",
+      "Tori pa sahih tarteeb kegda",
+      "حروف ترتیب سے رکھیں",
+      "Huroof tarteeb se rakhein"
+    ],
+    "missing": [
+      "Which letter is missing?",
+      "کوم توری پکې نشته؟",
+      "Kum toray pake nishta?",
+      "کون سا حرف غائب ہے؟",
+      "Kaun sa harf ghaib hai?"
+    ],
+    "picture": [
+      "Which word matches the picture?",
+      "دا د څه شي تصویر دی؟",
+      "Da da sa shay tasweer day?",
+      "تصویر کس لفظ کی ہے؟",
+      "Tasveer kis lafz ki hai?"
+    ],
+    "audio": [
+      "Which word did you hear?",
+      "کوم لفظ دې واورېدو؟",
+      "Kum lafz de waawredo?",
+      "آپ نے کون سا لفظ سنا؟",
+      "Aap ne kaun sa lafz suna?"
+    ],
+    "letter": [
+      "Choose the letter you hear",
+      "کوم توری دې واورېدو؟",
+      "Kum toray de waawredo?",
+      "سنا ہوا حرف چنیں",
+      "Suna hua harf chunein"
+    ],
+    "start": [
+      "Let’s start learning",
+      "راځه، سبق شروع کړو",
+      "Raaza, sabaq shuru kro",
+      "سیکھنا شروع کریں",
+      "Seekhna shuru karein"
+    ],
+    "continue": [
+      "Continue learning",
+      "خپل سبق جاري کړه",
+      "Khpal sabaq jaari kra",
+      "سیکھنا جاری رکھیں",
+      "Seekhna jari rakhein"
+    ]
+  }
+}

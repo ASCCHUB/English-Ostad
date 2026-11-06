@@ -1,0 +1,8 @@
+.home-recorder{margin:18px 0;padding:14px 16px;border-radius:16px;border:1px solid var(--line,#cfdde3);background:var(--surface-soft,#f4f9fb)}
+.home-recorder summary{cursor:pointer;font-weight:800;font-size:17px}
+.home-recorder ul{list-style:none;padding:0;display:grid;gap:8px}
+.home-recorder-row{display:grid;grid-template-columns:minmax(64px,auto) 1fr auto;gap:10px;align-items:center;padding:8px 10px;border-radius:12px;background:var(--surface,#fff)}
+.home-recorder-row strong{font-size:22px}
+.home-recorder-row small{grid-column:1/-1;color:#b3261e}
+@media (max-width:640px){.home-recorder-row{grid-template-columns:1fr}}
+.home-recorder-status{margin:16px 0 0;padding:8px 12px;border-left:4px solid #d9a63a;background:rgba(217,166,58,.12);border-radius:8px;font-size:15px}

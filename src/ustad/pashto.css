@@ -1,0 +1,16 @@
+/* Lower Dir Pashto: Noto Naskh Arabic has every Pashto letter (ټ ډ ړ ښ ږ ځ څ ې ۍ ئ).
+   It is bundled with the app, so it also works offline. English inside a Pashto line
+   falls back to the app's own font and stays left-to-right. */
+:root{--font-pashto:"Noto Naskh Arabic",Nunito,Arial,sans-serif}
+:lang(ps),[data-support-lang=ps]::after,[data-support-lang=mixed]::after{font-family:var(--font-pashto);line-height:1.85}
+:lang(ps) bdi[lang=en]{font-family:Nunito,Arial,sans-serif}
+.translations [dir=rtl]{text-align:right}
+.translation-line[dir=rtl]{unicode-bidi:isolate}
+.ps-speaker{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;margin-inline-start:8px;padding:0;vertical-align:middle;border:1.5px solid #c9dccc;border-radius:999px;background:#f4faf3;color:#2f5b45;cursor:pointer;flex:none}
+.ps-speaker:hover{border-color:#2f6f4f}
+.ps-speaker:focus-visible{outline:3px solid #176bc1;outline-offset:2px}
+.ps-speaker-pending{border-style:dashed;opacity:.6}
+.ps-speaker.sentence-speaking{background:#e5f3e9;border-color:#7cbf95;opacity:1}
+.translation-line .ps-speaker{width:24px;height:24px;margin-inline-start:6px}
+.translation-line .ps-speaker svg{width:12px;height:12px}
+[data-color-mode=dark] .ps-speaker{background:#1d3a35;border-color:#3f6b5e;color:#d7efe3}

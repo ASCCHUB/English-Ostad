@@ -1,0 +1,66 @@
+/* Tap-to-hear words, sentence playback, Pashto help, celebrations and sound settings. */
+.hear-word{display:inline-flex;align-items:center;gap:5px;margin:2px;padding:2px 9px 2px 10px;border:1.5px dashed #9cc3e6;border-radius:999px;background:transparent;color:inherit;font:inherit;line-height:1.25;cursor:pointer;transition:background .2s,transform .2s,border-color .2s}
+.hear-word:hover{border-style:solid;background:#eef6fd}
+.hear-word:focus-visible{outline:3px solid #176bc1;outline-offset:2px}
+.hear-word-icon{flex:none;width:.62em;height:.62em;min-width:13px;min-height:13px;opacity:.6}
+.hear-word.word-speaking{background:#ffe9a1;border-color:#e7c876;border-style:solid;color:#5b481e;transform:scale(1.06)}
+.hear-word.word-speaking .hear-word-icon{opacity:1}
+.tap-words{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:2px}
+.tap-sentence{display:flex;flex-direction:column;align-items:center;gap:10px;margin:8px 0}
+.hear-sentence{display:inline-flex;align-items:center;gap:8px;border-radius:14px}
+.hear-sentence.sentence-speaking,.pashto-help-button.sentence-speaking{background:#e5f3e9;border-color:#7cbf95}
+.pashto-help{display:inline-flex;flex-direction:column;align-items:center;gap:6px;margin:6px 0;max-width:100%}
+.pashto-help-button{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:6px 14px;border:1.5px solid #c9dccc;border-radius:999px;background:#f4faf3;color:#2f5b45;font:inherit;font-size:15px;cursor:pointer}
+.pashto-help-button>span{font-size:17px;font-weight:700}
+.pashto-help-button>small{opacity:.8}
+.pashto-help-text{display:flex;flex-direction:column;gap:3px;padding:8px 14px;border-radius:14px;background:#f4faf3;color:#2f5b45;text-align:center;font-size:18px;line-height:1.7}
+.pashto-help-text small{font-size:13px;line-height:1.5}
+.pashto-help-note{opacity:.85}
+.celebration-burst{position:relative;display:flex;justify-content:center;min-height:86px;margin:4px 0 6px;overflow:visible}
+.celebration-phrase{position:relative;z-index:1;margin:12px 0;padding:10px 24px;border-radius:999px;background:linear-gradient(180deg,#fff6d6,#ffe9a1);color:#5b481e;font-size:clamp(22px,5vw,30px);font-weight:800;box-shadow:0 8px 22px #c9a2412b;animation:celebrate-pop .55s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes celebrate-pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.audio-notice{flex-wrap:wrap;gap:8px}
+.audio-notice>span{flex:1 1 200px}
+.audio-notice>.secondary{min-height:36px;padding:4px 14px}
+.sound-options>button{position:relative}
+.sound-state{font-size:13px;font-weight:700;opacity:.75}
+.sound-muted-note{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;background:#fff4dc;color:#6b5320}
+.voice-picker{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;margin-top:16px}
+.voice-picker label{display:flex;flex-direction:column;gap:6px;flex:1 1 240px;font-weight:700}
+.voice-picker select{max-width:100%;min-height:44px}
+.story-caption .hear-word,.read-along-words .hear-word{font-size:inherit}
+@media (prefers-reduced-motion:reduce){.celebration-phrase{animation:none}.hear-word.word-speaking{transform:none}}
+.reduce-motion .hear-word.word-speaking{transform:none}
+[data-color-mode=dark] .hear-word{border-color:#4f7397}
+[data-color-mode=dark] .hear-word:hover{background:#21374d}
+[data-color-mode=dark] .hear-word.word-speaking{background:#365775;border-color:#88b7dc;color:#f6faff}
+[data-color-mode=dark] .pashto-help-button,[data-color-mode=dark] .pashto-help-text{background:#1d3a35;border-color:#3f6b5e;color:#d7efe3}
+[data-color-mode=dark] .hear-sentence.sentence-speaking,[data-color-mode=dark] .pashto-help-button.sentence-speaking{background:#24493f;border-color:#5fa284}
+[data-color-mode=dark] .celebration-phrase{background:linear-gradient(180deg,#4a3f1c,#3b3218);color:#ffe9a1;box-shadow:none}
+[data-color-mode=dark] .sound-muted-note{background:#3b3218;color:#ffe9a1}
+/* Voice chooser: one card per English voice, with a Try button. */
+.voice-chooser{margin-top:18px;display:grid;gap:12px}
+.voice-chooser h3{margin:0;font-size:18px}
+.voice-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.voice-card{display:flex;align-items:stretch;border:2px solid #d6e2ea;border-radius:16px;overflow:hidden;background:var(--surface,#fff)}
+.voice-card.voice-chosen{border-color:#2584da;box-shadow:0 0 0 3px #2584da26}
+.voice-pick{flex:1;display:flex;align-items:center;gap:10px;min-height:64px;padding:8px 12px;border:0;background:transparent;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.voice-flag{font-size:28px;line-height:1}
+.voice-text{display:flex;flex-direction:column;min-width:0}
+.voice-text strong{font-size:16px}
+.voice-text small{font-size:13px;opacity:.8}
+.voice-try{min-width:72px;border:0;border-left:2px solid #d6e2ea;background:#eef6fd;color:#176bc1;font:inherit;font-weight:800;cursor:pointer}
+.voice-try:disabled{opacity:.45;cursor:default}
+.voice-speed{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.voice-speed>span{font-weight:700}
+.voice-speed>button{min-height:48px;min-width:96px;border-radius:14px;border:2px solid #d6e2ea;background:var(--surface,#fff);color:inherit;font:inherit;font-weight:700;cursor:pointer}
+.voice-speed>button.appearance-selected{border-color:#2584da;background:#e8f3fd}
+[data-color-mode=dark] .voice-card,[data-color-mode=dark] .voice-speed>button{background:#1b2d40;border-color:#38516a}
+[data-color-mode=dark] .voice-try{background:#21374d;border-color:#38516a;color:#9cc8f2}
+[data-color-mode=dark] .voice-speed>button.appearance-selected{background:#21374d;border-color:#88b7dc}
+/* Room for the Pashto line under each voice label; the Try button never gets squeezed. */
+.voice-cards{grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.voice-pick{min-width:0}
+.voice-try{flex:none;min-width:92px;padding:6px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;white-space:nowrap}
+@media (max-width:420px){.voice-cards{grid-template-columns:1fr}}
+.voice-try{display:block;text-align:center}

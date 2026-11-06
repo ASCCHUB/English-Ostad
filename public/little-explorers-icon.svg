@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+<title id="title">Little Explorers fox</title>
+<rect width="512" height="512" rx="112" fill="#1976D2"/>
+<circle cx="256" cy="243" r="205" fill="#328FDF"/>
+<path d="M173 338 C166 305 346 305 339 338 L350 415 C317 447 195 447 162 415 Z" fill="#0C4F91"/>
+<path d="M191 342 C192 320 320 320 321 342 L329 414 C299 436 213 436 183 414 Z" fill="#57B8F3"/>
+<path d="M143 239 L129 112 C127 100 139 96 150 105 L216 155 C242 146 270 146 296 155 L362 105 C373 96 385 100 383 112 L369 239 C401 328 322 391 256 391 C190 391 111 328 143 239 Z" fill="#F58B35"/>
+<path d="M151 130 L162 211 L201 168 Z" fill="#594238"/>
+<path d="M361 130 L350 211 L311 168 Z" fill="#594238"/>
+<path d="M160 147 L168 190 L188 167 Z" fill="#EAB08D"/>
+<path d="M352 147 L344 190 L324 167 Z" fill="#EAB08D"/>
+<path d="M139 280 C169 247 207 263 256 308 C305 263 343 247 373 280 C370 339 310 385 256 385 C202 385 142 339 139 280 Z" fill="#FFF3DA"/>
+<ellipse cx="210" cy="253" rx="15" ry="21" fill="#18374E"/>
+<ellipse cx="302" cy="253" rx="15" ry="21" fill="#18374E"/>
+<circle cx="205" cy="247" r="5" fill="#FFFFFF"/>
+<circle cx="297" cy="247" r="5" fill="#FFFFFF"/>
+<path d="M234 309 C241 296 271 296 278 309 C277 318 262 329 256 329 C250 329 235 318 234 309 Z" fill="#18374E"/>
+<path d="M234 344 C247 356 265 356 278 344" fill="none" stroke="#18374E" stroke-width="8" stroke-linecap="round"/>
+<path d="M388 158 L394 175 L411 181 L394 187 L388 204 L382 187 L365 181 L382 175 Z" fill="#FFE18A"/>
+</svg>

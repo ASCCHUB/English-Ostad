@@ -1,0 +1,12 @@
+﻿import test from 'node:test';
+import assert from 'node:assert/strict';
+import {words,alphabet,phrases,readings} from './content.js';
+import {freshProfile,recordWord,wordStage,makeQuiz,scoreAnswers,streak} from './engine.js';
+test('starter words have complete language data and unique IDs',()=>{assert.ok(words.length>=50);assert.equal(new Set(words.map(w=>w.id)).size,words.length);for(const w of words)for(const key of ['en','emoji','ps','rps','ur','rur','pron','category'])assert.ok(w[key],`${w.en}: ${key}`);});
+test('alphabet covers A–Z with valid example associations',()=>{assert.equal(alphabet.length,26);for(const a of alphabet)assert.ok(a.letter==='X'?a.word.en==='Fox':a.word.en.startsWith(a.letter));});
+test('quiz options have one valid answer without duplicates',()=>{for(const mode of ['picture','audio']){const quiz=makeQuiz(words,mode);assert.equal(quiz.length,5);assert.equal(new Set(quiz.map(q=>q.word.id)).size,5);for(const q of quiz){assert.equal(q.options.filter(w=>w.id===q.word.id).length,1);assert.equal(new Set(q.options.map(w=>w.id)).size,q.options.length);}}});
+test('quiz scoring counts only correct answers',()=>{assert.equal(scoreAnswers([true,false,true,false,true]),3);assert.equal(scoreAnswers([]),0);});
+test('review state persists through serialization and does not master after one answer',()=>{let p=freshProfile();p=recordWord(p,words[0].id,true,1000);assert.equal(wordStage(p.words[words[0].id]),'Learning');p=JSON.parse(JSON.stringify(p));for(let i=0;i<4;i++)p=recordWord(p,words[0].id,true,1000);assert.equal(wordStage(p.words[words[0].id]),'Confident');assert.ok(p.words[words[0].id].due>1000);});
+test('incorrect answers become due sooner; profiles stay independent',()=>{const first=freshProfile('A'),second=freshProfile('B');const good=recordWord(first,'cat',true,1000),bad=recordWord(first,'cat',false,1000);assert.ok(bad.words.cat.due<good.words.cat.due);assert.deepEqual(second.words,{});assert.deepEqual(first.words,{});});
+test('streak handles today, yesterday and gaps',()=>{const date=new Date(2026,9,24,12);const fmt=d=>new Date(2026,9,d,12).toLocaleDateString('en-CA');assert.equal(streak([fmt(24),fmt(23)],date),2);assert.equal(streak([fmt(23)],date),1);assert.equal(streak([fmt(22)],date),0);});
+test('reading and phrase translations are complete',()=>{for(const item of [...phrases,...readings])for(const lang of ['en','ps','rps','ur','rur'])assert.ok(item[lang]);});

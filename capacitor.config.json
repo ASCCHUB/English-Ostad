@@ -1,0 +1,8 @@
+{
+  "appId": "com.englishustad.app",
+  "appName": "English Ustad",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": false
+  }
+}

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+output/
+.env*
+*.jks
+*.keystore
+*.p12
+*.p8
+*.mobileprovision
+**/keystore.properties
+**/local.properties
+**/.gradle/
+**/build/
+android/app/src/main/assets/public/
+ios/App/App/public/

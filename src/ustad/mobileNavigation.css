@@ -1,0 +1,39 @@
+.mobile-menu-toggle,.mobile-menu-backdrop,.first-steps .fs-icon.fs-menu-button{display:none}
+.simple-home .simple-home-content{max-width:800px;margin:0 auto}.simple-home .fs-entry-big{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:16px;padding:22px;margin:18px 0}.simple-home .fs-entry-big>img{width:76px;height:76px}.simple-home .fs-entry-big>div:not(.fs-entry-actions){flex:1;min-width:170px}.simple-home .fs-entry-big .fs-entry-actions{width:100%}.simple-home .fs-entry-big .fs-continue-big{width:100%;min-width:0;min-height:64px;font-size:21px;padding:16px}.simple-home .fs-entry-big small{display:none}.simple-home .fs-entry-big h2{font-size:23px}.simple-home .fs-entry-big p{font-size:16px;line-height:1.65}.quick-exam-entry{display:block!important;padding:0!important;margin:16px 0!important;border:0!important;background:transparent!important}.quick-exam-entry .quick-exam-button{width:100%;min-height:74px;padding:16px;border:1px solid #91aec4;border-radius:18px;font-size:21px}.quick-exam-entry .quick-exam-button .fs-ps{font-size:18px}.simple-home .home-all-lessons{display:flex;align-items:center;justify-content:center;width:100%;min-height:64px;margin:16px 0;font-size:19px}.simple-home .home-greeting{margin-bottom:16px}.simple-home .home-greeting .section-kicker,.simple-home .home-greeting>div>p:last-child{display:none}
+@media(max-width:700px){
+ .explorer-app .explorer-bottom-nav{display:none!important}
+ .explorer-app .explorer-sidebar{display:none}
+ .explorer-app .explorer-main{margin-left:0}
+ .explorer-app .explorer-header{padding-left:70px;padding-right:12px;justify-content:flex-end}
+ .explorer-app .explorer-header>.explorer-brand{display:none}
+ .mobile-menu-toggle{display:flex;align-items:center;justify-content:center;position:fixed;left:12px;top:12px;z-index:50;width:46px;height:46px;min-height:46px;padding:0;border:1px solid #8eaac1;border-radius:13px;background:#fffdf7;color:#18354e;font-size:24px;box-shadow:0 2px 7px #132b431a}
+ .mobile-menu-backdrop{position:fixed;inset:0;display:flex;z-index:280;background:#0b2039a8}
+ .mobile-menu-panel{display:flex;flex-direction:column;box-sizing:border-box;width:320px;max-width:86vw;height:100%;overflow:auto;background:#fffdf7;color:#18354e;padding:18px 16px;padding-bottom:calc(20px + env(safe-area-inset-bottom,0px));border-right:1px solid #91aec4;box-shadow:10px 0 35px #0003}
+ .mobile-menu-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.mobile-menu-heading h2{font-size:23px}
+ .mobile-menu-close{width:46px;min-height:46px;border:1px solid #8eaac1;border-radius:12px;background:transparent;color:inherit;font-size:27px}
+ .mobile-menu-panel nav{display:flex;flex-direction:column;gap:9px}.mobile-menu-panel nav>button,.mobile-menu-tools>button{display:flex;align-items:center;gap:13px;min-height:58px;box-sizing:border-box;padding:12px 14px;background:transparent;border:1px solid #bfd0db;border-radius:14px;color:inherit;text-align:left;font-size:18px;font-weight:800}
+ .mobile-menu-panel .is-active{background:#e7f2ff;border-color:#1685ec;color:#075fae}.mobile-menu-panel .fs-ps{font-size:15px;line-height:1.7}
+ .mobile-menu-tools{display:flex;flex-direction:column;gap:9px;margin-top:24px;padding-top:18px;border-top:1px solid #bfd0db}.mobile-menu-tools>button{font-size:16px;min-height:52px}
+ .mobile-menu-panel button:focus-visible,.mobile-menu-toggle:focus-visible{outline:3px solid #1685ec;outline-offset:3px}
+ .explorer-app .explorer-content{padding-bottom:24px}
+ .explorer-app .audio-status{bottom:12px!important}
+ .first-steps .fs-icon.fs-menu-button{display:inline-grid}
+ .first-steps .fs-icon.fs-back-button{display:inline-grid}
+ .simple-home .home-greeting{padding:6px 0}.simple-home .home-greeting h1{font-size:29px}.simple-home .fs-entry-big{padding:18px}.simple-home .fs-entry-big>img{width:58px;height:58px}.simple-home .fs-entry-big p{display:none}.simple-home .fs-entry-big h2{font-size:21px}
+ [data-color-mode=dark] .mobile-menu-panel{background:#1b3044;color:#f2f7fa}[data-color-mode=dark] .mobile-menu-toggle{background:#21374d;color:#f2f7fa}[data-color-mode=dark] .mobile-menu-panel .is-active{background:#254c71;color:#fff}
+}
+
+.simple-home h1{overflow-wrap:anywhere}
+
+/* On phones, the app header is replaced by the single side-menu handle. */
+@media(max-width:700px){
+ .explorer-app .explorer-header{display:none!important}
+ .explorer-app .explorer-content{padding-top:76px;padding-top:calc(76px + var(--safe-area-inset-top,env(safe-area-inset-top,0px)))}
+ .explorer-app.explorer-page-beginner-lesson .explorer-content{padding-top:0}
+ .mobile-menu-toggle{top:12px;top:calc(12px + var(--safe-area-inset-top,env(safe-area-inset-top,0px)))}
+ .mobile-menu-panel{padding-top:18px;padding-top:calc(18px + var(--safe-area-inset-top,env(safe-area-inset-top,0px)))}
+ .mobile-menu-settings{display:flex;flex-direction:column;gap:9px;margin-top:20px;padding-top:18px;border-top:1px solid #bfd0db}
+ .mobile-menu-settings>label{display:flex;flex-direction:column;gap:8px;font-size:17px;font-weight:800;padding:6px 0}
+ .mobile-menu-settings select{width:100%;box-sizing:border-box;min-height:48px;padding:12px;border:1px solid #91aec4;border-radius:12px;background:transparent;color:inherit;font-size:17px}
+ .mobile-menu-settings>button{display:flex;align-items:center;gap:12px;min-height:54px;padding:12px;border:1px solid #bfd0db;border-radius:14px;background:transparent;color:inherit;font-size:17px;text-align:left}
+}
