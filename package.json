@@ -17,7 +17,8 @@
     "release:check": "node scripts/add-recordings.mjs --release",
     "course:audit": "node scripts/audit-taught-words.mjs",
     "android:apk": "node scripts/android-apk.mjs",
-    "android:aab": "node scripts/android-aab.mjs"
+    "android:aab": "node scripts/android-aab.mjs",
+    "check:pages": "node scripts/build-pages.mjs && node scripts/check-pages-offline-retry.mjs chromium && node scripts/check-pages-offline-retry.mjs iphone"
   },
   "dependencies": {
     "@capacitor-community/text-to-speech": "^8.0.2",
