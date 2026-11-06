@@ -21,6 +21,13 @@ manifest.start_url=base;manifest.scope=base;manifest.id=base;
 for(const icon of manifest.icons)icon.src=base+icon.src.replace(/^\//,'');
 await writeFile(join(outDir,'manifest.json'),JSON.stringify(manifest));
 await writeFile(join(outDir,'.nojekyll'),'');
+// Link previews for WhatsApp and other chat apps need absolute https addresses.
+const owner=(process.env.GITHUB_REPOSITORY||'ASCCHUB/English-Ostad').split('/')[0].toLowerCase();
+const site=process.env.PAGES_URL||`https://${owner}.github.io${base}`;
+if(!/^https:\/\/[a-z0-9.-]+\/[A-Za-z0-9._\/-]*$/.test(site))throw Error('Invalid Pages URL');
+const escape=v=>v.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
+const preview=[['og:type','website'],['og:site_name','English Ustad'],['og:title','Pashto to English: Learn & Play'],['og:description','Learn English with Pakistani Pashto help, pictures, listening, spelling, stories and games. Works offline once saved.'],['og:url',site],['og:image',site+'ustad-icon-512.png'],['og:image:width','512'],['og:image:height','512']].map(([k,v])=>`<meta property="${k}" content="${escape(v)}">`).join('')+'<meta name="twitter:card" content="summary">';
+const indexPath=join(outDir,'index.html');let indexHtml=await readFile(indexPath,'utf8');if(!indexHtml.includes('og:title'))indexHtml=indexHtml.replace('</head>',preview+'</head>');await writeFile(indexPath,indexHtml);
 const urls=[base];
 for(const path of await walk(outDir)){
  const relative=path.slice(outDir.length+1).replaceAll('\\','/');
