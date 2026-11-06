@@ -1,4 +1,6 @@
 ﻿export const PACK_PREFIX='ustad-core-';
+// In the browser, 'reload' requests skip the HTTP cache so a saved pack never holds an outdated copy.
+const fresh=url=>globalThis.location&&typeof Request==='function'?new Request(url,{cache:'reload'}):url;
 export async function packStatus(storage=globalThis.caches){
  if(!storage)return false;
  try{const names=(await storage.keys()).filter(n=>n.startsWith(PACK_PREFIX));
@@ -16,8 +18,10 @@ export async function savePack({production,serviceWorker=globalThis.navigator?.s
  const manifest=await response.json();
  if(typeof manifest.version!=='string'||!Array.isArray(manifest.urls)||!manifest.urls.length||!manifest.urls.every(u=>typeof u==='string'&&u.startsWith('/')&&!u.startsWith('//')))throw new Error('Invalid lesson pack list.');
  const cache=await storage.open(PACK_PREFIX+manifest.version);
- for(let i=0;i<manifest.urls.length;i+=12)await cache.addAll(manifest.urls.slice(i,i+12));
- await cache.addAll(['/offline-manifest.json']);
+ // Only download what the offline worker has not already saved; fresh copies skip the browser's HTTP cache.
+ const missing=[];for(const url of manifest.urls)if(!await cache.match(url))missing.push(url);
+ for(let i=0;i<missing.length;i+=12)await cache.addAll(missing.slice(i,i+12).map(fresh));
+ await cache.put('/offline-manifest.json',new Response(JSON.stringify(manifest),{headers:{'Content-Type':'application/json'}}));
  const entries=await Promise.all(manifest.urls.map(url=>cache.match(url)));
  if(!entries.every(Boolean))throw new Error('The lesson pack is incomplete. Please try again online.');
  return true;
