@@ -12,7 +12,21 @@ import {LearningErrorBoundary} from './ustad/LearningErrorBoundary.jsx';
 import './ustad/explorers.css';
 createRoot(document.getElementById('root')).render(<React.StrictMode><LearningErrorBoundary><App/></LearningErrorBoundary></React.StrictMode>);
 // Native Android and iOS apps have every file built in, so it needs no offline cache (and a cache could keep old files after an update).
-if('serviceWorker' in navigator && import.meta.env.PROD && !Capacitor.isNativePlatform()) window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+if('serviceWorker' in navigator && import.meta.env.PROD && !Capacitor.isNativePlatform()){
+ const worker=navigator.serviceWorker,hadWorker=!!worker.controller;let updateReady=false,reloading=false;
+ // A new version takes over only after every file is saved. Reload into it at a calm moment (when the app is
+ // reopened or the learner moves to another screen). Profiles and progress stay in browser storage, untouched.
+ const reloadIntoUpdate=()=>{if(updateReady&&!reloading){reloading=true;location.reload();}};
+ worker.addEventListener('controllerchange',()=>{if(!hadWorker)return;updateReady=true;// On the start screen nothing is in progress, so the new version can open straight away.
+  if(document.hidden||!location.hash||location.hash==='#/'||location.hash==='#')reloadIntoUpdate();});
+ window.addEventListener('hashchange',reloadIntoUpdate);
+ window.addEventListener('load',()=>worker.register('/sw.js',{updateViaCache:'none'}).then(registration=>{
+  // iPhone home-screen apps can stay open for days: check for a new version whenever the app is reopened.
+  const check=()=>{if(navigator.onLine!==false)registration.update().catch(()=>{});};
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){reloadIntoUpdate();check();}});
+  setInterval(check,30*60*1000);
+ }).catch(()=>{}));
+}
 
 import './ustad/study.css';
 import './ustad/theme.css';
