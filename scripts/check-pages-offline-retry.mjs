@@ -71,6 +71,9 @@ try{
  const here=await task.getAttribute('data-task'),back=page.getByRole('button',{name:'Previous page',exact:true});
  assert.ok(await back.isVisible());assert.match(await back.innerText(),/←\s*Back/);
  const idx=lesson.tasks.findIndex(t=>t.id===here);await back.click();await page.waitForTimeout(150);assert.equal(await task.getAttribute('data-task'),lesson.tasks[idx-1].id);assert.equal(lesson.tasks[idx-1].id,shopId);await page.screenshot({path:`${out}/${engine}-back.png`});pass('after moving on, visible "← Back" reopens the previous (shop) question');
+ assert.equal(await strip.count(),0,'reopening with Back shows no old "try again" message');
+ await page.locator('.fs-tiles .fs-word-tile>button:first-child',{hasText:/^sh$/}).click();await page.waitForTimeout(6500);assert.equal(await page.locator('.fs-answer button').count(),1,'a letter placed on the reopened question is kept');await page.getByRole('button',{name:/Remove the last letter/}).click();
+ pass('the reopened question shows no old message and keeps letters the learner places');
  // 4. Offline reopen, then the check "shop" question offline.
  await page.evaluate(({base,cursor,id})=>{const s=JSON.parse(localStorage.getItem('english-ustad-v1'));const p=s.profiles[0],l=p.firstSteps.lessons[id];p.firstSteps.lessons[id]={...l,cursor,solved:[],first:{},tries:{},placed:[],currentSolved:false};localStorage.setItem('english-ustad-v1',JSON.stringify(s));},{base,cursor:shop[1][1],id:lesson.id});
  // Fill earlier steps as solved so the check question opens directly.
