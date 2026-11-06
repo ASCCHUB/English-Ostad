@@ -10,22 +10,25 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: true
+# Every action below runs on Node.js 24, and the app is built and tested with Node.js 24.
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: node --version
       - run: npm test
       - run: node scripts/build-pages.mjs
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: output/github-pages
+          include-hidden-files: true
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -35,4 +38,4 @@ jobs:
     steps:
       - name: Publish
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
