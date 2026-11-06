@@ -26,7 +26,7 @@ compiled and signed on macOS, so it is built either on a Mac or in a cloud Mac s
 ## Already set up
 
 - App name "English Ustad", icon and splash screen.
-- Microphone message (NSMicrophoneUsageDescription), in English and Pashto, shown the first time a child taps Record.
+- Child recording controls are removed; no microphone permission is requested.
 - Sound unlocks on the first tap (iPhone rule); the replay buttons stay visible if a sound is still blocked.
 - English voice: the best voice on the device (Pakistani or Indian English, then Enhanced/Premium voices, US, British),
   never Apple's novelty voices. Pashto plays only your recordings.
@@ -34,4 +34,4 @@ compiled and signed on macOS, so it is built either on a Mac or in a cloud Mac s
 ## Without an app (works today)
 
 On iPhone, open the web version in **Safari** → Share → **Add to Home Screen**. It opens full screen like an app and
-works fully offline after the first visit.
+saves lessons offline after the complete pack finishes. Wait for the Home screen confirmation before disconnecting. See IPHONE-WEB-INSTALL.md.
