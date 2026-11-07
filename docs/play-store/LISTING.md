@@ -13,6 +13,9 @@ English Ustad helps children and beginners learn English step by step, with help
 • Go all the way: 10 classes from Beginner to Advanced (grammar, tenses, conditionals, idioms)
 • One clear path: "Continue My Adventure" always opens the next lesson
 • 185 picture words with sound, puzzles and matching games
+• 5 learning games with 1,000 questions: Letter Hunt, Sound Safari, Feed the Animal, Number Adventure and Fox & Apple
+• Adult spelling course: 1,200 words from beginner to advanced
+• Slow, clear speech, with Urdu help under the instructions
 • Pashto (Swat/Dir style), Roman Pashto, Urdu and Roman Urdu meanings under every instruction
 • Stories with questions, speaking practice, tracing and spelling
 • Works offline, with no ads, no accounts and no tracking
