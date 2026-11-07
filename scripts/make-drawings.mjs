@@ -1,7 +1,7 @@
 // Simple picture drawings for course words that have no photo, all in one style: a cream tile, a thick dark
 // outline and flat colours. Writes public/drawings/<word>.svg and src/ustad/drawings.json (the word list).
 // Usage: node scripts/make-drawings.mjs
-import {mkdir,writeFile} from 'node:fs/promises';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
 const root=new URL('../',import.meta.url);
 const C={ink:'#3B3A36',red:'#E8645A',orange:'#F2A65A',yellow:'#F7D35C',green:'#7DBE7A',blue:'#6AA8E0',navy:'#4A6FA5',purple:'#A98BD6',brown:'#B98154',dark:'#8A5A35',skin:'#F2C29B',grey:'#B8C0C8',white:'#FFFFFF',sand:'#E9C98E',bg:'#FFF4DC'};
 const eye=(x,y)=>`<circle cx="${x}" cy="${y}" r="5" fill="${C.ink}" stroke="none"/>`;
@@ -144,5 +144,7 @@ const art={
 const svg=body=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img"><rect width="200" height="200" rx="28" fill="${C.bg}"/><g stroke="${C.ink}" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">${body}</g></svg>\n`;
 await mkdir(new URL('public/drawings/',root),{recursive:true});
 for(const [word,body] of Object.entries(art))await writeFile(new URL(`public/drawings/${word}.svg`,root),svg(body));
-await writeFile(new URL('src/ustad/drawings.json',root),JSON.stringify(Object.keys(art).sort())+'\n');
+// Keep drawings made elsewhere (by hand, or scripts/make-colour-drawings.mjs) in the list.
+const listUrl=new URL('src/ustad/drawings.json',root),kept=JSON.parse(await readFile(listUrl,'utf8').catch(()=>'[]'));
+await writeFile(listUrl,JSON.stringify([...new Set([...kept,...Object.keys(art)])].sort())+'\n');
 console.log(`Drawings: ${Object.keys(art).length} written to public/drawings/.`);

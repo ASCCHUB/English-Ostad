@@ -19,7 +19,8 @@ test('Every vocabulary picture and course picture has a local image',()=>{
 });
 test('Quantity pictures preserve exact counts and color pictures retain their colors',()=>{
  ['one','two','three','four','five','six','seven','eight','nine','ten'].forEach((w,i)=>assert.equal(wordPhoto(w).count,i+1));
- for(const c of ['red','blue','green','yellow','purple','brown','pink','grey','black','white'])assert.equal(wordPhoto(c).color,c);
+ // Drawn in the exact colour (a CSS colour filter is ignored by some phones and showed a "red" ball blue).
+ for(const c of ['red','blue','green','yellow','purple','brown','pink','grey','black','white'])assert.equal(wordPhoto(c).src,`/drawings/ball-${c}.svg`);
  assert.equal(wordPhoto('not-a-word'),null);
  const credits=JSON.parse(readFileSync('public/learning-photos/credits.json'));
  for(const [word,p] of Object.entries(photoLibrary.words).filter(([,p])=>p.src?.startsWith('/learning-photos/')))assert.ok(credits.images.some(c=>c.src===p.src),word);
