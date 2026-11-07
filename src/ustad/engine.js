@@ -1,3 +1,4 @@
+import {validateGames} from './games/progress.js';
 import {validateAssessment} from './startingAssessment.js';
 import {validateCourse} from './firstSteps/state.js';
 import {validateFoxLessons} from './foxLessonModel.js';
@@ -90,7 +91,7 @@ export function validateSaved(input) {
     if(p.skillStats!==undefined){if(!object(p.skillStats))fail();for(const [key,stat] of Object.entries(p.skillStats)){if(!['practice','spelling','order','audio','picture','missing'].includes(key)||!object(stat)||!integer(stat.correct)||!integer(stat.attempts)||stat.correct>stat.attempts)fail();skillStats[key]={correct:stat.correct,attempts:stat.attempts};}}
     const resume=['alphabet','phonics','vocabulary','spelling','reading','writing','speaking','grammar','stories','sentences','word-families'].includes(p.resume)?p.resume:'alphabet';
     const resumeLimit=({vocabulary:1000,spelling:1000,alphabet:26,writing:26,sentences:21,'word-families':8,reading:12}[resume]||100);
-    return {startingAssessment:validateAssessment(p.startingAssessment),firstSteps:validateCourse(p.firstSteps),foxLessons:validateFoxLessons(p.foxLessons),adult:validateAdult(p.adult),adventure:validateAdventure(p.adventure),learning:validateLearning(p.learning),id:p.id,name:p.name.trim(),level:p.level,xp:p.xp,completed:[...p.completed],days:[...p.days],words,results,skillStats,activityLog:activityLog.map(a=>({id:a.id,date:a.date})),minutes:Number.isFinite(p.minutes)&&p.minutes>=0?p.minutes:0,resume,resumeIndex:integer(p.resumeIndex)&&p.resumeIndex<resumeLimit?p.resumeIndex:0};
+    return {startingAssessment:validateAssessment(p.startingAssessment),firstSteps:validateCourse(p.firstSteps),foxLessons:validateFoxLessons(p.foxLessons),...(validateGames(p.games)?{games:validateGames(p.games)}:{}),adult:validateAdult(p.adult),adventure:validateAdventure(p.adventure),learning:validateLearning(p.learning),id:p.id,name:p.name.trim(),level:p.level,xp:p.xp,completed:[...p.completed],days:[...p.days],words,results,skillStats,activityLog:activityLog.map(a=>({id:a.id,date:a.date})),minutes:Number.isFinite(p.minutes)&&p.minutes>=0?p.minutes:0,resume,resumeIndex:integer(p.resumeIndex)&&p.resumeIndex<resumeLimit?p.resumeIndex:0};
   });
   if(new Set(profiles.map(p=>p.id)).size!==profiles.length)fail();
   return {profiles,active:integer(input.active)&&input.active<profiles.length?input.active:0,language:['en','ps','rps','ur','rur','all'].includes(input.language)?input.language:'ps',goal:[2,3,5,7].includes(input.goal)?input.goal:3};

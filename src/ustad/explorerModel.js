@@ -3,11 +3,11 @@ import {outlineLessons} from './firstSteps/state.js';
 import {adultWords} from './adultContent.js';
 import {words} from './content.js';
 import {pathLessons} from './pathModel.js';
-export const ROUTES=['topics','topic','topic-unit','beginner','beginner-lesson','fox-game','welcome','home','journey','letters','alphabet','phonics','vocabulary','spelling','reading','writing','speaking','grammar','stories','star-story','games','memory','quiz','progress','downloads','parent','sentences','word-families','adult-spelling','adult-lesson','appearance','setup','classes','class-map','adventure-lesson','adventure-game','play-game','discover','discover-lesson','level-check','story-library','story-player','picture-words','path-lesson'];
+export const ROUTES=['topics','topic','topic-unit','beginner','beginner-lesson','fox-game','welcome','home','journey','letters','alphabet','phonics','vocabulary','spelling','reading','writing','speaking','grammar','stories','star-story','games','memory','quiz','progress','downloads','parent','sentences','word-families','adult-spelling','adult-lesson','appearance','setup','classes','class-map','adventure-lesson','adventure-game','play-game','discover','discover-lesson','level-check','story-library','story-player','picture-words','path-lesson','game-play'];
 export function parseExplorerRoute(hash='') {
  const [page,rawIndex]=hash.replace(/^#\/?/,'').split('/');
  if(!ROUTES.includes(page))return null;
- const n=Number(rawIndex||0),limit=({topic:12,'topic-unit':22,'beginner-lesson':outlineLessons.length,'fox-game':5,'adult-lesson':adultWords.length,classes:10,'class-map':10,'adventure-lesson':30,'adventure-game':30,'play-game':24,'discover-lesson':12,'story-player':6,'path-lesson':pathLessons.length,'picture-words':new Set(words.map(w=>w.category)).size+1,vocabulary:words.length,spelling:words.length,alphabet:26,writing:26,sentences:21,'word-families':8,reading:12}[page]||100);
+ const n=Number(rawIndex||0),limit=({topic:12,'topic-unit':22,'beginner-lesson':outlineLessons.length,'fox-game':5,'game-play':10,'adult-lesson':adultWords.length,classes:10,'class-map':10,'adventure-lesson':30,'adventure-game':30,'play-game':24,'discover-lesson':12,'story-player':6,'path-lesson':pathLessons.length,'picture-words':new Set(words.map(w=>w.category)).size+1,vocabulary:words.length,spelling:words.length,alphabet:26,writing:26,sentences:21,'word-families':8,reading:12}[page]||100);
  return {page,index:Number.isInteger(n)&&n>=0&&n<limit?n:0};
 }
 export const journeyStops=[

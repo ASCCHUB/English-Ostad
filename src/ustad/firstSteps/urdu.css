@@ -1,0 +1,5 @@
+/* Urdu help line and its speaker (Bilingual.jsx). */
+.fs-ur{font-family:var(--font-pashto,"Noto Naskh Arabic",serif);unicode-bidi:isolate}
+.fs-ur-speak{display:inline-grid;place-items:center;width:40px;height:40px;min-height:40px;margin-inline-start:6px;padding:0;border:2px solid #bfe0fa;border-radius:50%;background:#fff;color:#1d2b4f;font-size:18px;line-height:1;vertical-align:middle;cursor:pointer}
+.fs-ur-speak:focus-visible{outline:3px solid #1b6fb8;outline-offset:2px}
+[data-color-mode=dark] .fs-ur-speak{background:#222a40;color:#eef2fb;border-color:#3a6a94}

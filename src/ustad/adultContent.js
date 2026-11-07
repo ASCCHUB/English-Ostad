@@ -1,3 +1,4 @@
+import {moreLists} from './adultContentMore.js';
 export const adultLevels=[
  {id:'foundation',title:'Foundation',subtitle:'Short, useful words',description:'Build confidence with short words for everyday life.'},
  {id:'everyday',title:'Everyday',subtitle:'Familiar words, longer spellings',description:'Practise words for home, people, places and routines.'},
@@ -369,7 +370,8 @@ sustainability|the ability to continue without exhausting resources|The report d
 thorough|careful and complete|We carried out a thorough review.
 unnecessary|not needed|Remove unnecessary words from the sentence.`
 ];
-export const adultWords=lists.flatMap((text,level)=>text.trim().split('\n').map(line=>{const [en,meaning,example]=line.split('|');return {id:'adult-'+en.toLowerCase(),en,meaning,example,level};})).sort((a,b)=>a.level-b.level||a.en.length-b.en.length||a.en.localeCompare(b.en));
+// Each level: the original 60 words plus 140 more from adultContentMore.js (200 per level).
+export const adultWords=lists.map((text,level)=>text.trim()+'\n'+moreLists[level].trim()).flatMap((text,level)=>text.split('\n').map(line=>{const [en,meaning,example]=line.split('|');return {id:'adult-'+en.toLowerCase(),en,meaning,example,level};})).sort((a,b)=>a.level-b.level||a.en.length-b.en.length||a.en.localeCompare(b.en));
 export const adultSpellingNotes={
  address:'Address has two d letters and two s letters.',
  receive:'The middle vowel letters are e-i: receive.',

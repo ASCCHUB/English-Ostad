@@ -8,6 +8,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import * as W from '../src/ustad/games/content/words.js';
 import {templates,newMeanings} from '../src/ustad/games/content/pashto.js';
+import {urduGameTemplates} from '../src/ustad/locales/ur.js';
 import {wordPhoto} from '../src/ustad/wordPhotos.js';
 import {hasArt} from '../src/ustad/games/art.js';
 import psLocale from '../src/ustad/locales/ps.js';
@@ -43,7 +44,8 @@ function gloss(words){
   return null;
  }).filter(Boolean);
 }
-const ps=(skill,x)=>({text:templates[skill].replace('{x}',x??''),status:'check'});
+// tpl and x let the assembler add the matching Urdu line (locales/ur.js) next to the Pashto one.
+const ps=(skill,x)=>({text:templates[skill].replace('{x}',x??''),status:'check',tpl:skill,x:x??''});
 const tts=text=>({kind:'tts',text});
 
 // Sounds: the course's sound ids, their spelling and recording slot (a phoneme plays only from a real recording).
@@ -306,7 +308,7 @@ function foxGame(){
  const combos=shuffle(items.flatMap(it=>Object.entries(pos).flatMap(([lm,ps])=>ps.map(p=>[it,lm,p]))));
  let ci=0;const nextCombo=()=>combos[(ci++)%combos.length];
  for(let i=0;i<50;i++){const [it,lm,p]=nextCombo(),c=itemColor[it];
-  Q.push({skill:'positions',skillLabel:'Where is it?',activity:'choice',scene:sceneOf[lm],key:`pos:${it}:${lm}:${p}`,instruction:{en:`Find the ${it} ${p} the ${lm}.`,ps:{text:`${templates.position} (${p} the ${lm})`,status:'check'}},say:`Find the ${it} ${p} the ${lm}.`,prompt:{},
+  Q.push({skill:'positions',skillLabel:'Where is it?',activity:'choice',scene:sceneOf[lm],key:`pos:${it}:${lm}:${p}`,instruction:{en:`Find the ${it} ${p} the ${lm}.`,ps:{text:`${templates.position} (${p} the ${lm})`,status:'check',tpl:'position',x:'',suffix:` (${p} the ${lm})`}},say:`Find the ${it} ${p} the ${lm}.`,prompt:{},
   options:shuffle([p,...otherPositions(lm,p,2)]).map(x=>({id:'s-'+x,scene:scene(it,c,lm,x),label:sentence(it,lm,x)})),answer:'s-'+p,hint:posHint[p],feedback:sentence(it,lm,p),gloss:gloss([it,p,lm]),practiced:'position words',instructionCount:1});}
  const colored=shuffle(Object.entries(palettes).filter(([it])=>items.includes(it)).flatMap(([it,cs])=>cs.flatMap(c=>Object.entries(pos).flatMap(([lm,ps])=>ps.map(p=>[it,c,lm,p])))));
  colored.slice(0,35).forEach(([it,c,lm,p])=>{const c2=pickOther(palettes[it],1,[c])[0],p2=otherPositions(lm,p,1)[0];
@@ -337,7 +339,9 @@ for(const g of games){
  const list=g.build();
  if(list.length!==PER_GAME)throw Error(`${g.id}: ${list.length} questions, expected ${PER_GAME}`);
  const questions=list.map((q,i)=>{const level=Math.floor(i/PER_LEVEL)+1,n=i%PER_LEVEL;const cls=g.classes.find(([a,b])=>level>=a&&level<=b)[2];
-  return {id:`${g.prefix}-${String(level).padStart(2,'0')}-${String(n+1).padStart(2,'0')}`,game:g.id,class:cls,level,round:n<5?1:2,...q};});
+  const {tpl,x,suffix,...psLine}=q.instruction.ps;
+  const ur={text:urduGameTemplates[tpl].replace('{x}',x)+(suffix||''),status:'check'};
+  return {id:`${g.prefix}-${String(level).padStart(2,'0')}-${String(n+1).padStart(2,'0')}`,game:g.id,class:cls,level,round:n<5?1:2,...q,instruction:{...q.instruction,ps:psLine,ur}};});
  const levels=Array.from({length:LEVELS},(_,i)=>{const qs=questions.filter(q=>q.level===i+1),labels=[...new Set(qs.map(q=>q.skillLabel))];
   return {level:i+1,class:qs[0].class,title:labels.join(' · '),skills:[...new Set(qs.map(q=>q.skill))],questions:qs.length};});
  fs.writeFileSync(path.join(out,g.id+'.json'),JSON.stringify({game:g.id,title:g.title,levels,questions},null,0)+'\n');

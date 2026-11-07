@@ -9,7 +9,7 @@ const outDir='output/github-pages';
 await build({base,build:{outDir},logLevel:'error'});
 // Public pictures and generated course data use root paths in the native app.
 // Relocate these in this separate Pages build; leave native/root builds unchanged.
-const prefixes=['assets/','audio/','drawings/','explorers/','learning-photos/','payments/','first-steps-audio.json','offline-manifest.json','manifest.json','sw.js','favicon-32.png','favicon.svg','apple-touch-icon.png','ustad-icon.svg','ustad-icon-192.png','ustad-icon-512.png','ustad-icon-maskable-512.png'];
+const prefixes=['assets/','audio/','drawings/','explorers/','learning-photos/','payments/','first-steps-audio.json','en-pk-voice.json','ur-pk-voice.json','offline-manifest.json','manifest.json','sw.js','favicon-32.png','favicon.svg','apple-touch-icon.png','ustad-icon.svg','ustad-icon-192.png','ustad-icon-512.png','ustad-icon-maskable-512.png'];
 async function walk(dir){const files=[];for(const entry of await readdir(dir,{withFileTypes:true})){const p=join(dir,entry.name);if(entry.isDirectory())files.push(...await walk(p));else files.push(p);}return files;}
 for(const path of await walk(outDir))if(/\.(?:js|css|html)$/.test(path)&&!path.endsWith('sw.js')){
  let text=await readFile(path,'utf8');

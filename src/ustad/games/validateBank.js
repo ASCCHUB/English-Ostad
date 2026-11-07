@@ -1,7 +1,7 @@
 // Checks a game bank. Used by scripts/check-game-bank.mjs and src/ustad/games.test.js.
 // fileExists(publicPath) is passed in so this module stays free of Node APIs.
 import {wordPhoto} from '../wordPhotos.js';
-import {hasArt} from './art.js';
+import {hasArt,hasPlace} from './art.js';
 import {animals,initialSoundWords} from './content/words.js';
 import {gpcs} from '../firstSteps/tasks.js';
 const firstSound=w=>{const id=Object.entries(initialSoundWords).find(([,l])=>l.includes(w))?.[0];return id?gpcs[id].ipa:null;};
@@ -25,6 +25,7 @@ export function validateBank(bank,{fileExists=()=>true,recordings={},levels=20,p
  for(let level=1;level<=levels;level++){const inLevel=qs.filter(q=>q.level===level);if(inLevel.length!==perLevel)err(null,`level ${level} has ${inLevel.length} questions`);
   for(const round of [1,2])if(inLevel.filter(q=>q.round===round).length!==perLevel/2)err(null,`level ${level} round ${round} is not ${perLevel/2} questions`);}
  const checkPicture=(q,ref,where)=>{const file=pictureFile(ref);if(!file)err(q,`${where}: unknown picture ${ref}`);else if(file!=='art'&&!fileExists(file))err(q,`${where}: missing file ${file}`);};
+ const checkScene=(q,sc,where)=>{if(!hasPlace(sc.landmark.replace(/^art:/,''),sc.position))err(q,`${where}: no layout for ${sc.position} the ${sc.landmarkWord}`);};
  const checkSound=(q,s,where)=>{if(!s?.recording||!s.grapheme||!s.ipa)err(q,`${where}: incomplete sound`);else if(Object.keys(recordings).length&&!recordings[s.recording])err(q,`${where}: no recording slot ${s.recording}`);};
  for(const q of qs){
   if(ids.has(q.id))err(q,'duplicate id');ids.add(q.id);
@@ -34,6 +35,7 @@ export function validateBank(bank,{fileExists=()=>true,recordings={},levels=20,p
   if(!q.instruction?.en)err(q,'missing English instruction');
   if(!q.instruction?.ps?.text||!['check','approved'].includes(q.instruction.ps.status))err(q,'missing Pashto explanation or status');
   if(!Array.isArray(q.gloss))err(q,'missing Pashto word meanings list');
+  if(!q.instruction?.ur?.text||q.instruction.ur.status!=='check'||/{x}/.test(q.instruction.ur.text))err(q,'missing Urdu instruction');
   if(/\/[a-zæɪɒʌ]+\//i.test(q.say))err(q,'spoken text contains a phoneme mark; device speech must not say sounds');
   if(keys.has(q.key))err(q,`duplicate content key ${q.key}`);keys.add(q.key);
   const opts=q.options||[];
@@ -42,10 +44,10 @@ export function validateBank(bank,{fileExists=()=>true,recordings={},levels=20,p
   if(q.activity!=='order'&&q.activity!=='word-tap'&&new Set(opts.map(optionContent)).size!==opts.length)err(q,'two choices look the same');
   const fp=JSON.stringify([q.instruction.en,q.prompt,JSON.stringify(q.answer)]);if(fingerprints.has(fp))err(q,'same question as another');fingerprints.add(fp);
   // Assets
-  for(const o of opts){if(o.picture)checkPicture(q,o.picture,'choice');if(o.group)checkPicture(q,o.group.picture,'group');if(o.scene){checkPicture(q,o.scene.item,'scene item');checkPicture(q,o.scene.landmark,'scene landmark');}if(o.sound)checkSound(q,o.sound,'choice sound');}
+  for(const o of opts){if(o.picture)checkPicture(q,o.picture,'choice');if(o.group)checkPicture(q,o.group.picture,'group');if(o.scene){checkScene(q,o.scene,'choice scene');checkPicture(q,o.scene.item,'scene item');checkPicture(q,o.scene.landmark,'scene landmark');}if(o.sound)checkSound(q,o.sound,'choice sound');}
   const p=q.prompt||{};
   if(p.picture)checkPicture(q,p.picture,'prompt');if(p.group)checkPicture(q,p.group.picture,'prompt group');(p.groups||[]).forEach(g=>checkPicture(q,g.picture,'prompt group'));
-  if(p.scene){checkPicture(q,p.scene.item,'prompt scene');checkPicture(q,p.scene.landmark,'prompt scene');}
+  if(p.scene){checkScene(q,p.scene,'prompt scene');checkPicture(q,p.scene.item,'prompt scene');checkPicture(q,p.scene.landmark,'prompt scene');}
   (p.animals||[]).forEach(a=>checkPicture(q,a.picture,'animal'));if(p.food)checkPicture(q,p.food.picture,'food');
   if(p.sound)checkSound(q,p.sound,'prompt sound');(p.sounds||[]).forEach(s=>checkSound(q,s,'blend sound'));
   // Answers

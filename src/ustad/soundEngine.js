@@ -1,5 +1,6 @@
 import {useSyncExternalStore} from 'react';
 import {pashtoAudio} from './pashto.js';
+import {speechKey} from './speechKey.js';
 // One sound channel for the whole app. A new word stops the last one, background music steps
 // aside while anyone is speaking, and celebration sounds wait until narration has finished.
 // Chimes and music are synthesised with Web Audio, so no sound files are needed. Pashto plays
@@ -30,8 +31,31 @@ const englishRank=v=>(noveltyVoice.test(v.name)?-100:0)+(/^en[-_]PK/i.test(v.lan
 const isEnglish=v=>/^en(?:[-_]|$)/i.test(v.lang);
 // Fallback: if a device only has novelty voices, use them rather than nothing.
 function englishVoices(){const all=(synth()?.getVoices()||[]).filter(isEnglish),good=all.filter(v=>!noveltyVoice.test(v.name));return (good.length?good:all).sort((a,b)=>englishRank(b)-englishRank(a));}
-function loadVoices(){emit({voices:englishVoices().map(v=>({name:v.name,lang:v.lang}))});}
-function voiceFor(name=prefs.voiceName){const list=englishVoices().filter(v=>!failedVoices.has(v.name));return list.find(v=>v.name===name)||list[0];}
+// Pre-recorded Pakistani English (public/en-pk-voice.json, made by scripts/make-pk-voice.mjs). It comes first
+// ("Recommended") when present; lines without a recording use the best device voice.
+export const PK_VOICE='Pakistani English (recorded)';
+let pk=null;
+const pkClip=text=>pk?.clips[speechKey(text)];
+function pkClips(text){const whole=pkClip(text);if(whole)return [whole];const parts=text.split(/(?<=[.!?])s+(?=[A-Z“"'‘(])/);if(parts.length<2)return null;const list=parts.map(pkClip);return list.every(Boolean)?list:null;}
+function usePk(voiceName){return !!pk&&(voiceName===undefined?(prefs.voiceName===''||prefs.voiceName===PK_VOICE):voiceName===PK_VOICE);}
+// Urdu: a recorded Pakistani Urdu clip (public/ur-pk-voice.json) first, otherwise the device's Urdu voice.
+let urClips=null;
+export const urduKey=text=>String(text||'').replace(/[⁦-⁩]/g,'').replace(/s+/g,' ').trim();
+const urduVoice=()=>(synth()?.getVoices()||[]).find(v=>/^ur(?:[-_]|$)/i.test(v.lang));
+if(browser&&typeof fetch!=='undefined')fetch('/ur-pk-voice.json').then(r=>r.ok?r.json():null).then(data=>{if(data?.clips&&Object.keys(data.clips).length){urClips=data.clips;emit({urdu:true});}}).catch(()=>{});
+export function canSpeakUrdu(text){return !!(urClips?.[urduKey(text)])||!!urduVoice();}
+export function speakUrdu(text){
+ const key=urduKey(text);if(!key||!browser)return Promise.resolve('stopped');
+ if(!channelOn('ur'))return Promise.resolve('off');
+ stopSpeech();const id=seq;
+ const clipFile=urClips?.[key];
+ if(clipFile)return playClip('/audio/ur-pk/'+clipFile,{id,text:key,owner:'urdu',kind:'instruction',quiet:true,again:()=>speakUrdu(text),lang:'ur'});
+ const voice=urduVoice();if(!voice)return Promise.resolve('unavailable');
+ return utter(key,voice,{id,rate:.95,owner:'urdu',kind:'instruction',quiet:true,again:()=>speakUrdu(text),lang:'ur'});
+}
+function loadVoices(){emit({urdu:!!urClips||!!urduVoice(),voices:[...(pk?[{name:PK_VOICE,lang:'en-PK',recorded:true,speaker:pk.speaker}]:[]),...englishVoices().map(v=>({name:v.name,lang:v.lang}))]});}
+if(browser&&typeof fetch!=='undefined')fetch('/en-pk-voice.json').then(r=>r.ok?r.json():null).then(data=>{if(data?.clips&&Object.keys(data.clips).length){pk={speaker:data.speaker||'',clips:data.clips};loadVoices();}}).catch(()=>{/* Device voices still work. */});
+function voiceFor(name=prefs.voiceName){if(name===PK_VOICE)name='';const list=englishVoices().filter(v=>!failedVoices.has(v.name));return list.find(v=>v.name===name)||list[0];}
 // Voices load late in some browsers; wait briefly only while the list is still empty.
 async function waitForVoice(name){for(let i=0;i<15&&synth()&&!synth().getVoices().length;i++)await wait(100);return voiceFor(name);}
 // The ranked list the settings page shows; the first one is what "Recommended" plays.
@@ -74,6 +98,7 @@ export function speak(text,{lang='en',rate=.88,owner='',kind='word',onBoundary,q
   const delay=Math.max(busy?60:0,Math.min(1200,effectUntil-performance.now()));if(delay>0)await wait(delay);
   if(id!==seq)return 'stopped';
   if(recording)return playClip(recording,{id,text,owner,kind,quiet,again});
+  if(!isPashtoLang(lang)&&usePk(voiceName)){const clips=pkClips(text);if(clips){for(const src of clips){const result=await playClip('/audio/en-pk/'+src,{id,text,owner,kind,quiet,again,lang:'en',rate:{slow:.88,'very-slow':.76}[prefs.voiceSpeed]||1});if(result!=='ended'||id!==seq)return id!==seq?'stopped':result;}return 'ended';}}
   const voice=await waitForVoice(voiceName);if(id!==seq)return 'stopped';
   if(!voice){if(!quiet)issue('unavailable',again);return 'unavailable';}
   return utter(text,voice,{id,rate,owner,kind,onBoundary,quiet,again,lang});
@@ -81,7 +106,7 @@ export function speak(text,{lang='en',rate=.88,owner='',kind='word',onBoundary,q
 }
 function utter(text,voice,{id,rate,owner,kind,onBoundary,quiet,again,lang}){
  return new Promise(resolve=>{
-  const u=new SpeechSynthesisUtterance(text);u.voice=voice;u.lang=voice.lang;u.rate=rate*(prefs.voiceSpeed==='slow'?.75:1);u.pitch=1.05;
+  const u=new SpeechSynthesisUtterance(text);u.voice=voice;u.lang=voice.lang;u.rate=rate*({slow:.78,'very-slow':.62}[prefs.voiceSpeed]||.92);u.pitch=1.05;
   let settled=false;
   const settle=result=>{if(settled)return;settled=true;clearTimeout(guard);if(finishCurrent===settle)finishCurrent=null;if(id===seq&&state.speaking)emit({speaking:null,paused:false});resolve(result);};
   finishCurrent=settle;
@@ -93,21 +118,22 @@ function utter(text,voice,{id,rate,owner,kind,onBoundary,quiet,again,lang}){
   u.onerror=e=>{
    if(['canceled','interrupted'].includes(e.error)){settle('stopped');return;}
    // An online voice can fail without internet: try the next voice once.
-   if(!voice.localService&&!failedVoices.has(voice.name)&&id===seq){failedVoices.add(voice.name);settled=true;clearTimeout(guard);finishCurrent=null;const next=voiceFor();if(next){utter(text,next,{id,rate,owner,kind,onBoundary,quiet,again,lang}).then(resolve);return;}}
+   if(!voice.localService&&isEnglish(voice)&&!failedVoices.has(voice.name)&&id===seq){failedVoices.add(voice.name);settled=true;clearTimeout(guard);finishCurrent=null;const next=voiceFor();if(next){utter(text,next,{id,rate,owner,kind,onBoundary,quiet,again,lang}).then(resolve);return;}}
    if(!quiet&&id===seq)issue('error',again);settle('error');
   };
   emit({speaking:{owner,text,kind,lang},paused:false});
   synth().resume();synth().speak(u);
  });
 }
-function playClip(src,{id,text,owner,kind,quiet,again}){
+function playClip(src,{id,text,owner,kind,quiet,again,lang='ps',rate=1}){
  return new Promise(resolve=>{
   const audio=mediaElement(src);clip=audio;let settled=false;
   const settle=result=>{if(settled)return;settled=true;if(clip===audio)clip=null;if(finishCurrent===settle)finishCurrent=null;if(id===seq&&state.speaking)emit({speaking:null,paused:false});resolve(result);};
   finishCurrent=settle;
   audio.onended=()=>settle('ended');
   audio.onerror=()=>{if(!quiet&&id===seq)issue('error',again);settle('error');};
-  emit({speaking:{owner,text,kind,lang:'ps'},paused:false});
+  emit({speaking:{owner,text,kind,lang},paused:false});
+  try{audio.defaultPlaybackRate=rate;audio.playbackRate=rate;audio.preservesPitch=true;}catch{/* optional */}
   audio.play().catch(()=>{if(!quiet&&id===seq)issue('error',again);settle('error');});
  });
 }

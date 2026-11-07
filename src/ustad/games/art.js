@@ -61,3 +61,27 @@ export function artSvg(ref){
  return registry[ref]?.()||null;
 }
 export function hasArt(ref){return artSvg(ref)!==null;}
+
+// ---------- Fox scenes: one SVG, so an object behind a landmark is really partly hidden ----------
+// Landmark drawn at x 50–150, y 22–105 of a 200×120 stage; positions give the object's box (x, y, size).
+const FRONTS={box:'<rect x="24" y="40" width="72" height="54" rx="4" fill="#d9a066" stroke="#23324a" stroke-width="3"/><path d="M60 40V94" stroke="#23324a" stroke-width="2" opacity=".5"/>'};
+export const PLACES={
+ tree:{under:[66,76,28],beside:[154,76,28],behind:[101,70,30,'back']},
+ chair:{on:[85,37,28],under:[86,77,26],beside:[154,76,28],behind:[106,34,28,'back']},
+ table:{on:[85,26,28],under:[86,76,28],beside:[154,76,28]},
+ bed:{on:[96,32,28],under:[89,84,20],beside:[154,76,28]},
+ box:{in:[85,34,30,'mid'],on:[86,15,28],beside:[154,76,28],behind:[121,48,32,'back']},
+ house:{behind:[121,46,32,'back'],beside:[154,76,28],'in front of':[86,78,28]},
+ car:{beside:[154,76,28],behind:[131,40,30,'back'],'in front of':[84,58,32]}
+};
+const nest=(markup,x,y,w,h)=>markup?markup.replace(/^<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg"/,`<svg x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMax meet"`):'';
+export function sceneMarkup(scene){
+ const lm=scene.landmark.replace(/^art:/,''),item=scene.item.replace(/^art:/,''),place=PLACES[lm]?.[scene.position];
+ if(!place)return '';
+ const [x,y,s,layer]=place,land=nest(artSvg(lm),50,22,100,83),thing=nest(artSvg(item),x,y,s,s);
+ // "in": the object sits inside, its lower part hidden by the front of the container.
+ const front=layer==='mid'&&FRONTS[lm]?nest(svg(FRONTS[lm],'0 0 120 100'),50,22,100,83):'';
+ const ground='<ellipse cx="100" cy="106" rx="96" ry="9" fill="#cfe9b8"/>';
+ return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" aria-hidden="true" focusable="false">${ground}${layer==='back'?thing+land:land+thing+front}</svg>`;
+}
+export function hasPlace(landmark,position){return !!PLACES[landmark]?.[position];}

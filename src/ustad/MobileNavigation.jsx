@@ -3,7 +3,7 @@ import {useEffect,useRef} from 'react';
 import {Bi} from './firstSteps/Bilingual.jsx';
 import {Icon} from './ExplorerArt.jsx';
 import './mobileNavigation.css';
-const links=[['home','home','Home','کور'],['beginner','book','All lessons','ټول سبقونه'],['level-check','check','Quick exam','خپل انګلش امتحان واخلئ'],['topics','sparkle','Topics','موضوعګانې'],['games','game','Play','لوبې'],['progress','star','My Stars','زما ستوري']];
+const links=[['home','home','Home','کور'],['beginner','book','All lessons','ټول سبقونه'],['level-check','check','Quick exam','خپل انګلش امتحان واخلئ'],['topics','sparkle','Topics','موضوعګانې'],['games','game','Play','لوبې'],['progress','star','My Stars','زما ستوري'],['adult-spelling','book','Adult spelling','د لویانو د پاره املا']];
 export default function MobileNavigation({onStudents,studentName,open,onOpen,onClose,page,go,onShare,onGuide,onParent,language='ps',onLanguage,colorMode='light',onTheme,muted=false,onMute}){
  const panel=useRef(null),close=useRef(null),trigger=useRef(null);
  useEffect(()=>{if(!open)return;const previous=document.activeElement,overflow=document.body.style.overflow;document.body.style.overflow='hidden';close.current?.focus();const resize=()=>{if(window.innerWidth>700)onClose();};window.addEventListener('resize',resize);return()=>{document.body.style.overflow=overflow;window.removeEventListener('resize',resize);previous?.focus?.();};},[open]);

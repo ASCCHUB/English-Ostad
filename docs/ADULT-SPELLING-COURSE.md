@@ -1,10 +1,10 @@
 # Adult spelling and vocabulary
 
-Open `#/adult-spelling`, or choose **Adult spelling** on Home, the sidebar or the original spelling screen. The existing children's content remains available. Adult lessons use a quieter layout, English explanations, real-life examples, and the app's background/light/dark settings.
+Open **Adult spelling** in the side menu (phones) or the left sidebar (tablets and computers), or go to `#/adult-spelling`. It is not behind the parent check. (Before 2026-11-07 it was reachable only from the Parent area.) The existing children's content remains available. Adult lessons use a quieter layout, English explanations, real-life examples, and the app's background/light/dark settings.
 
 ## Vocabulary and progression
 
-There are **360 unique adult vocabulary entries**, arranged into six levels of 60 words each:
+There are **1,200 unique adult vocabulary entries**, arranged into six levels of 200 words each. The first 60 of each level are in `src/ustad/adultContent.js`; 140 more per level were added on 2026-11-07 in `src/ustad/adultContentMore.js` (same format: `word|meaning|example`).
 
 | Level | Focus | Examples |
 | --- | --- | --- |

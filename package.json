@@ -18,6 +18,9 @@
     "course:audit": "node scripts/audit-taught-words.mjs",
     "android:apk": "node scripts/android-apk.mjs",
     "android:aab": "node scripts/android-aab.mjs",
+    "games:build": "node scripts/build-game-bank.mjs",
+    "games:check": "node scripts/check-game-bank.mjs",
+    "voice:pk": "node scripts/make-pk-voice.mjs",
     "check:pages": "node scripts/build-pages.mjs && node scripts/check-pages-offline-retry.mjs chromium && node scripts/check-pages-offline-retry.mjs iphone"
   },
   "dependencies": {

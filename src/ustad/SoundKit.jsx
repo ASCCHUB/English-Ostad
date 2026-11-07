@@ -4,6 +4,7 @@ import {support,ariaText} from './supportCopy.js';
 import {radioKeys,radioProps} from './radioGroup.js';
 import {withPashto,pashtoAudioStatus} from './pashto.js';
 import {useAudio,speak,celebrate,clearIssue,previewVoice} from './soundEngine.js';
+import {canInstallVoices,installVoices} from '../nativeSpeech.js';
 import './sound.css';
 // Word taps say the English word; the sentence button says the whole sentence; Pashto help is a
 // separate, optional button. Everything stays readable when sound is off or unavailable.
@@ -84,7 +85,8 @@ function VoiceChooser({voices,settings,onChange,language}){
   {card('','Recommended',voices[0]?accentOf(voices[0])[1]:'⭐',voices[0]?accentOf(voices[0])[2]:'Best voice on this device',voices[0]&&shortName(voices[0].name))}
   {voices.map(v=>{const [,flag,accent]=accentOf(v);return card(v.name,shortName(v.name),flag,accent,null);})}
  </div>
- <div className="voice-speed" role="radiogroup" aria-labelledby="voice-speed-label" onKeyDown={radioKeys}><span id="voice-speed-label">Voice speed</span>{[['normal','Normal'],['slow','Slow']].map(([id,label])=><button key={id} {...radioProps(speed===id)} className={speed===id?'appearance-selected':''} onClick={()=>onChange({voiceSpeed:id})}>{label}</button>)}</div>
+ <div className="voice-speed" role="radiogroup" aria-labelledby="voice-speed-label" onKeyDown={radioKeys}><span id="voice-speed-label">Voice speed</span>{[['normal','Normal'],['slow','Slow'],['very-slow','Very slow']].map(([id,label])=><button key={id} {...radioProps(speed===id)} className={speed===id?'appearance-selected':''} onClick={()=>onChange({voiceSpeed:id})}>{label}</button>)}</div>
+ {canInstallVoices()&&<p className="voice-install">{voices.some(v=>/^en[-_](PK|IN)/i.test(v.lang))?null:<>No Pakistani or Indian English voice is on this phone yet. </>}<button className="text-button" onClick={installVoices}>Get more English voices</button> <small>In the phone settings, choose English (India) and download it, then come back.</small></p>}
  </div>;
 }
 export function SoundSettings({settings,onChange,language}){
